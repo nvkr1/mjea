@@ -16,14 +16,14 @@ const ServicesFour = () => {
                   </div>
                 </div>
 
-                <div className='col d-flex align-items-center'>
+                <div className='col flex flex-col justify-center align-items-center'>
                   <div className='contents'>
                     <h4>
-                      <p className='text-nowrap ' to='/'>
+                      <p className='row text-nowrap ' to='/'>
                         ГАНЗОРИГ Чулуун
                       </p>
                     </h4>
-                    <p className='text-white font-bold'>
+                    <p className='row text-white font-bold'>
                       Удирдах зөвлөлийн дарга
                     </p>
                   </div>
@@ -66,14 +66,16 @@ const ServicesFour = () => {
                   </div>
                 </div>
 
-                <div className='col d-flex align-items-center'>
+                <div className='col flex flex-col justify-center align-items-center'>
                   <div className='contents'>
                     <h4>
-                      <p className='text-nowrap ' to='/'>
+                      <p className='row text-nowrap ' to='/'>
                         ТӨРТОГТОХ Эрдэнбаатар
                       </p>
                     </h4>
-                    <p className='text-white font-bold'>Гүйцэтгэх захирал</p>
+                    <p className='row text-white font-bold'>
+                      Гүйцэтгэх захирал
+                    </p>
                   </div>
                 </div>
               </div>

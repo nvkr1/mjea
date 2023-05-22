@@ -26,7 +26,7 @@ const FooterFour = () => {
                       <h3>Хаяг:</h3>
                     </div>
                     <ul className='col'>
-                      <li>
+                      <li className='flex items-center'>
                         <FaSearchLocation className='mx-1' />
                         <a
                           target='_blank'
@@ -44,7 +44,7 @@ const FooterFour = () => {
                       <h3>Цахим шуудан:</h3>
                     </div>
                     <ul className='col-6 '>
-                      <li>
+                      <li className='flex items-center'>
                         <AiOutlineMail className='mx-1' />
                         <a target='_blank' href='info@mjae.mn'>
                           info@mjae.mn
@@ -59,7 +59,7 @@ const FooterFour = () => {
                       <h3>Сошиал аккаунт:</h3>
                     </div>
                     <ul className='col'>
-                      <li>
+                      <li className='flex items-center'>
                         <FaFacebookF className='mx-1' />
                         <a
                           href='https://www.facebook.com/%D0%9C%D0%BE%D0%BD%D0%B3%D0%BE%D0%BB%D1%8B%D0%BD-%D0%91%D0%B8%D1%80%D0%B6%D2%AF%D2%AF%D0%B4%D0%B8%D0%B9%D0%BD-%D0%9D%D1%8D%D0%B3%D0%B4%D1%81%D1%8D%D0%BD-%D0%A5%D0%BE%D0%BB%D0%B1%D0%BE%D0%BE-100147869249365'
@@ -68,7 +68,7 @@ const FooterFour = () => {
                           Монголын Биржүүдийн Нэгдсэн Холбоо
                         </a>
                       </li>
-                      <li>
+                      <li className='flex items-center'>
                         {" "}
                         <FaLinkedin className='mx-1' />
                         <a
@@ -78,7 +78,7 @@ const FooterFour = () => {
                           Mongolian Joint Association of Exchanges
                         </a>
                       </li>
-                      <li>
+                      <li className='flex items-center'>
                         {" "}
                         <FaTwitter className='mx-1' />
                         <a

@@ -15,7 +15,11 @@ const HeaderFour = () => {
         <div className='container-fluid d-flex justify-content-between align-items-center'>
           <div className='logo'>
             <Link to='/'>
-              <img src={mainLogo} height={60} widht={60} alt='logo2' />
+              <img
+                src={mainLogo}
+                className='img-fluid custom-img'
+                alt='logo2'
+              />
             </Link>
           </div>
           <div className='header-right-area d-flex'>
