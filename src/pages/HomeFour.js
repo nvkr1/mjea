@@ -6,6 +6,7 @@ import FunFactTwo from "../Components/FunFact/FunFactTwo";
 import AboutOne from "../Components/About/AboutOne";
 import ServicesTwo from "../Components/Services/ServicesTwo";
 import Exchanges from "../Components/Exchanges";
+import Timeline from "../Components/Timeline";
 
 const HomeFour = () => {
   return (
@@ -15,6 +16,7 @@ const HomeFour = () => {
       <Exchanges />
       <FunFactTwo />
       <AboutOne />
+      <Timeline />
       <ServicesFour />
       <ServicesTwo />
       <FooterFour />

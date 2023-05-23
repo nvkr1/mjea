@@ -3,7 +3,6 @@ import imgBlock1 from "../../assets/img/home1/img-block1.jpg";
 import tabImg1 from "../../assets/img/futurist.png";
 import tabImg2 from "../../assets/img/dart-board.png";
 import tabImg3 from "../../assets/img/megaphone.png";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import "react-modal-video/scss/modal-video.scss";
 import ModalVideo from "react-modal-video";
@@ -21,11 +20,7 @@ const AboutOne = ({ pt }) => {
         onClose={() => setOpen(false)}
       />
       <section
-        className={
-          pt
-            ? "about-section section-padding"
-            : "about-section section-padding pt-10"
-        }>
+        className={pt ? "about-section mt-100" : "about-section mt-100 pt-10"}>
         <div id='about' className='container'>
           <div className='row'>
             <div className='col-xl-6 col-lg-5 col-12'>
