@@ -9,7 +9,7 @@ const FooterFour = () => {
   return (
     <>
       <footer className='footer-4 footer-wrap'>
-        <div className='footer-widgets-wrapper text-white'>
+        <div id='contacts' className='footer-widgets-wrapper text-white'>
           <div className='container'>
             <div className='row d-flex justify-content-center align-items-center'>
               <div className='col-3 m-auto'>

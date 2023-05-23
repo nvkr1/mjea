@@ -3,7 +3,7 @@ import img2 from "../../assets/img/person2.png";
 const ServicesFour = () => {
   return (
     <section className='our-service-wrapper bg-black section-padding'>
-      <div className='container'>
+      <div id='ceos' className='container'>
         <div className='row mtm-30'>
           <h2 className='text-white'>УДИРДЛАГА</h2>
           <div className='col-md-6 col-12 col-lg-6 mt-30'>

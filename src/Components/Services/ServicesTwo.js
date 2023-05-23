@@ -4,7 +4,7 @@ import img1 from "../../assets/img/cyber2.png";
 const ServicesTwo = () => {
   return (
     <section className='our-service-wrapper section-padding bg-gray'>
-      <div className='container'>
+      <div id='structure' className='container'>
         <div className='row'>
           <div className='col-xl-12'>
             <div className='block-contents text-center'>

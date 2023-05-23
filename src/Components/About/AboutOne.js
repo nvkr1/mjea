@@ -26,7 +26,7 @@ const AboutOne = ({ pt }) => {
             ? "about-section section-padding"
             : "about-section section-padding pt-10"
         }>
-        <div className='container'>
+        <div id='about' className='container'>
           <div className='row'>
             <div className='col-xl-6 col-lg-5 col-12'>
               <div className='img-block-pop-video'>

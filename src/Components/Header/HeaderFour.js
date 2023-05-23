@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import mainLogo from "../../assets/img/logo.png";
 import MobileMenu from "./MobileMenu";
 
@@ -14,47 +14,59 @@ const HeaderFour = () => {
       <header className='header-wrap header-1 header-4'>
         <div className='container-fluid d-flex justify-content-between align-items-center'>
           <div className='logo'>
-            <Link to='/'>
+            <a to='/'>
               <img
                 src={mainLogo}
                 className='img-fluid custom-img'
                 alt='logo2'
               />
-            </Link>
+            </a>
           </div>
           <div className='header-right-area d-flex'>
             <div className='main-menu d-none me-0 pe-xl-5 me-xl-5 d-xl-block'>
               <ul>
                 <li>
-                  <a href='index.html'>НҮҮР</a>
+                  <a href='/'>НҮҮР</a>
                 </li>
                 <li>
-                  <a href='#'>
+                  <Link to='about' spy={true} smooth={true}>
                     ХОЛБООНЫ ТУХАЙ <i className='fal fa-plus'></i>
-                  </a>
+                  </Link>
                   <ul className='sub-menu'>
                     <li>
-                      <Link to='/services'>УДИРДЛАГА</Link>
+                      <Link to='ceos' spy={true} smooth={true}>
+                        УДИРДЛАГА
+                      </Link>
                     </li>
                     <li>
-                      <Link to='/news'>БҮТЭЦ</Link>
+                      <Link to='structure' spy={true} smooth={true}>
+                        БҮТЭЦ
+                      </Link>
                     </li>
                     <li>
-                      <Link to='/contact'> ГИШҮҮД</Link>
+                      <Link to='partners' spy={true} smooth={true}>
+                        ГИШҮҮД
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <Link to='/contact'> БАРИМТ БИЧИГ</Link>
+                  <a href='/Documents'> БАРИМТ БИЧИГ</a>
                 </li>
                 <li>
-                  <Link to='/contact'> ЭКОСИСТЕМ</Link>
+                  <Link to='' spy={true} smooth={true}>
+                    ЭКОСИСТЕМ
+                  </Link>
                 </li>
                 <li>
-                  <Link to='/contact'> ХОЛБОО БАРИХ</Link>
+                  <Link to='contacts' spy={true} smooth={true}>
+                    ХОЛБОО БАРИХ
+                  </Link>
                 </li>
                 <li>
-                  <Link to='/'> EN</Link>
+                  <Link to='' spy={true} smooth={true}>
+                    EN
+                  </Link>
                 </li>
               </ul>
             </div>

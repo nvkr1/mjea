@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Preloader from "./Components/Preloader";
 import ScrollTopBtn from "./Components/ScrollTopBtn";
 import HomeFour from "./pages/HomeFour";
+import Documents from "./pages/Documents";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -21,6 +22,7 @@ function App() {
         <ScrollTopBtn />
         <Routes>
           <Route path='/' element={<HomeFour />} />
+          <Route path='/documents' element={<Documents />} />
         </Routes>
       </>
     );

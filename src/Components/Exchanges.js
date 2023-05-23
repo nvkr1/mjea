@@ -27,25 +27,117 @@ function IndividualIntervalsExample() {
   ];
 
   return (
-    <Carousel
-      pause={false}
-      slide={true}
-      interval={4000}
-      keyboard={false}
-      indicators={false}
-      controls={false}
-      className='smooth-carousel'>
-      <Carousel.Item>
-        <div className='flex'>
-          {companies.slice(0, 4).map((company) => (
+    <div id='partners'>
+      <Carousel
+        pause={false}
+        slide={true}
+        interval={4000}
+        keyboard={false}
+        indicators={false}
+        controls={false}
+        className='smooth-carousel'>
+        <Carousel.Item>
+          <div className='flex'>
+            {companies.slice(0, 4).map((company) => (
+              <div
+                key={nanoid()}
+                className='mx-auto relative sm:w-full text-center h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
+                <div className='md:w-7/12 w-10/12 shrink-0 mx-auto'>
+                  <div className='flex justify-center items-center relative w-full lg:h-12 h-5'>
+                    <a href={company.link} target='_blank'>
+                      <img
+                        src={company.img}
+                        alt=''
+                        layout='fill'
+                        objectFit=''
+                        className='mx-auto sm:h-8 h-5'
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <div className='flex'>
+            {companies.slice(4, 8).map((company) => (
+              <div
+                key={nanoid()}
+                className='mx-auto relative sm:w-full text-center h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
+                <div className='md:w-7/12 w-10/12 shrink-0 mx-auto'>
+                  <div className='flex justify-center items-center relative w-full lg:h-12 h-5'>
+                    <a href={company.link} target='_blank'>
+                      <img
+                        src={company.img}
+                        alt=''
+                        layout='fill'
+                        objectFit=''
+                        className='mx-auto sm:h-8 h-5'
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Carousel.Item>
+        <Carousel.Item>
+          {" "}
+          <div className='flex'>
+            <div className='mx-auto relative sm:w-full text-center h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
+              <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
+                <div className='flex justify-center items-center relative w-full lg:h-12 h-5'>
+                  <a href='https://www.idax.exchange' target='_blank'>
+                    <img
+                      src={idax}
+                      alt=''
+                      layout='fill'
+                      objectFit=''
+                      className='mx-auto mt-[5px] lg:mt-0 sm:h-6 h-4'
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className='mx-auto relative sm:w-full text-center h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
+              <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
+                <div className='flex justify-center items-center relative w-full lg:h-12 h-5'>
+                  <a href='https://www.coinhub.mn' target='_blank'>
+                    <img
+                      src={coinhub}
+                      alt=''
+                      layout='fill'
+                      objectFit=''
+                      className='mx-auto mt-0 lg:mt-2 sm:h-4 h-3'
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className='mx-auto relative sm:w-full text-center h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
+              <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
+                <div className='flex justify-center items-center relative w-full lg:h-12 h-5'>
+                  <a href='https://www.x-meta.com' target='_blank'>
+                    <img
+                      src={xmeta}
+                      layout='fill'
+                      alt=''
+                      objectFit=''
+                      className='mx-auto mt-3 lg:mt-4 sm:h-16 h-10'
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
             <div
               key={nanoid()}
               className='mx-auto relative sm:w-full text-center h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
               <div className='md:w-7/12 w-10/12 shrink-0 mx-auto'>
                 <div className='flex justify-center items-center relative w-full lg:h-12 h-5'>
-                  <a href={company.link} target='_blank'>
+                  <a href='https://zoos.digital' target='_blank'>
                     <img
-                      src={company.img}
+                      src={zoos}
                       alt=''
                       layout='fill'
                       objectFit=''
@@ -55,100 +147,10 @@ function IndividualIntervalsExample() {
                 </div>
               </div>
             </div>
-          ))}
-        </div>
-      </Carousel.Item>
-      <Carousel.Item>
-        <div className='flex'>
-          {companies.slice(4, 8).map((company) => (
-            <div
-              key={nanoid()}
-              className='mx-auto relative sm:w-full text-center h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
-              <div className='md:w-7/12 w-10/12 shrink-0 mx-auto'>
-                <div className='flex justify-center items-center relative w-full lg:h-12 h-5'>
-                  <a href={company.link} target='_blank'>
-                    <img
-                      src={company.img}
-                      alt=''
-                      layout='fill'
-                      objectFit=''
-                      className='mx-auto sm:h-8 h-5'
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </Carousel.Item>
-      <Carousel.Item>
-        {" "}
-        <div className='flex'>
-          <div className='mx-auto relative sm:w-full text-center h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
-            <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
-              <div className='flex justify-center items-center relative w-full lg:h-12 h-5'>
-                <a href='https://www.idax.exchange' target='_blank'>
-                  <img
-                    src={idax}
-                    alt=''
-                    layout='fill'
-                    objectFit=''
-                    className='mx-auto mt-[5px] lg:mt-0 sm:h-6 h-4'
-                  />
-                </a>
-              </div>
-            </div>
           </div>
-          <div className='mx-auto relative sm:w-full text-center h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
-            <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
-              <div className='flex justify-center items-center relative w-full lg:h-12 h-5'>
-                <a href='https://www.coinhub.mn' target='_blank'>
-                  <img
-                    src={coinhub}
-                    alt=''
-                    layout='fill'
-                    objectFit=''
-                    className='mx-auto mt-0 lg:mt-2 sm:h-4 h-3'
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className='mx-auto relative sm:w-full text-center h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
-            <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
-              <div className='flex justify-center items-center relative w-full lg:h-12 h-5'>
-                <a href='https://www.x-meta.com' target='_blank'>
-                  <img
-                    src={xmeta}
-                    layout='fill'
-                    alt=''
-                    objectFit=''
-                    className='mx-auto mt-3 lg:mt-4 sm:h-16 h-10'
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            key={nanoid()}
-            className='mx-auto relative sm:w-full text-center h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
-            <div className='md:w-7/12 w-10/12 shrink-0 mx-auto'>
-              <div className='flex justify-center items-center relative w-full lg:h-12 h-5'>
-                <a href='https://zoos.digital' target='_blank'>
-                  <img
-                    src={zoos}
-                    alt=''
-                    layout='fill'
-                    objectFit=''
-                    className='mx-auto sm:h-8 h-5'
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Carousel.Item>
-    </Carousel>
+        </Carousel.Item>
+      </Carousel>
+    </div>
   );
 }
 
