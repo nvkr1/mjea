@@ -8399,7 +8399,7 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     content: "\f133";
 }
 
-@font-face {
+/* @font-face {
     font-family: 'busico';
     src: url('../fonts/busico.eot');
     src: url('../fonts/busico.eot?#iefix') format('embedded-opentype'),
@@ -8426,7 +8426,7 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   
-  }
+  } */
   
   .icon-search:before { content: '\f101'; } /* '' */
   .icon-call:before { content: '\f102'; } /* '' */

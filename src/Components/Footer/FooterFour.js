@@ -101,7 +101,7 @@ const FooterFour = () => {
             <div className='row align-items-center'>
               <div className='mt-3 mt-lg-0 col text-center text-md-start'>
                 <div className='copyright-info text-center'>
-                  <p>© 2022 Монголын Биржүүдийн Нэгдсэн Холбоо.</p>
+                  <p>2022 Монголын Биржүүдийн Нэгдсэн Холбоо.</p>
                 </div>
               </div>
               <div className='mt-3 mt-lg-0 col text-center text-md-start'>
@@ -111,7 +111,7 @@ const FooterFour = () => {
               </div>
               <div className='mt-3 mt-lg-0 col text-center text-md-start'>
                 <div className='copyright-info text-center'>
-                  <p> © Сайт хөгжүүлсэн Diverse Solutions LLC</p>
+                  <p>Сайт хөгжүүлсэн Diverse Solutions LLC</p>
                 </div>
               </div>
             </div>
