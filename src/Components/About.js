@@ -1,8 +1,4 @@
-import videoBg from "./../assets/img/video_bg_1.jpg";
 import imgBlock1 from "./../assets/img/home1/img-block1.jpg";
-import tabImg1 from "./../assets/img/futurist.png";
-import tabImg2 from "./../assets/img/dart-board.png";
-import tabImg3 from "./../assets/img/megaphone.png";
 import { useState } from "react";
 import "react-modal-video/scss/modal-video.scss";
 import ModalVideo from "react-modal-video";

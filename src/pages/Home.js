@@ -7,6 +7,7 @@ import Hero from "../Components/Hero";
 import Footer from "../Components/Footer";
 import FunFact from "../Components/FunFact";
 import About from "../Components/About";
+import Contacts from "../Components/Contacts";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Timeline />
       <ServicesFour />
       <ServicesTwo />
+      <Contacts />
       <Footer />
     </div>
   );
