@@ -4,6 +4,7 @@ import Preloader from "./Components/Preloader";
 import ScrollTopBtn from "./Components/ScrollTopBtn";
 import HomeFour from "./pages/HomeFour";
 import Documents from "./pages/Documents";
+import { Helmet } from "react-helmet";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -19,6 +20,10 @@ function App() {
   } else {
     return (
       <>
+        <Helmet>
+          <title>Mongolian Joint Association of Exchange</title>
+          <link rel='icon' type='image/png' href='favicon.ico' />
+        </Helmet>
         <ScrollTopBtn />
         <Routes>
           <Route path='/' element={<HomeFour />} />
