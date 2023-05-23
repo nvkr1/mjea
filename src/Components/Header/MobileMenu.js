@@ -10,66 +10,52 @@ const MobileMenu = ({ mobileMenu, handleMobileMenu }) => {
       <nav className='sidebar-nav'>
         <ul className='metismenu' id='mobile-menu'>
           <li>
-            <a className='has-arrow' href='#'>
-              Homes
-            </a>
+            <li>
+              <a href='/'>НҮҮР</a>
+            </li>
+          </li>
+          <li>
+            <Link to='about' spy={true} smooth={true}>
+              ХОЛБООНЫ ТУХАЙ
+            </Link>
             <ul className='sub-menu'>
               <li>
-                <Link to='/'>homepage 1</Link>
+                <Link to='ceos' spy={true} smooth={true}>
+                  УДИРДЛАГА
+                </Link>
               </li>
               <li>
-                <Link to='/homeTwo'>homepage 2</Link>
+                <Link to='structure' spy={true} smooth={true}>
+                  БҮТЭЦ
+                </Link>
               </li>
               <li>
-                <Link to='/homeThree'>homepage 3</Link>
-              </li>
-              <li>
-                <Link to='/homeFour'>homepage 4</Link>
+                <Link to='partners' spy={true} smooth={true}>
+                  ГИШҮҮД
+                </Link>
               </li>
             </ul>
           </li>
           <li>
-            <Link to='/about'>about us</Link>
+            <a href='/Documents'> БАРИМТ БИЧИГ</a>
           </li>
           <li>
-            <Link to='/services'>Services</Link>
+            <Link to='' spy={true} smooth={true}>
+              ЭКОСИСТЕМ
+            </Link>
           </li>
           <li>
-            <a className='has-arrow' href='#'>
-              Pages
-            </a>
-            <ul className='sub-menu'>
-              <li>
-                <Link to='/faq'>faq</Link>
-              </li>
-              <li>
-                <Link to='/pricing'>Pricing</Link>
-              </li>
-              <li>
-                <Link to='/team'>Team</Link>
-              </li>
-            </ul>
+            <Link to='contacts' spy={true} smooth={true}>
+              ХОЛБОО БАРИХ
+            </Link>
           </li>
           <li>
-            <Link to='/news'>News</Link>
-          </li>
-          <li>
-            <Link to='/contact'>Contact</Link>
+            <Link to='' spy={true} smooth={true}>
+              EN
+            </Link>
           </li>
         </ul>
       </nav>
-
-      <div className='action-bar'>
-        <a href='mailto:info@example.com'>
-          <i className='fal fa-envelope'></i>info@webmail.com
-        </a>
-        <a href='tel:123-456-7890'>
-          <i className='fal fa-phone'></i>987-098-098-09
-        </a>
-        <Link to='/contact' className='d-btn theme-btn'>
-          Contact Us
-        </Link>
-      </div>
     </div>
   );
 };

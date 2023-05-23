@@ -8,15 +8,15 @@ const ServicesFour = () => {
           <h2 className='text-white'>УДИРДЛАГА</h2>
           <div className='col-md-6 col-12 col-lg-6 mt-30'>
             <div className='service-item-card'>
-              <div className='row'>
-                <div className='col'>
+              <div className='flex flex-col sm:gap-20 sm:flex-row'>
+                <div className=''>
                   <div className='icon'>
-                    <img src={img1} alt='' width={200} />
+                    <img src={img1} alt='' className='w-full sm:w-[200px]' />
                     <div className='contents'></div>
                   </div>
                 </div>
 
-                <div className='col flex flex-col justify-center align-items-center'>
+                <div className='flex flex-col justify-center align-items-center'>
                   <div className='contents'>
                     <h4>
                       <p className='row text-nowrap ' to='/'>
@@ -58,10 +58,10 @@ const ServicesFour = () => {
 
           <div className='col-md-6 col-12 col-lg-6 mt-30'>
             <div className='service-item-card'>
-              <div className='row'>
+              <div className='flex flex-col sm:flex-row'>
                 <div className='col'>
                   <div className='icon'>
-                    <img src={img2} alt='' width={200} />
+                    <img src={img2} alt='' className='w-full sm:w-[200px]' />
                     <div className='contents'></div>
                   </div>
                 </div>

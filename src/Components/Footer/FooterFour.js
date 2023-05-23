@@ -46,7 +46,7 @@ const FooterFour = () => {
                     <ul className='col-6 sm:mt-0 '>
                       <li className='flex items-center'>
                         <AiOutlineMail className='mx-1' />
-                        <a target='_blank' href='info@mjae.mn'>
+                        <a target='_blank' href=''>
                           info@mjae.mn
                         </a>
                       </li>
