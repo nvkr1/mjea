@@ -106,7 +106,7 @@ const FooterFour = () => {
               </div>
               <div className='mt-3 mt-lg-0 col text-center text-md-start'>
                 <div className='copyright-info text-center'>
-                  <p>© Бүх эрх хуулиар хамгаалагдсан ©</p>
+                  <p>© Бүх эрх хуулиар хамгаалагдсан </p>
                 </div>
               </div>
               <div className='mt-3 mt-lg-0 col text-center text-md-start'>
