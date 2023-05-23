@@ -30,7 +30,7 @@ const AboutOne = ({ pt }) => {
           <div className='row'>
             <div className='col-xl-6 col-lg-5 col-12'>
               <div className='img-block-pop-video'>
-                <img src={imgBlock1} alt='busico' />
+                <img src={imgBlock1} alt='' />
                 {/* <div
                   className='popup-video-block d-flex justify-content-center align-items-center bg-cover'
                   style={{ backgroundImage: `url(${videoBg})` }}>
