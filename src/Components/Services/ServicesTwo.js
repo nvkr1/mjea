@@ -33,7 +33,7 @@ const ServicesTwo = () => {
                   </div>
                   <div className='service-title'>
                     <h4>
-                      <p>
+                      <p className='cursor-default'>
                         Мэдээллийн технологи & Мэдээллийн аюулгүй байдлын хороо
                       </p>
                     </h4>
@@ -52,7 +52,7 @@ const ServicesTwo = () => {
                     </div>
                     <div className='service-title'>
                       <h4>
-                        <p>{data.title}</p>
+                        <p className='cursor-default'>{data.title}</p>
                       </h4>
                     </div>
                   </div>

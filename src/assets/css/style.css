@@ -5603,7 +5603,7 @@ header .header-top-bar .top-social-icons a:hover {
 }
 
 .service-item-card:hover .contents h4, .service-item-card:hover .contents p {
-  color: #161616;
+  color: #FFFFFF
 }
 
 .service-item-card:hover::after, .service-item-card:hover::before {

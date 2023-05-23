@@ -12,8 +12,8 @@ const HomeFour = () => {
     <div className='font-oswald'>
       <HeaderFour />
       <HeroFour />
-      <FunFactTwo />
       <Exchanges />
+      <FunFactTwo />
       <AboutOne />
       <ServicesFour />
       <ServicesTwo />
