@@ -1,8 +1,8 @@
 import React from "react";
 import CountUp from "react-countup";
-import bannerImg from "../../assets/img/bg.png";
+import bannerImg from "./../assets/img/bg.png";
 
-const FunFactTwo = () => {
+const FunFact = () => {
   return (
     <section
       className='fun-fact-banner bg-overlay text-white bg-cover'
@@ -56,4 +56,4 @@ const FunFactTwo = () => {
   );
 };
 
-export default FunFactTwo;
+export default FunFact;

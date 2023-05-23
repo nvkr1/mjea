@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import slide1 from "../../assets/img/home4/slide1.jpg";
+import slide1 from "./../assets/img/home4/slide1.jpg";
 import { EffectFade } from "swiper";
 
 // Import Swiper styles
@@ -10,7 +10,7 @@ import "swiper/css/effect-fade";
 // import required modules
 import { Pagination } from "swiper";
 
-const HeroFour = () => {
+const Hero = () => {
   return (
     <section className='agency-hero-wrapper hero-wrapper fix'>
       <Swiper
@@ -48,4 +48,4 @@ const HeroFour = () => {
   );
 };
 
-export default HeroFour;
+export default Hero;

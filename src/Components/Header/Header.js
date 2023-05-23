@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import mainLogo from "../../assets/img/logo.png";
 import MobileMenu from "./MobileMenu";
 
-const HeaderFour = () => {
+const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(true);
 
   const handleMobileMenu = () => {
@@ -91,4 +91,4 @@ const HeaderFour = () => {
   );
 };
 
-export default HeaderFour;
+export default Header;

@@ -1,17 +1,17 @@
 import React from "react";
 
 import { useState } from "react";
-import FooterFour from "../Components/Footer/FooterFour";
-import HeaderFour from "../Components/Header/HeaderFour";
-import HeroFour from "../Components/Hero/HeroFour";
+import Footer from "../Components/Footer";
+import Header from "../Components/Header/Header";
+import Hero from "../Components/Hero";
 
 export default function Documents() {
   const [currentPage, setCurrentPage] = useState(1);
 
   return (
     <div>
-      <HeaderFour />
-      <HeroFour />
+      <Header />
+      <Hero />
 
       <div
         id='laws'
@@ -176,7 +176,7 @@ export default function Documents() {
           ) : null}
         </div>
       </div>
-      <FooterFour />
+      <Footer />
     </div>
   );
 }

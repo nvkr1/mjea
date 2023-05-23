@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import logoImg from "../../assets/img/logo2.png";
+import logoImg from "./../assets/img/logo2.png";
 import { FaFacebookF, FaSearchLocation } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 
-const FooterFour = () => {
+const Footer = () => {
   return (
     <>
       <footer className='footer-4 footer-wrap'>
@@ -122,4 +122,4 @@ const FooterFour = () => {
   );
 };
 
-export default FooterFour;
+export default Footer;
