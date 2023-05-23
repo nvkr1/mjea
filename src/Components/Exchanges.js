@@ -31,7 +31,7 @@ function IndividualIntervalsExample() {
       <Carousel
         pause={false}
         slide={true}
-        interval={2000}
+        interval={1750}
         keyboard={false}
         indicators={false}
         controls={false}
