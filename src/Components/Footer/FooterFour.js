@@ -21,13 +21,13 @@ const FooterFour = () => {
               </div>
               <div className='col-9 mx-auto '>
                 <div className='row justify-content-center'>
-                  <div className='row'>
+                  <div className='flex flex-col sm:flex-row'>
                     <div className='col-3'>
-                      <h3>Хаяг:</h3>
+                      <h3>Хаяг</h3>
                     </div>
                     <ul className='col-9'>
                       <li className='flex items-center'>
-                        <FaSearchLocation className='mx-1' />
+                        <FaSearchLocation className='mx-1 w-10 sm:w-auto' />
                         <a
                           target='_blank'
                           href='https://www.google.com/maps/place/Central+Tower,+Ulaanbaatar+14200/@47.9180885,106.9177498,17z/data=!3m1!4b1!4m6!3m5!1s0x5d969246ee9e7233:0x3df25e1e20c33ca5!8m2!3d47.9180885!4d106.9203247!16zL20vMGcxMWRo'>
@@ -39,9 +39,9 @@ const FooterFour = () => {
                   </div>
                 </div>
                 <div className='row justify-content-center'>
-                  <div className='row'>
+                  <div className='flex flex-col sm:flex-row'>
                     <div className='col-3 text-nowrap'>
-                      <h3>Цахим шуудан:</h3>
+                      <h3>Цахим шуудан</h3>
                     </div>
                     <ul className='col-6 sm:mt-0 '>
                       <li className='flex items-center'>
@@ -54,9 +54,9 @@ const FooterFour = () => {
                   </div>
                 </div>{" "}
                 <div className='row justify-content-center'>
-                  <div className='row'>
+                  <div className='flex flex-col sm:flex-row'>
                     <div className='col-3 text-nowrap'>
-                      <h3>Сошиал хаяг:</h3>
+                      <h3>Сошиал хаяг</h3>
                     </div>
                     <ul className='col sm:mt-0'>
                       <li className='flex items-center'>
@@ -98,7 +98,7 @@ const FooterFour = () => {
 
         <div className='footer-bottom'>
           <div className='container'>
-            <div className='row align-items-center'>
+            <div className='flex flex-col sm:flex-row justify-between'>
               <div className='mt-3 mt-lg-0 col text-center text-md-start'>
                 <div className='copyright-info text-center'>
                   <p>2022 Монголын Биржүүдийн Нэгдсэн Холбоо.</p>

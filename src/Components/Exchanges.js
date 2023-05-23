@@ -41,7 +41,7 @@ function IndividualIntervalsExample() {
             {companies.slice(0, 4).map((company) => (
               <div
                 key={nanoid()}
-                className='mx-auto relative sm:w-full text-center h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
+                className='mx-auto relative sm:w-full text-center h-[30px] sm:h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
                 <div className='md:w-7/12 w-10/12 shrink-0 mx-auto'>
                   <div className='flex justify-center items-center relative w-full lg:h-12 h-5'>
                     <a href={company.link} target='_blank'>
@@ -64,7 +64,7 @@ function IndividualIntervalsExample() {
             {companies.slice(4, 8).map((company) => (
               <div
                 key={nanoid()}
-                className='mx-auto relative sm:w-full text-center h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
+                className='mx-auto relative sm:w-full text-center h-[30px] sm:h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
                 <div className='md:w-7/12 w-10/12 shrink-0 mx-auto'>
                   <div className='flex justify-center items-center relative w-full lg:h-12 h-5'>
                     <a href={company.link} target='_blank'>
@@ -85,7 +85,7 @@ function IndividualIntervalsExample() {
         <Carousel.Item>
           {" "}
           <div className='flex'>
-            <div className='mx-auto relative sm:w-full text-center h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
+            <div className='mx-auto relative sm:w-full text-center h-[30px] sm:h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
               <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
                 <div className='flex justify-center items-center relative w-full lg:h-12 h-5'>
                   <a href='https://www.idax.exchange' target='_blank'>
@@ -100,7 +100,7 @@ function IndividualIntervalsExample() {
                 </div>
               </div>
             </div>
-            <div className='mx-auto relative sm:w-full text-center h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
+            <div className='mx-auto relative sm:w-full text-center h-[30px] sm:h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
               <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
                 <div className='flex justify-center items-center relative w-full lg:h-12 h-5'>
                   <a href='https://www.coinhub.mn' target='_blank'>
@@ -115,7 +115,7 @@ function IndividualIntervalsExample() {
                 </div>
               </div>
             </div>
-            <div className='mx-auto relative sm:w-full text-center h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
+            <div className='mx-auto relative sm:w-full text-center h-[30px] sm:h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
               <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
                 <div className='flex justify-center items-center relative w-full lg:h-12 h-5'>
                   <a href='https://www.x-meta.com' target='_blank'>
@@ -132,7 +132,7 @@ function IndividualIntervalsExample() {
             </div>
             <div
               key={nanoid()}
-              className='mx-auto relative sm:w-full text-center h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
+              className='mx-auto relative sm:w-full text-center h-[30px] sm:h-[60px] transition ease-in lg:shadow-md duration-100 my-2'>
               <div className='md:w-7/12 w-10/12 shrink-0 mx-auto'>
                 <div className='flex justify-center items-center relative w-full lg:h-12 h-5'>
                   <a href='https://zoos.digital' target='_blank'>
