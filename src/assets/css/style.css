@@ -2377,7 +2377,7 @@ header .side-menu-toggle {
 }
 
 header .side-menu-toggle:hover {
-  color: #FF5E14 !important;
+  color: #001659 !important;
 }
 
 header .theme-btn {
@@ -2590,7 +2590,7 @@ header.header-2 .right-elements .search-icon {
 }
 
 header.header-2 .right-elements .call-action {
-  background-color: #FF5E14;
+  background-color: #001659;
   position: relative;
   z-index: 1;
 }
@@ -2653,7 +2653,7 @@ header.header-4 {
 }
 
 header.header-4 .main-menu ul > li:hover > a {
-  color: #FFBB00;
+  color: #001659;
 }
 
 header.header-4 .main-menu ul > li a {
@@ -2661,7 +2661,7 @@ header.header-4 .main-menu ul > li a {
 }
 
 header.header-4 .main-menu ul > li a:hover {
-  color: #FFBB00 !important;
+  color: #001659 !important;
 }
 
 header .header-top-bar {
@@ -2712,7 +2712,7 @@ header .header-top-bar .top-social-icons a {
 }
 
 header .header-top-bar .top-social-icons a:hover {
-  color: #FF5E14 !important;
+  color: #001659 !important;
 }
 
 .hero-social-elements {
@@ -4231,7 +4231,7 @@ header .header-top-bar .top-social-icons a:hover {
   font-size: 50px;
   font-weight: 600;
   line-height: 115%;
-  color: #161616;
+  color: #001659;
   margin-top: -8px;
   margin-bottom: 20px;
 }
@@ -5167,17 +5167,17 @@ header .header-top-bar .top-social-icons a:hover {
 
 .single-service-card .content .icon-title .icon {
   font-size: 55px;
-  color: #FF5E14;
+  color: #6f6f6f;
   line-height: 1;
   margin-right: 20px;
 }
 
 .single-service-card .content .icon-title .service-title h4:hover {
-  color: #FF5E14;
+  color: #6f6f6f;
 }
 
 .single-service-card .content .read-more {
-  color: #FF5E14;
+  color: #6f6f6f;
   text-decoration: underline;
   text-transform: uppercase;
   font-weight: 700;

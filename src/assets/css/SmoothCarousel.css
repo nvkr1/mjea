@@ -1,0 +1,7 @@
+.smooth-carousel .carousel-inner {
+    width: 100%; /* Set the width to twice the size of a single slide */
+    animation: carouselScroll 20s linear infinite; /* Set the animation properties */
+  }
+  
+  
+  

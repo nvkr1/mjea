@@ -25,7 +25,7 @@ const FooterFour = () => {
                     <div className='col-3'>
                       <h3>Хаяг:</h3>
                     </div>
-                    <ul className='col'>
+                    <ul className='col-9'>
                       <li className='flex items-center'>
                         <FaSearchLocation className='mx-1' />
                         <a
@@ -43,7 +43,7 @@ const FooterFour = () => {
                     <div className='col-3 text-nowrap'>
                       <h3>Цахим шуудан:</h3>
                     </div>
-                    <ul className='col-6 '>
+                    <ul className='col-6 mt-4 sm:mt-0 '>
                       <li className='flex items-center'>
                         <AiOutlineMail className='mx-1' />
                         <a target='_blank' href='info@mjae.mn'>
@@ -58,7 +58,7 @@ const FooterFour = () => {
                     <div className='col-3 text-nowrap'>
                       <h3>Сошиал аккаунт:</h3>
                     </div>
-                    <ul className='col'>
+                    <ul className='col mt-4 sm:mt-0'>
                       <li className='flex items-center'>
                         <FaFacebookF className='mx-1' />
                         <a

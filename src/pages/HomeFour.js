@@ -5,6 +5,7 @@ import ServicesFour from "../Components/Services/ServicesFour";
 import FunFactTwo from "../Components/FunFact/FunFactTwo";
 import AboutOne from "../Components/About/AboutOne";
 import ServicesTwo from "../Components/Services/ServicesTwo";
+import Exchanges from "../Components/Exchanges";
 
 const HomeFour = () => {
   return (
@@ -12,6 +13,7 @@ const HomeFour = () => {
       <HeaderFour />
       <HeroFour />
       <FunFactTwo />
+      <Exchanges />
       <AboutOne />
       <ServicesFour />
       <ServicesTwo />
