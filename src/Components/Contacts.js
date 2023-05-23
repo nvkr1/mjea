@@ -1,8 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import contactsData from "./ContactsData";
+import Map from "./Map";
 
 const Contacts = () => {
+  const location = {
+    address: "1600 Amphitheatre Parkway, Mountain View, california.",
+    lat: 37.42216,
+    lng: -122.08427,
+  }; // our location object from earlier
   return (
     <section className='our-service-wrapper mb-80 bg-gray'>
       <div className='container'>
@@ -43,6 +49,7 @@ const Contacts = () => {
           ))}
         </div>
       </div>
+      <Map location={location} zoomLevel={17} /> {/* include it here */}
     </section>
   );
 };

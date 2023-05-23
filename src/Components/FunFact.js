@@ -12,7 +12,7 @@ const FunFact = () => {
           <div className='col-lg-2 col-md-3 mt-30 col-12'>
             <div className='single-fun-fact'>
               <h2>
-                ₮<CountUp end={384.3} duration={3}></CountUp>тэрбум
+                ₮<CountUp end={384.3} duration={4}></CountUp>тэрбум
               </h2>
               <h3> Зах зээлийн үнэлгээ</h3>
             </div>
@@ -20,7 +20,7 @@ const FunFact = () => {
           <div className='col-lg-2 col-md-3 mt-30 col-6'>
             <div className='single-fun-fact'>
               <h2>
-                ₮<CountUp end={411.0} duration={3}></CountUp>сая
+                ₮<CountUp end={411.0} duration={5}></CountUp>сая
               </h2>
               <h3>Өдрийн дундаж арилжаа</h3>
             </div>
@@ -28,7 +28,7 @@ const FunFact = () => {
           <div className='col-lg-2 col-md-3 mt-30 col-6'>
             <div className='single-fun-fact'>
               <h2>
-                <CountUp end={832764} duration={3}></CountUp>
+                <CountUp end={832764} duration={6}></CountUp>
               </h2>
 
               <h3>Нийт харилцагчийн тоо</h3>
@@ -37,7 +37,7 @@ const FunFact = () => {
           <div className='col-lg-2 col-md-3 mt-30 col-6'>
             <div className='align-items-center single-fun-fact'>
               <h2>
-                <CountUp end={211} duration={3}></CountUp>
+                <CountUp end={211} duration={7}></CountUp>
               </h2>
               <h3>Листлэгдсэн Койн, Токен</h3>
             </div>
@@ -45,7 +45,7 @@ const FunFact = () => {
           <div className='col-lg-2 col-md-3 mt-30 col-6'>
             <div className='align-items-center single-fun-fact'>
               <h2>
-                <CountUp end={12} duration={3}></CountUp>%
+                <CountUp end={12} duration={8}></CountUp>%
               </h2>
               <h3>Бүртгэлтэй ХҮҮ</h3>
             </div>

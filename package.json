@@ -1,9 +1,12 @@
 {
-  "name": "mjea",
+  "name": "busico",
   "version": "1.0",
   "private": true,
   "dependencies": {
+    "@iconify/react": "^4.1.0",
     "bootstrap": "^5.2.3",
+    "google-map-react": "^2.2.1",
+    "iconify": "^1.4.0",
     "nanoid": "^4.0.2",
     "node-polyfill-webpack-plugin": "^2.0.1",
     "node-sass": "^7.0.0",
