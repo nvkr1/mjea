@@ -21,7 +21,7 @@ const Hero = () => {
         effect={"fade"}
         loop>
         <SwiperSlide>
-          <LazyLoad>
+          <LazyLoad placeholder={<div className=''>loading</div>}>
             <div
               className='single-agency-slide bg-cover'
               style={{ backgroundImage: `url(${slide1})` }}>
