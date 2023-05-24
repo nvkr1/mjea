@@ -61,7 +61,7 @@ const Contacts = () => {
         </div>
       </div>
 
-      <div class='container section-padding'>
+      <div class='container section-padding px-2'>
         <div class=''>
           <iframe
             class='google-map'
