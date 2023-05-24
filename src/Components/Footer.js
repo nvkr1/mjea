@@ -46,9 +46,7 @@ const Footer = () => {
                     <ul className='col-6 sm:mt-0 '>
                       <li className='flex items-center'>
                         <AiOutlineMail className='mx-1' />
-                        <a target='_blank' href=''>
-                          info@mjae.mn
-                        </a>
+                        <a target='_blank'>info@mjae.mn</a>
                       </li>
                     </ul>
                   </div>
