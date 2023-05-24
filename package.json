@@ -25,8 +25,10 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "react-scroll": "^1.8.9",
+    "react-slick": "^0.29.0",
     "react-wow": "^1.0.0",
     "simple-react-lightbox": "^3.6.9-0",
+    "slick-carousel": "^1.8.1",
     "swiper": "^8.3.2",
     "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"

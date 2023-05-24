@@ -1,4 +1,7 @@
-import Carousel from "react-bootstrap/Carousel";
+// import Carousel from "react-bootstrap/Carousel";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import altex from "../assets/img/altex.png";
 import capex from "../assets/img/capexEdited.png";
 import complex from "../assets/img/Logo-black.png";
@@ -24,11 +27,91 @@ function IndividualIntervalsExample() {
     { img: nce, link: "https://ncx.mn" },
     { img: octagon, link: "https://octagon.mn" },
     { img: trade, link: "https://trade.mn" },
+    { img: zoos, link: "https://zoos.digital" },
   ];
+  const settings = {
+    infinite: true,
+    slidesToShow: 7,
+    // slidesToScroll: 1,
+    autoplay: true,
+    speed: 2850,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    arrows: false,
+  };
 
   return (
     <div id='partners'>
-      <Carousel
+      <Slider
+        {...settings}
+        adaptiveHeight={false}
+        className='flex items-center'>
+        {companies.map((company) => (
+          <div
+            key={nanoid()}
+            className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[60px] transition ease-in lg:shadow-md duration-100 mt-[6px]'>
+            <div className='md:w-7/12 w-10/12 shrink-0 mx-auto'>
+              <div className='flex justify-center items-center relative w-full bg-white lg:h-12 h-5'>
+                <a href={company.link} target='_blank'>
+                  <img
+                    src={company.img}
+                    alt=''
+                    layout='fill'
+                    objectFit=''
+                    className='mx-auto mt-3 sm:h-8 h-5'
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+        <div className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[60px] transition ease-in lg:shadow-md duration-100 mt-[6px]'>
+          <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
+            <div className='flex justify-center items-center relative w-full bg-white lg:h-12 h-5'>
+              <a href='https://www.idax.exchange' target='_blank'>
+                <img
+                  src={idax}
+                  alt=''
+                  layout='fill'
+                  objectFit=''
+                  className='mx-auto mt-2 lg:mt-0 sm:h-6 h-4'
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[60px] transition ease-in lg:shadow-md duration-100 mt-[6px]'>
+          <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
+            <div className='flex justify-center items-center relative w-full bg-white lg:h-12 h-5'>
+              <a href='https://www.coinhub.mn' target='_blank'>
+                <img
+                  src={coinhub}
+                  alt=''
+                  layout='fill'
+                  objectFit=''
+                  className='mx-auto mt-3 lg:mt-4 sm:h-4 h-3'
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[60px] transition ease-in lg:shadow-md duration-100 mt-[6px]'>
+          <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
+            <div className='flex justify-center items-center relative w-full bg-white lg:h-12 h-5'>
+              <a href='https://www.x-meta.com' target='_blank'>
+                <img
+                  src={xmeta}
+                  layout='fill'
+                  alt=''
+                  objectFit=''
+                  className='mx-auto mt-4 sm:h-12 h-6'
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </Slider>
+      {/* <Carousel
         pause={false}
         slide={true}
         interval={1750}
@@ -149,7 +232,7 @@ function IndividualIntervalsExample() {
             </div>
           </div>
         </Carousel.Item>
-      </Carousel>
+      </Carousel> */}
     </div>
   );
 }
