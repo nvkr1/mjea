@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import slide1 from "./../assets/img/home4/slide1.jpg";
+import slide1 from "./../assets/img/cover.png";
 import { EffectFade } from "swiper";
 
 // Import Swiper styles
@@ -27,16 +27,9 @@ const Hero = () => {
               <div className='row'>
                 <div className='col-xl-9 col-md-10 col-12'>
                   <div className='hero-contents'>
-                    <h2
-                      className='fs-lg wow fadeInLeft animated text-white'
-                      data-wow-duration='1.3s'>
+                    <h1 className='text-white'>
                       Монголын Биржүүдийн Нэгдсэн Холбоо
-                      <br />
-                      <br />
-                      <br />
-                      <br />
-                      <br />
-                    </h2>
+                    </h1>
                   </div>
                 </div>
               </div>

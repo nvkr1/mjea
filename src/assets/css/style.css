@@ -3415,26 +3415,26 @@ header .header-top-bar .top-social-icons a:hover {
 }
 
 .hero-2 .hero-contents h1 {
-  font-size: 95px;
+  font-size: 30px;
   margin-bottom: 30px;
   color: #001659;
 }
 
 @media (max-width: 1191px) {
   .hero-2 .hero-contents h1 {
-    font-size: 70px;
+    font-size: 40px;
   }
 }
 
 @media (max-width: 991px) {
   .hero-2 .hero-contents h1 {
-    font-size: 60px;
+    font-size: 35px;
   }
 }
 
 @media (max-width: 767px) {
   .hero-2 .hero-contents h1 {
-    font-size: 48px;
+    font-size: 30px;
   }
 }
 
@@ -3847,7 +3847,7 @@ header .header-top-bar .top-social-icons a:hover {
 }
 
 .agency-slider-active .single-agency-slide .hero-contents h1 {
-  font-size: 130px;
+  font-size: 80px;
   line-height: 110%;
   font-weight: 700;
   text-transform: uppercase;
@@ -3855,19 +3855,19 @@ header .header-top-bar .top-social-icons a:hover {
 
 @media (max-width: 991px) {
   .agency-slider-active .single-agency-slide .hero-contents h1 {
-    font-size: 100px;
+    font-size: 50px;
   }
 }
 
 @media (max-width: 767px) {
   .agency-slider-active .single-agency-slide .hero-contents h1 {
-    font-size: 80px;
+    font-size: 40px;
   }
 }
 
 @media (max-width: 500px) {
   .agency-slider-active .single-agency-slide .hero-contents h1 {
-    font-size: 60px;
+    font-size: 30px;
   }
 }
 

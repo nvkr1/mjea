@@ -1,4 +1,4 @@
-import imgBlock1 from "./../assets/img/home1/img-block1.jpg";
+import imgBlock1 from "./../assets/img/about-us.png";
 import { useState } from "react";
 import "react-modal-video/scss/modal-video.scss";
 import ModalVideo from "react-modal-video";
