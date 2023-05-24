@@ -2420,7 +2420,7 @@ header.header-1 .main-menu ul > li > a {
 }
 
 header.header-1 .main-menu ul > li:hover > a {
-  color: #001041;
+  color: #5a5b61;
 }
 
 header.header-1 .main-menu ul > li:hover > ul {
@@ -2454,12 +2454,12 @@ header.header-1 .main-menu ul > li > ul li {
 
 header.header-1 .main-menu ul > li > ul li a {
   display: block;
-  color: #252525;
+  color: #5a5b61;
   padding: 12px 25px;
 }
 
 header.header-1 .main-menu ul > li > ul li a:hover {
-  color: #001659;
+  color: #5a5b61;
 }
 
 header.header-1 .main-menu ul > li > ul ul {
@@ -2531,7 +2531,7 @@ header.header-2 .main-menu ul > li > a {
 }
 
 header.header-2 .main-menu ul > li:hover > a {
-  color: #001041;
+  color: #5a5b61;
 }
 
 header.header-2 .main-menu ul > li:hover > ul {
@@ -2565,12 +2565,12 @@ header.header-2 .main-menu ul > li > ul li {
 
 header.header-2 .main-menu ul > li > ul li a {
   display: block;
-  color: #252525;
+  color: #5a5b61;
   padding: 12px 25px;
 }
 
 header.header-2 .main-menu ul > li > ul li a:hover {
-  color: #001659;
+  color: #5a5b61;
 }
 
 header.header-2 .main-menu ul > li > ul ul {
@@ -2579,7 +2579,7 @@ header.header-2 .main-menu ul > li > ul ul {
 }
 
 header.header-2 .right-elements .search-icon {
-  color: #001659;
+  color: #5a5b61;
   margin-right: 30px;
 }
 
@@ -2647,7 +2647,7 @@ header.header-4 {
 }
 
 header.header-4 .main-menu ul > li:hover > a {
-  color: #001659;
+  color: #5a5b61;
 }
 
 header.header-4 .main-menu ul > li a {
@@ -2655,11 +2655,11 @@ header.header-4 .main-menu ul > li a {
 }
 
 header.header-4 .main-menu ul > li a:hover {
-  color: #001659 !important;
+  color: #5a5b61 !important;
 }
 
 header .header-top-bar {
-  background-color: #001659;
+  background-color: #5a5b61;
   padding: 10px 0px;
 }
 
