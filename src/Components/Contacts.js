@@ -27,7 +27,7 @@ const Contacts = () => {
           </div>
         </div> */}
 
-        {/* <div className='row'>
+        <div className='row'>
           {contactsData.map((data) => (
             <div className='col-xl-4 col-md-6 col-12' key={data.id}>
               <div className='single-service-card'>
@@ -47,7 +47,7 @@ const Contacts = () => {
               </div>
             </div>
           ))}
-        </div> */}
+        </div>
       </div>
       {/* <Map location={location} zoomLevel={17} />  */}
     </section>
