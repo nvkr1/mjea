@@ -49,7 +49,7 @@ function IndividualIntervalsExample() {
         {companies.map((company) => (
           <div
             key={nanoid()}
-            className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[60px] transition ease-in lg:shadow-md duration-100 mt-[6px]'>
+            className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[40px] lg:h-[60px] transition ease-in shadow-md duration-100 mt-[6px]'>
             <div className='md:w-7/12 w-10/12 shrink-0 mx-auto'>
               <div className='flex justify-center items-center relative w-full bg-white lg:h-12 h-5'>
                 <a href={company.link} target='_blank'>
@@ -58,14 +58,14 @@ function IndividualIntervalsExample() {
                     alt=''
                     layout='fill'
                     objectFit=''
-                    className='mx-auto mt-3 sm:h-8 h-5'
+                    className='mx-auto mt-3 lg:h-8 h-5'
                   />
                 </a>
               </div>
             </div>
           </div>
         ))}
-        <div className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[60px] transition ease-in lg:shadow-md duration-100 mt-[6px]'>
+        <div className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[40px] lg:h-[60px] transition ease-in shadow-md duration-100 mt-[6px]'>
           <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
             <div className='flex justify-center items-center relative w-full bg-white lg:h-12 h-5'>
               <a href='https://www.idax.exchange' target='_blank'>
@@ -74,13 +74,13 @@ function IndividualIntervalsExample() {
                   alt=''
                   layout='fill'
                   objectFit=''
-                  className='mx-auto mt-2 lg:mt-0 sm:h-6 h-4'
+                  className='mx-auto mt-3 sm:mt-2 lg:h-6 md:h-5 sm:h-4 h-3'
                 />
               </a>
             </div>
           </div>
         </div>
-        <div className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[60px] transition ease-in lg:shadow-md duration-100 mt-[6px]'>
+        <div className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[40px] lg:h-[60px] transition ease-in shadow-md duration-100 mt-[6px]'>
           <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
             <div className='flex justify-center items-center relative w-full bg-white lg:h-12 h-5'>
               <a href='https://www.coinhub.mn' target='_blank'>
@@ -89,13 +89,13 @@ function IndividualIntervalsExample() {
                   alt=''
                   layout='fill'
                   objectFit=''
-                  className='mx-auto mt-3 lg:mt-4 sm:h-4 h-3'
+                  className='mx-auto mt-3 sm:mt-4 md:h-4 h-2'
                 />
               </a>
             </div>
           </div>
         </div>
-        <div className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[60px] transition ease-in lg:shadow-md duration-100 mt-[6px]'>
+        <div className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[40px] lg:h-[60px] transition ease-in shadow-md duration-100 mt-[6px]'>
           <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
             <div className='flex justify-center items-center relative w-full bg-white lg:h-12 h-5'>
               <a href='https://www.x-meta.com' target='_blank'>
@@ -104,7 +104,7 @@ function IndividualIntervalsExample() {
                   layout='fill'
                   alt=''
                   objectFit=''
-                  className='mx-auto mt-4 sm:h-12 h-6'
+                  className='mx-auto mt-4 md:h-12 sm:h-8 h-6'
                 />
               </a>
             </div>
