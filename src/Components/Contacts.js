@@ -1,31 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import contactsData from "./ContactsData";
-import Map from "./Map";
+
+import "../assets/css/map.css";
 
 const Contacts = () => {
-  const location = {
-    address: "1600 Amphitheatre Parkway, Mountain View, california.",
-    lat: 37.42216,
-    lng: -122.08427,
-  }; // our location object from earlier
   return (
-    <section className='our-service-wrapper mb-80 bg-gray'>
+    <section className='our-service-wrapper bg-gray'>
       <div className='container'>
-        {/* <div className='row'>
+        <div className='row'>
           <div className='col-xl-12'>
             <div className='block-contents text-center'>
               <div className=''>
-                <h3>Lorem ipsum</h3>
-                <span className=''>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  at libero <br />
-                  vel ligula efficitur dignissim. Sed vitae hendrerit tortor.
-                </span>
+                <h3>ХОЛБОО БАРИХ</h3>
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
         <div className='row'>
           {contactsData.slice(0, 1).map((data) => (
@@ -69,7 +60,19 @@ const Contacts = () => {
           ))}
         </div>
       </div>
-      {/* <Map location={location} zoomLevel={17} />  */}
+
+      <div class='container section-padding'>
+        <div class=''>
+          <iframe
+            class='google-map'
+            frameborder='0'
+            scrolling='no'
+            marginheight='0'
+            marginwidth='0'
+            src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=central tower&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'></iframe>
+        </div>
+        <style></style>
+      </div>
     </section>
   );
 };

@@ -22,18 +22,6 @@ const About = ({ pt }) => {
             <div className='col-xl-6 col-lg-5 col-12'>
               <div className='img-block-pop-video'>
                 <img src={imgBlock1} alt='' />
-                {/* <div
-                  className='popup-video-block d-flex justify-content-center align-items-center bg-cover'
-                  style={{ backgroundImage: `url(${videoBg})` }}>
-                  <div className='video-play-btn'>
-                    <span
-                      className='popup-video'
-                      onClick={() => setOpen(true)}
-                      style={{ cursor: "pointer" }}>
-                      <i className='fas fa-play'></i>
-                    </span>
-                  </div>
-                </div> */}
               </div>
             </div>
             <div className='col-xl-6 col-lg-7 col-md-10 col-12'>

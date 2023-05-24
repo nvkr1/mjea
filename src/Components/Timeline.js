@@ -7,6 +7,15 @@ const Timeline = () => {
     <section className='company-timeline-wrapper mt-80 mb-50'>
       <div className='container'>
         <div className='row'>
+          <div className='col-xl-12'>
+            <div className='block-contents text-center'>
+              <div className=''>
+                <h3>ТҮҮХЭН ЗАМНАЛ</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='row'>
           <div className='col-lg-4 col-md-6 offset-lg-1 pe-lg-0'>
             <div className='timeline-content text-lg-end'>
               <div className='single-timeline-box'>
