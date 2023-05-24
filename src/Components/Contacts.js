@@ -12,7 +12,7 @@ const Contacts = () => {
   return (
     <section className='our-service-wrapper mb-80 bg-gray'>
       <div className='container'>
-        <div className='row'>
+        {/* <div className='row'>
           <div className='col-xl-12'>
             <div className='block-contents text-center'>
               <div className=''>
@@ -25,7 +25,7 @@ const Contacts = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className='row'>
           {contactsData.map((data) => (
@@ -49,7 +49,7 @@ const Contacts = () => {
           ))}
         </div>
       </div>
-      <Map location={location} zoomLevel={17} /> {/* include it here */}
+      {/* <Map location={location} zoomLevel={17} />  */}
     </section>
   );
 };
