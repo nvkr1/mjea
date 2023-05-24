@@ -28,7 +28,7 @@ const Contacts = () => {
         </div> */}
 
         <div className='row'>
-          {contactsData.map((data) => (
+          {contactsData.slice(0, 1).map((data) => (
             <div className='col-xl-4 col-md-6 col-12' key={data.id}>
               <div className='single-service-card'>
                 <div className='content'>
@@ -43,6 +43,26 @@ const Contacts = () => {
                     </div>
                   </div>
                   <p className='mt-10'>{data.desc}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+          {contactsData.slice(1, 3).map((data) => (
+            <div className='col-xl-4 col-md-6 col-12' key={data.id}>
+              <div className='single-service-card'>
+                <div className='content'>
+                  <div className='icon-title'>
+                    <div className='icon'>
+                      <img src={data.img} className='w-10' />
+                    </div>
+                    <div className='service-title'>
+                      <h6>
+                        <Link to='/servicesDetails'>{data.title}</Link>
+                      </h6>
+                    </div>
+                  </div>
+                  <p className='mt-10'>{data.desc}</p>
+                  <br />
                 </div>
               </div>
             </div>
