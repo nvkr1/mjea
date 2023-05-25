@@ -47,7 +47,7 @@ const FunFact = () => {
               <h2>
                 <CountUp end={12} duration={8}></CountUp>%
               </h2>
-              <h3>Бүртгэлтэй ХҮҮ</h3>
+              <h3>Бүртгэлтэй ВХҮҮ</h3>
             </div>
           </div>
         </div>
