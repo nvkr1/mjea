@@ -11,7 +11,7 @@ import nce from "../assets/img/nce.png";
 import octagon from "../assets/img/octagon.png";
 import trade from "../assets/img/trade.svg";
 import xmeta from "../assets/img/x-meta.png";
-import zoos from "../assets/img/zoosCrop.png";
+import zoos from "../assets/img/zoos.png";
 import coinhub from "../assets/img/coinhub.png";
 import { nanoid } from "nanoid";
 import LazyLoad from "react-lazyload";
