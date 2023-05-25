@@ -5,6 +5,9 @@ import ScrollTopBtn from "./Components/ScrollTopBtn";
 import Home from "./pages/Home";
 import Documents from "./pages/Documents";
 import { Helmet } from "react-helmet";
+import NotFound from "./Components/NotFound";
+import { I18nextProvider } from "react-i18next";
+import i18n from "./Components/i18n";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -25,10 +28,13 @@ function App() {
           <link rel='icon' type='image/png' href='favicon.ico' />
         </Helmet>
         <ScrollTopBtn />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/documents' element={<Documents />} />
-        </Routes>
+        <I18nextProvider i18n={i18n}>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='*' element={<NotFound />} />
+            <Route path='/documents' element={<Documents />} />
+          </Routes>
+        </I18nextProvider>
       </>
     );
   }

@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import mainLogo from "../../assets/img/logo.png";
 import MobileMenu from "./MobileMenu";
+import { useTranslation } from "react-i18next";
+import i18n from "../i18n";
 
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(true);
@@ -9,6 +11,11 @@ const Header = () => {
   const handleMobileMenu = () => {
     setMobileMenu(!mobileMenu);
   };
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+  const { t } = useTranslation();
+  const currentLanguage = i18n.language;
   return (
     <>
       <header className='header-wrap header-1 header-4'>
@@ -63,11 +70,19 @@ const Header = () => {
                     ХОЛБОО БАРИХ
                   </Link>
                 </li>
-                <li>
-                  <Link to='' spy={true} smooth={true}>
-                    EN
-                  </Link>
-                </li>
+                {currentLanguage == "en" ? (
+                  <li>
+                    <Link to='' spy={true} smooth={true}>
+                      <button onClick={() => changeLanguage("mn")}>MN</button>
+                    </Link>
+                  </li>
+                ) : (
+                  <li>
+                    <Link to='' spy={true} smooth={true}>
+                      <button onClick={() => changeLanguage("en")}>EN</button>
+                    </Link>
+                  </li>
+                )}
               </ul>
             </div>
             <div className='header-right-elements d-flex align-items-center justify-content-between'>
