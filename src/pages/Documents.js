@@ -38,23 +38,45 @@ export default function Documents() {
           </div>
         </div>
 
-        <div className='flex w-full gap-y-16 mt-10 gap-x-4 sm:gap-x-10'>
-          <div className='flex flex-col items-start w-4/12'>
+        <div className='flex flex-col sm:flex-row w-full gap-y-8 sm:gap-y-16 mt-10 gap-x-4 sm:gap-x-10'>
+          <div className='hidden sm:flex sm:flex-col sm:items-start w-full sm:w-4/12 border-[#f0f0f0] border-bottom sm:border-none'>
             <button
               onClick={() => setCurrentPage(1)}
-              className='flex justify-between items-center border-t-[2px] border-top border-[#f0f0f0] w-full p-4 text-start transition-colors hover:bg-[#2957a4] hover:text-white'>
+              className='flex sm:justify-between items-center border-t-[2px] border-top border-[#f0f0f0] w-full p-4 text-start transition-colors hover:bg-[#2957a4] hover:text-white'>
               <span className=''>Хууль</span>
               <img src='arrowDocs.png' className='w-4 h-4' />
             </button>
             <button
               onClick={() => setCurrentPage(2)}
-              className='flex justify-between items-center border-t-[2px] border-top border-[#f0f0f0] w-full p-4 text-start transition-colors hover:bg-[#2957a4] hover:text-white'>
+              className='flex sm:justify-between items-center border-t-[2px] border-top border-[#f0f0f0] w-full p-4 text-start transition-colors hover:bg-[#2957a4] hover:text-white'>
               <span className=''>СЗХ-ны батласан журам, заавар, аргачлал</span>
               <img src='arrowDocs.png' className='w-4 h-4' />
             </button>
             <button
               onClick={() => setCurrentPage(3)}
-              className='flex justify-between items-center border-y-[2px] border-top border-bottom border-[#f0f0f0] w-full p-4 text-start transition-colors hover:bg-[#2957a4] hover:text-white'>
+              className='flex sm:justify-between items-center border-y-[2px] border-top sm:border-bottom border-[#f0f0f0] w-full p-4 text-start transition-colors hover:bg-[#2957a4] hover:text-white'>
+              <span className=''>
+                Холбооны батласан журам, заавар, аргачлал
+              </span>
+              <img src='arrowDocs.png' className='w-4 h-4' />
+            </button>
+          </div>
+          <div className='flex sm:hidden sm:items-start w-full border-[#f0f0f0] border-bottom sm:border-none'>
+            <button
+              onClick={() => setCurrentPage(1)}
+              className='flex justify-center items-center border-t-[2px] border-top border-[#f0f0f0] w-full p-2 text-start transition-colors hover:bg-[#2957a4] hover:text-white'>
+              <span className=''>Хууль</span>
+              <img src='arrowDocs.png' className='w-4 h-4' />
+            </button>
+            <button
+              onClick={() => setCurrentPage(2)}
+              className='flex sm:justify-between items-center border-t-[2px] border-top border-[#f0f0f0] w-full p-2 text-start transition-colors hover:bg-[#2957a4] hover:text-white'>
+              <span className=''>СЗХ-ны батласан журам, заавар, аргачлал</span>
+              <img src='arrowDocs.png' className='w-4 h-4' />
+            </button>
+            <button
+              onClick={() => setCurrentPage(3)}
+              className='flex sm:justify-between items-center border-y-[2px] border-top sm:border-bottom border-[#f0f0f0] w-full p-2 text-start transition-colors hover:bg-[#2957a4] hover:text-white'>
               <span className=''>
                 Холбооны батласан журам, заавар, аргачлал
               </span>
@@ -62,7 +84,7 @@ export default function Documents() {
             </button>
           </div>
           {currentPage == 1 ? (
-            <div className='w-9/12'>
+            <div className='w-full sm:w-9/12'>
               <table className='table-auto w-full'>
                 <thead>
                   <tr className='text-[#2957a4] bg-[#f8f8f8]'>
@@ -99,7 +121,7 @@ export default function Documents() {
             </div>
           ) : null}
           {currentPage == 2 ? (
-            <div className='w-9/12'>
+            <div className='w-full sm:w-9/12'>
               <table className='table-auto w-full'>
                 <thead>
                   <tr className='text-[#2957a4] bg-[#f8f8f8]'>
@@ -137,7 +159,7 @@ export default function Documents() {
             </div>
           ) : null}
           {currentPage == 3 ? (
-            <div className='w-9/12'>
+            <div className='w-full sm:w-9/12'>
               <table className='table-auto w-full'>
                 <thead>
                   <tr className='text-[#2957a4] bg-[#f8f8f8]'>
