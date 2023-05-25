@@ -13,11 +13,11 @@ const Preloader = () => {
             <span data-text-preloader='J' className='letters-loading'>
               J
             </span>
-            <span data-text-preloader='E' className='letters-loading'>
-              E
-            </span>
             <span data-text-preloader='A' className='letters-loading'>
               A
+            </span>
+            <span data-text-preloader='E' className='letters-loading'>
+              E
             </span>
           </div>
           <p className='text-center'>Loading</p>
