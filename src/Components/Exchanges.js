@@ -42,12 +42,12 @@ function IndividualIntervalsExample() {
 
   return (
     <LazyLoad>
-      <div id='partners'>
+      <div id='partners' className=''>
         <Slider {...settings} adaptiveHeight={false} className=''>
           {companies.map((company) => (
             <div
               key={nanoid()}
-              className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[40px] lg:h-[60px] transition ease-in shadow-md duration-100 mt-[6px]'>
+              className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[40px] lg:h-[60px] transition ease-in shadow-left-right duration-100 mt-[6px]'>
               <div className='md:w-7/12 w-10/12 shrink-0 mx-auto'>
                 <div className='flex justify-center items-center relative w-full bg-white lg:h-12 h-5'>
                   <a href={company.link} target='_blank'>
@@ -63,7 +63,7 @@ function IndividualIntervalsExample() {
               </div>
             </div>
           ))}
-          <div className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[40px] lg:h-[60px] transition ease-in shadow-md duration-100 mt-[6px]'>
+          <div className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[40px] lg:h-[60px] transition ease-in shadow-left-right duration-100 mt-[6px]'>
             <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
               <div className='flex justify-center items-center relative w-full bg-white lg:h-12 h-5'>
                 <a href='https://www.idax.exchange' target='_blank'>
@@ -78,7 +78,7 @@ function IndividualIntervalsExample() {
               </div>
             </div>
           </div>
-          <div className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[40px] lg:h-[60px] transition ease-in shadow-md duration-100 mt-[6px]'>
+          <div className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[40px] lg:h-[60px] transition ease-in shadow-left-right duration-100 mt-[6px]'>
             <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
               <div className='flex justify-center items-center relative w-full bg-white lg:h-12 h-5'>
                 <a href='https://www.coinhub.mn' target='_blank'>
@@ -93,16 +93,19 @@ function IndividualIntervalsExample() {
               </div>
             </div>
           </div>
-          <div className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[40px] lg:h-[60px] transition ease-in shadow-md duration-100 mt-[6px]'>
+          <div className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[40px] lg:h-[60px] transition ease-in shadow-left-right duration-100 mt-[6px]'>
             <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
               <div className='flex justify-center items-center relative w-full bg-white lg:h-12 h-5'>
-                <a href='https://www.x-meta.com' target='_blank'>
+                <a
+                  href='https://www.x-meta.com'
+                  target='_blank'
+                  className='relative flex justify-center items-center'>
                   <img
                     src={xmeta}
                     layout='fill'
                     alt=''
                     objectFit=''
-                    className='mx-auto mt-4 md:h-12 sm:h-8 h-6'
+                    className='mx-auto h-8 mt-4 sm:h-12'
                   />
                 </a>
               </div>

@@ -39,7 +39,7 @@ export default function Documents() {
         </div>
 
         <div className='flex flex-col sm:flex-row w-full gap-y-8 sm:gap-y-16 mt-10 gap-x-4 sm:gap-x-10'>
-          <div className='hidden sm:flex sm:flex-col sm:items-start w-full sm:w-4/12 border-[#f0f0f0] border-bottom sm:border-none'>
+          <div className='hidden sm:flex sm:flex-col sm:items-start w-full sm:w-4/12 border-[#f0f0f0]'>
             <button
               onClick={() => setCurrentPage(1)}
               className='flex sm:justify-between items-center border-t-[2px] border-top border-[#f0f0f0] w-full p-4 text-start transition-colors hover:bg-[#2957a4] hover:text-white'>

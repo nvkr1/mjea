@@ -12,13 +12,13 @@ const Contacts = () => {
           <div className='col-xl-12'>
             <div className='block-contents text-center'>
               <div className=''>
-                <h3>ХОЛБОО БАРИХ</h3>
+                <h3>БАЙРШИЛ</h3>
               </div>
             </div>
           </div>
         </div>
 
-        <div className='row'>
+        {/* <div className='row'>
           {contactsData.slice(0, 1).map((data) => (
             <div className='col-xl-4 col-md-6 col-12' key={data.id}>
               <div className='single-service-card'>
@@ -58,10 +58,10 @@ const Contacts = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
 
-      <div class='container section-padding px-2'>
+      <div class='container pb-100 pt-45 px-2'>
         <div class=''>
           <iframe
             class='google-map'

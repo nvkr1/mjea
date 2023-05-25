@@ -8439,11 +8439,13 @@ header .header-top-bar .top-social-icons a:hover {
   top: 100px;
   z-index: -1;
 }
-
 @media (max-width: 991px) {
   .circle-border::after {
     display: none;
   }
+}
+.shadow-left-right {
+  box-shadow: -4px 0 4px -2px rgba(243, 243, 243, 1), 4px 0 4px -2px rgba(243, 243, 243, 1);
 }
 
 .single-fun-fact h2 {
