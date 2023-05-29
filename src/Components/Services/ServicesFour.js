@@ -11,7 +11,12 @@ const ServicesFour = () => {
               <div className='flex flex-col sm:gap-20 sm:flex-row'>
                 <div className=''>
                   <div className='icon'>
-                    <img src={img1} alt='' className='w-full sm:w-[200px]' />
+                    <img
+                      src={img1}
+                      alt=''
+                      className='w-full sm:w-[200px]'
+                      loading='lazy'
+                    />
                     <div className='contents'></div>
                   </div>
                 </div>
@@ -61,7 +66,12 @@ const ServicesFour = () => {
               <div className='flex flex-col sm:flex-row'>
                 <div className='col'>
                   <div className='icon'>
-                    <img src={img2} alt='' className='w-full sm:w-[200px]' />
+                    <img
+                      src={img2}
+                      alt=''
+                      className='w-full sm:w-[200px]'
+                      loading='lazy'
+                    />
                     <div className='contents'></div>
                   </div>
                 </div>

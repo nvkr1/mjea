@@ -63,6 +63,7 @@ function IndividualIntervalsExample() {
                       layout='fill'
                       objectFit=''
                       className='mx-auto mt-3 lg:h-8 h-5'
+                      loading='lazy'
                     />
                   </a>
                 </div>
@@ -82,6 +83,7 @@ function IndividualIntervalsExample() {
                     layout='fill'
                     objectFit=''
                     className='mx-auto mt-3 sm:mt-2 lg:h-6 md:h-5 sm:h-4 h-3'
+                    loading='lazy'
                   />
                 </a>
               </div>
@@ -100,6 +102,7 @@ function IndividualIntervalsExample() {
                     layout='fill'
                     objectFit=''
                     className='mx-auto mt-3 sm:mt-4 md:h-4 h-2'
+                    loading='lazy'
                   />
                 </a>
               </div>
@@ -118,6 +121,7 @@ function IndividualIntervalsExample() {
                     alt=''
                     objectFit=''
                     className='mx-auto h-8 mt-4 sm:h-12'
+                    loading='lazy'
                   />
                 </a>
               </div>

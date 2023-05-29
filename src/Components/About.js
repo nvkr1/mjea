@@ -21,7 +21,7 @@ const About = ({ pt }) => {
           <div className='row'>
             <div className='col-xl-6 col-lg-5 col-12'>
               <div className='img-block-pop-video'>
-                <img src={imgBlock1} alt='' />
+                <img src={imgBlock1} alt='' loading='lazy' />
               </div>
             </div>
             <div className='col-xl-6 col-lg-7 col-md-10 col-12'>

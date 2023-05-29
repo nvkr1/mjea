@@ -38,10 +38,10 @@ const Timeline = () => {
           <div className='col-lg-2 d-none mt-40 d-lg-block'>
             <div className='time-line-icon'>
               <div className='single-icon'>
-                <img src={icon1} alt='' />
+                <img src={icon1} alt='' loading='lazy' />
               </div>
               <div className='single-icon'>
-                <img src={icon2} alt='' />
+                <img src={icon2} alt='' loading='lazy' />
               </div>
             </div>
           </div>

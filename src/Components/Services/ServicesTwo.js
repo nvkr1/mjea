@@ -29,7 +29,7 @@ const ServicesTwo = () => {
               <div className='content'>
                 <div className='icon-title'>
                   <div className='icon'>
-                    <img src={img1} width={150} height={100} />
+                    <img src={img1} width={150} height={100} loading='lazy' />
                   </div>
                   <div className='service-title'>
                     <h4>
@@ -48,7 +48,12 @@ const ServicesTwo = () => {
                 <div className='content'>
                   <div className='icon-title'>
                     <div className='icon'>
-                      <img src={data.img} width={100} height={100} />
+                      <img
+                        src={data.img}
+                        width={100}
+                        height={100}
+                        loading='lazy'
+                      />
                     </div>
                     <div className='service-title'>
                       <h4>
