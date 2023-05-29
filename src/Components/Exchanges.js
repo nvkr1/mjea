@@ -43,14 +43,20 @@ function IndividualIntervalsExample() {
   return (
     <LazyLoad>
       <div id='partners' className=''>
-        <Slider {...settings} adaptiveHeight={false} className=''>
+        <Slider
+          {...settings}
+          adaptiveHeight={false}
+          className='h-[40px] lg:h-[60px]'>
           {companies.map((company) => (
             <div
               key={nanoid()}
               className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[40px] lg:h-[60px] transition ease-in shadow-left-right duration-100 mt-[6px]'>
               <div className='md:w-7/12 w-10/12 shrink-0 mx-auto'>
                 <div className='flex justify-center items-center relative w-full bg-white lg:h-12 h-5'>
-                  <a href={company.link} target='_blank'>
+                  <a
+                    href={company.link}
+                    target='_blank'
+                    className='flex items-center'>
                     <img
                       src={company.img}
                       alt=''
@@ -66,7 +72,10 @@ function IndividualIntervalsExample() {
           <div className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[40px] lg:h-[60px] transition ease-in shadow-left-right duration-100 mt-[6px]'>
             <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
               <div className='flex justify-center items-center relative w-full bg-white lg:h-12 h-5'>
-                <a href='https://www.idax.exchange' target='_blank'>
+                <a
+                  href='https://www.idax.exchange'
+                  target='_blank'
+                  className='flex items-center'>
                   <img
                     src={idax}
                     alt=''
@@ -81,7 +90,10 @@ function IndividualIntervalsExample() {
           <div className='mx-auto relative sm:w-[60px] w-[120px] text-center h-[40px] lg:h-[60px] transition ease-in shadow-left-right duration-100 mt-[6px]'>
             <div className='md:w-7/12 w-10/12 shrink-0  mx-auto'>
               <div className='flex justify-center items-center relative w-full bg-white lg:h-12 h-5'>
-                <a href='https://www.coinhub.mn' target='_blank'>
+                <a
+                  href='https://www.coinhub.mn'
+                  target='_blank'
+                  className='flex items-center'>
                   <img
                     src={coinhub}
                     alt=''

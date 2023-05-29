@@ -8,7 +8,7 @@ const FunFact = () => {
       className='fun-fact-banner bg-overlay text-white bg-cover'
       style={{ backgroundImage: `url(${bannerImg})` }}>
       <div className='container'>
-        <h4 className='align-items-center justify-content-center d-flex'>
+        <h4 className='mt-20 align-items-center justify-content-center d-flex'>
           2023 оны I улирал
         </h4>
         <div className='align-items-center justify-content-center d-flex row text-center text-md-start'>

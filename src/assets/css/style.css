@@ -41,6 +41,20 @@ img {
   max-width: 250px;
   max-height: 100px;
 }
+
+@media (max-width: 1191px) {
+  .custom-img {
+    max-width: 250px;
+    max-height: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-img {
+    max-width: 140px;
+    max-height: 100px;
+  }
+}
 a:hover, a:focus, a:active {
   text-decoration: none;
   outline: none !important;
