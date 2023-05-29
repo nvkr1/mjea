@@ -10602,13 +10602,13 @@ header .header-top-bar .top-social-icons a:hover {
 
 .footer-widgets-wrapper {
   padding-top: 50px;
-  padding-bottom: 90px;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 991px) {
   .footer-widgets-wrapper {
     padding-top: 30px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
   }
 }
 
