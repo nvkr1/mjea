@@ -70,7 +70,7 @@ const ServicesFour = () => {
                   <div className='contents'>
                     <h4>
                       <p className='row text-nowrap ' to='/'>
-                        ТӨРТОГТОХ Эрдэнбаатар
+                        ТӨРТОГТОХ ЭРДЭНЭБААТАР
                       </p>
                     </h4>
                     <p className='row text-white font-bold'>
