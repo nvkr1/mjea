@@ -14,7 +14,7 @@ export default function Documents() {
 
       <div
         id='laws'
-        className='container min-h-screen mx-auto px-4 py-28 text-xs sm:text-sm lg:text-base text-gray-500'>
+        className='container min-h-screen mx-auto px-4 section-padding text-xs sm:text-sm lg:text-base text-gray-500'>
         <div className='flex flex-col sm:flex-row gap-[16px] sm:gap-[30px] md:gap-[80px] lg:gap-[180px]'>
           <h1 className='text-[#09426C] font-[Roboto] font-bold text-2xl'>
             Баримт бичиг

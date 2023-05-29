@@ -21,7 +21,7 @@ const Header = () => {
       <header className='header-wrap header-1 header-4'>
         <div className='container-fluid d-flex justify-content-between align-items-center'>
           <div className='logo'>
-            <a to='/'>
+            <a href='/'>
               <img
                 src={mainLogo}
                 className='img-fluid custom-img'

@@ -8561,21 +8561,21 @@ header .header-top-bar .top-social-icons a:hover {
 }
 
 .fun-fact-banner {
-  padding-top: 80px;
-  padding-bottom: 120px;
+  padding-top: 30px;
+  padding-bottom: 70px;
 }
 
 @media (max-width: 1199px) {
   .fun-fact-banner {
-    padding-top: 100px;
-    padding-bottom: 270px;
+    padding-top: 50px;
+    padding-bottom: 80px;
   }
 }
 
 @media (max-width: 767px) {
   .fun-fact-banner {
-    padding-top: 80px;
-    padding-bottom: 250px;
+    padding-top: 40px;
+    padding-bottom: 70px;
   }
 }
 

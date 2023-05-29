@@ -17,7 +17,7 @@ const FunFact = () => {
               <h3>Бүртгэлтэй ВХҮҮ</h3>
             </div>
           </div>
-          <div className='col-lg-2 col-md-3 mt-30 col-12'>
+          <div className='col-lg-2 col-md-3 mt-30 col-6'>
             <div className='single-fun-fact'>
               <h2>
                 ₮<CountUp end={384.3} duration={5}></CountUp>тэрбум

@@ -20,7 +20,7 @@ const Home = () => {
       <Timeline />
       <ServicesFour />
       <ServicesTwo />
-      <Contacts />
+      {/* <Contacts /> */}
       <Footer />
     </div>
   );
