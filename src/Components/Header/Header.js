@@ -18,6 +18,7 @@ const Header = () => {
   const currentLanguage = i18n.language;
   return (
     <>
+      {currentLanguage == "mn" ? <></> : <></>}
       <header className='header-wrap header-1 header-4'>
         <div className='container-fluid d-flex justify-content-between align-items-center'>
           <div className='logo'>

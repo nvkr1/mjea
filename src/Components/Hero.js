@@ -7,11 +7,15 @@ import LazyLoad from "react-lazyload";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
+import i18n from "./i18n";
+import { useTranslation } from "react-i18next";
 
 // import required modules
 import { Pagination } from "swiper";
 
 const Hero = () => {
+  const { t } = useTranslation();
+  const currentLanguage = i18n.language;
   return (
     <section className='agency-hero-wrapper hero-wrapper fix'>
       <Swiper
@@ -30,7 +34,11 @@ const Hero = () => {
                   <div className='col-xl-9 col-md-10 col-12'>
                     <div className='hero-contents'>
                       <h1 className='text-white'>
-                        Монголын Биржүүдийн Нэгдсэн Холбоо
+                        {currentLanguage == "mn" ? (
+                          <> Монголын Биржүүдийн Нэгдсэн Холбоо</>
+                        ) : (
+                          <>Mongolian Joint Association Of Exchange</>
+                        )}
                       </h1>
                     </div>
                   </div>

@@ -1,8 +1,12 @@
 import React from "react";
 import icon1 from "../assets/img/Icon1.jpg";
 import icon2 from "../assets/img/Icon2.jpg";
+import i18n from "./i18n";
+import { useTranslation } from "react-i18next";
 
 const Timeline = () => {
+  const currentLanguage = i18n.language;
+  const { t } = useTranslation();
   return (
     <section className='company-timeline-wrapper mt-80 mb-50'>
       <div className='container'>
@@ -10,7 +14,9 @@ const Timeline = () => {
           <div className='col-xl-12'>
             <div className='block-contents text-center'>
               <div className=''>
-                <h3>ТҮҮХЭН ЗАМНАЛ</h3>
+                <h3>
+                  {currentLanguage == "mn" ? <>ТҮҮХЭН ЗАМНАЛ</> : <>TIMELINE</>}
+                </h3>
               </div>
             </div>
           </div>
@@ -22,15 +28,34 @@ const Timeline = () => {
                 <span>2021.12.17</span>
 
                 <p>
-                  Виртуал хөрөнгийн үйлчилгээ үзүүлэгчийн тухай хууль (ВХҮҮТХ)
-                  батлагдав.
+                  {currentLanguage == "mn" ? (
+                    <>
+                      Виртуал хөрөнгийн үйлчилгээ үзүүлэгчийн тухай хууль
+                      (ВХҮҮТХ) батлагдав.
+                    </>
+                  ) : (
+                    <>
+                      The Law on Virtual Asset Service Providers (LVASP) was
+                      passed.
+                    </>
+                  )}
                 </p>
               </div>
               <div className='single-timeline-box'>
                 <span>2022.12.27</span>
                 <p>
-                  СЗХ болон МБНХ хамтран ажиллах Харилцан ойлголцлын санамж
-                  бичиг байгуулав.
+                  {currentLanguage == "mn" ? (
+                    <>
+                      СЗХ болон МБНХ хамтран ажиллах Харилцан ойлголцлын санамж
+                      бичиг байгуулав.
+                    </>
+                  ) : (
+                    <>
+                      The Memorandum of Understanding was established between
+                      the Financial Regulatory Commission and the Mongolian
+                      Joint Association of Exchanges.
+                    </>
+                  )}
                 </p>
               </div>
             </div>
@@ -50,15 +75,37 @@ const Timeline = () => {
               <div className='single-timeline-box'>
                 <span>2022.01.10 </span>
                 <p>
-                  Монголын биржүүдийн нэгдсэн холбоо (МБНХ) үүсгэн байгуулагдав.
+                  {currentLanguage == "mn" ? (
+                    <>
+                      Монголын биржүүдийн нэгдсэн холбоо (МБНХ) үүсгэн
+                      байгуулагдав.
+                    </>
+                  ) : (
+                    <>
+                      Mongolian Joint Association of Exchanges (MJAE) was
+                      founded. (Established)
+                    </>
+                  )}
                 </p>
               </div>
               <div className='single-timeline-box'>
                 <span>2022-2023</span>
                 <p>
-                  ВХҮҮТХ-ийг дагасан 9 журам, 1 асуулгыг Санхүүгийн Зохицуулах
-                  Хороо (СЗХ)-той хамтран, МБНХ дотооддоо 6 хууль, эрх зүйн
-                  баримт бичиг боловсруулан батлан, мөрдөж эхлэв.
+                  {currentLanguage == "mn" ? (
+                    <>
+                      ВХҮҮТХ-ийг дагасан 9 журам, 1 асуулгыг Санхүүгийн
+                      Зохицуулах Хороо (СЗХ)-той хамтран, МБНХ дотооддоо 6
+                      хууль, эрх зүйн баримт бичиг боловсруулан батлан, мөрдөж
+                      эхлэв.
+                    </>
+                  ) : (
+                    <>
+                      In cooperation with the Financial Regulatory Commission
+                      (FRC), 9 regulations and 1 reference under the Law on
+                      Virtual Asset Service Providers, MJAE developed and
+                      approved 6 legal documents internally.
+                    </>
+                  )}
                 </p>
               </div>
             </div>

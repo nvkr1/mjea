@@ -2,9 +2,14 @@ import imgBlock1 from "./../assets/img/about-us.png";
 import { useState } from "react";
 import "react-modal-video/scss/modal-video.scss";
 import ModalVideo from "react-modal-video";
+import i18n from "./i18n";
+import { useTranslation } from "react-i18next";
 
 const About = ({ pt }) => {
   const [isOpen, setOpen] = useState(false);
+  const { t } = useTranslation();
+
+  const currentLanguage = i18n.language;
 
   return (
     <>
@@ -27,13 +32,29 @@ const About = ({ pt }) => {
             <div className='col-xl-6 col-lg-7 col-md-10 col-12'>
               <div className='block-contents'>
                 <div className='section-title-4'>
-                  <h2>БИДНИЙ ТУХАЙ</h2>
+                  <h2>
+                    {currentLanguage == "mn" ? <>БИДНИЙ ТУХАЙ</> : <>ABOUT</>}
+                  </h2>
                   <p>
-                    Санхүүгийн Зохицуулах Хороо (СЗХ)-ноос албан ёсоор зөвшөөрөл
-                    авч Монгол Улсад үйл ажиллагаа явуулдаг Виртуал Хөрөнгийн
-                    Үйлчилгээ Үзүүлэгч (ВХҮҮ)-ийн гишүүнчлэлтэй мэргэжлийн
-                    холбоо бөгөөд гишүүддээ үйлчилдэг, хараат бус - бие даасан,
-                    ашгийн бус төрийн бус байгууллага юм.
+                    {currentLanguage == "mn" ? (
+                      <>
+                        Санхүүгийн Зохицуулах Хороо (СЗХ)-ноос албан ёсоор
+                        зөвшөөрөл авч Монгол Улсад үйл ажиллагаа явуулдаг
+                        Виртуал Хөрөнгийн Үйлчилгээ Үзүүлэгч (ВХҮҮ)-ийн
+                        гишүүнчлэлтэй мэргэжлийн холбоо бөгөөд гишүүддээ
+                        үйлчилдэг, хараат бус - бие даасан, ашгийн бус төрийн
+                        бус байгууллага юм.
+                      </>
+                    ) : (
+                      <>
+                        It is a professional association with membership of
+                        Virtual Assets Service Providers (VASPs) operating in
+                        Mongolia with official permission from the Financial
+                        Regulatory Commission (FRC). It is an independent,
+                        non-profit non-governmental organization that serves its
+                        members.
+                      </>
+                    )}
                   </p>
                 </div>
               </div>
@@ -52,7 +73,7 @@ const About = ({ pt }) => {
                       role='tab'
                       aria-controls='pills-technology'
                       aria-selected='true'>
-                      Алсын хараа
+                      {currentLanguage == "mn" ? <>Алсын хараа</> : <>Vision</>}
                     </button>
                   </li>
                   <li className='nav-item' role='presentation'>
@@ -65,7 +86,11 @@ const About = ({ pt }) => {
                       role='tab'
                       aria-controls='pills-materials'
                       aria-selected='false'>
-                      Эрхэм зорилго
+                      {currentLanguage == "mn" ? (
+                        <>Эрхэм зорилго</>
+                      ) : (
+                        <>Mission</>
+                      )}
                     </button>
                   </li>
                   <li className='nav-item' role='presentation'>
@@ -78,7 +103,7 @@ const About = ({ pt }) => {
                       role='tab'
                       aria-controls='pills-approved'
                       aria-selected='false'>
-                      Уриа үг
+                      {currentLanguage == "mn" ? <>Уриа үг</> : <>Slogan</>}
                     </button>
                   </li>
                 </ul>
@@ -92,7 +117,13 @@ const About = ({ pt }) => {
                       <div className='checked-features-list'>
                         <ul>
                           <li>
-                            Төвлөрсөн бус санхүүгийн шинэ эринг бүтээлцэнэ
+                            {currentLanguage == "mn" ? (
+                              <>
+                                Төвлөрсөн бус санхүүгийн шинэ эринг бүтээлцэнэ
+                              </>
+                            ) : (
+                              <>Create a new era of decentralized finance</>
+                            )}
                           </li>
                         </ul>
                       </div>
@@ -107,9 +138,21 @@ const About = ({ pt }) => {
                       <div className='checked-features-list'>
                         <ul>
                           <li className=''>
-                            Найдвартай, хүртээмжтэй, нээлттэй дижитал ирээдүйтэй
-                            хөл нийлүүлэн алхах боломжийг бүрдүүлж, крипто зах
-                            зээлийн хөгжилд хувь нэмэр оруулах
+                            {currentLanguage == "mn" ? (
+                              <>
+                                Найдвартай, хүртээмжтэй, нээлттэй дижитал
+                                ирээдүйтэй хөл нийлүүлэн алхах боломжийг
+                                бүрдүүлж, крипто зах зээлийн хөгжилд хувь нэмэр
+                                оруулах
+                              </>
+                            ) : (
+                              <>
+                                Creating opportunities to keep pace with a
+                                reliable accessible and open digital future,
+                                Contribute to the development of the crypto
+                                market
+                              </>
+                            )}
                           </li>
                         </ul>
                       </div>
@@ -123,10 +166,17 @@ const About = ({ pt }) => {
                     <div className='row d-flex justify-content-center'>
                       <div className='checked-features-list'>
                         <ul>
-                          <li className=''>
-                            <p className=''>Дараагийн хувьсгал</p>
-                            <p>Дараагийн ирээдүй</p>
-                          </li>
+                          {currentLanguage == "mn" ? (
+                            <li className=''>
+                              <p className=''>Дараагийн хувьсгал</p>
+                              <p>Дараагийн ирээдүй</p>
+                            </li>
+                          ) : (
+                            <li className=''>
+                              <p className=''>The next revolution</p>
+                              <p>The next future</p>
+                            </li>
+                          )}
                         </ul>
                       </div>
                     </div>
