@@ -37,7 +37,7 @@ const Hero = () => {
                         {currentLanguage == "mn" ? (
                           <> Монголын Биржүүдийн Нэгдсэн Холбоо</>
                         ) : (
-                          <>Mongolian Joint Association Of Exchange</>
+                          <>Mongolian Joint Association Of Exchanges</>
                         )}
                       </h1>
                     </div>

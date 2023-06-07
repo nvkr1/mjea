@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
-import mainLogo from "../../assets/img/mjaeLogo.png";
+import mainLogo1 from "../../assets/img/mjaeLogo.png";
+import mainLogo from "../../assets/img/logo.png";
 import MobileMenu from "./MobileMenu";
 import { useTranslation } from "react-i18next";
 import i18n from "../i18n";
@@ -24,7 +25,7 @@ const Header = () => {
           <div className='logo'>
             <a href='/'>
               <img
-                src={mainLogo}
+                src={currentLanguage == "mn" ? mainLogo : mainLogo1}
                 className='img-fluid custom-img'
                 alt='logo2'
               />
