@@ -10,6 +10,7 @@ const servicesTwoData = [
     img: img2,
     icon: "sketch",
     title: "Хууль & Комплайнсын хороо",
+    title1: "LEGAL & COMPLIANCE COMMITTEE",
   },
 
   {
@@ -17,12 +18,14 @@ const servicesTwoData = [
     img: img3,
     icon: "house-plan",
     title: "Санхүү бүртгэл & Эрсдэлийн хороо",
+    title1: "FINANCIAL ACCOUNTING & RISK COMMITTEE",
   },
   {
     id: uuidv4(),
     img: img4,
     icon: "house-plan",
     title: "Пиар & Маркетингийн хороо",
+    title1: "PUBLIC RELATIONS & MARKETING COMMITTEE",
   },
 ];
 
