@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import slide1 from "./../assets/img/zuraglal.png";
+import slide1 from "./../assets/img/cover.png";
 import { EffectFade } from "swiper";
 import LazyLoad from "react-lazyload";
 

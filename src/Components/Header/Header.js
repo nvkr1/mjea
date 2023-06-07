@@ -32,42 +32,91 @@ const Header = () => {
           <div className='header-right-area d-flex'>
             <div className='main-menu d-none me-0 pe-xl-5 me-xl-5 d-xl-block'>
               <ul>
-                <li>
-                  <a href='/'>НҮҮР</a>
-                </li>
-                <li>
-                  <Link to='about' spy={true} smooth={true}>
-                    ХОЛБООНЫ ТУХАЙ <i className='fal fa-plus'></i>
-                  </Link>
-                  <ul className='sub-menu'>
+                {currentLanguage == "mn" ? (
+                  <li>
+                    <a href='/'>НҮҮР</a>
+                  </li>
+                ) : (
+                  <li>
+                    <a href='/'>HOME</a>
+                  </li>
+                )}
+                {currentLanguage == "mn" ? (
+                  <li>
+                    <Link to='about' spy={true} smooth={true}>
+                      ХОЛБООНЫ ТУХАЙ <i className='fal fa-plus'></i>
+                    </Link>
+                    <ul className='sub-menu'>
+                      <li>
+                        <Link to='ceos' spy={true} smooth={true}>
+                          УДИРДЛАГА
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to='structure' spy={true} smooth={true}>
+                          БҮТЭЦ
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to='partners' spy={true} smooth={true}>
+                          ГИШҮҮД
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                ) : (
+                  <li>
+                    <Link to='about' spy={true} smooth={true}>
+                      ABOUT <i className='fal fa-plus'></i>
+                    </Link>
+                    <ul className='sub-menu'>
+                      <li>
+                        <Link to='ceos' spy={true} smooth={true}>
+                          MANAGEMENT
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to='structure' spy={true} smooth={true}>
+                          STRUCTURE
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to='partners' spy={true} smooth={true}>
+                          MEMBERS
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                )}
+                {currentLanguage == "mn" ? (
+                  <>
                     <li>
-                      <Link to='ceos' spy={true} smooth={true}>
-                        УДИРДЛАГА
-                      </Link>
+                      <a href='/Documents'> БАРИМТ БИЧИГ</a>
                     </li>
                     <li>
-                      <Link to='structure' spy={true} smooth={true}>
-                        БҮТЭЦ
-                      </Link>
+                      <a href='/Ecosystem'> ЭКОСИСТЕМ</a>
                     </li>
                     <li>
-                      <Link to='partners' spy={true} smooth={true}>
-                        ГИШҮҮД
+                      <Link to='contacts' spy={true} smooth={true}>
+                        ХОЛБОО БАРИХ
                       </Link>
                     </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href='/Documents'> БАРИМТ БИЧИГ</a>
-                </li>
-                <li>
-                  <a href='/Ecosystem'> ЭКОСИСТЕМ</a>
-                </li>
-                <li>
-                  <Link to='contacts' spy={true} smooth={true}>
-                    ХОЛБОО БАРИХ
-                  </Link>
-                </li>
+                  </>
+                ) : (
+                  <>
+                    <li>
+                      <a href='/Documents'> DOCUMENTS</a>
+                    </li>
+                    <li>
+                      <a href='/Ecosystem'> ECOSYSTEM</a>
+                    </li>
+                    <li>
+                      <Link to='contacts' spy={true} smooth={true}>
+                        CONTACT
+                      </Link>
+                    </li>
+                  </>
+                )}
                 {currentLanguage == "en" ? (
                   <li>
                     <Link to='' spy={true} smooth={true}>
