@@ -11,14 +11,14 @@ import "swiper/css/effect-fade";
 // import required modules
 import { Pagination } from "swiper";
 
-const Hero2 = () => {
+const Hero2Mobile = () => {
   return (
     <section className='agency-hero-wrapper hero-wrapper fix'>
-      <img
+      {/* <img
         src={slide1}
         className='w-full h-full absolute
       '
-      />
+      /> */}
       <Swiper
         className='agency-slider-active'
         pagination={true}
@@ -29,8 +29,7 @@ const Hero2 = () => {
           <LazyLoad>
             <div
               className='single-agency-slide bg-cover'
-              // style={{ backgroundImage: `url(${slide1})` }}
-            >
+              style={{ backgroundImage: `url(${slide1})` }}>
               <div className='container'>
                 <div className='row'>
                   <div className='col-xl-9 col-md-10 col-12'>
@@ -51,4 +50,4 @@ const Hero2 = () => {
   );
 };
 
-export default Hero2;
+export default Hero2Mobile;

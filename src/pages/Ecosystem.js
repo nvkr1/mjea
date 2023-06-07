@@ -4,6 +4,7 @@ import Footer from "../Components/Footer";
 import Hero2 from "../Components/Hero2";
 import { useTranslation } from "react-i18next";
 import i18n from "../Components/i18n";
+import Hero2Mobile from "../Components/Hero2Mobile";
 
 export default function Ecosystem() {
   const { t } = useTranslation();
@@ -11,7 +12,12 @@ export default function Ecosystem() {
   return (
     <div>
       <Header />
-      <Hero2 />
+      <div className='hidden sm:block'>
+        <Hero2 />
+      </div>
+      <div className='block sm:hidden'>
+        <Hero2Mobile />
+      </div>
       <div className='section-padding bg-gray'>
         <div id='ecosystem' className='container'>
           <div className='row'>
