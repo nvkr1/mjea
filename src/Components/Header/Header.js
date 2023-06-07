@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
-import mainLogo from "../../assets/img/logo.png";
+import mainLogo from "../../assets/img/mjaeLogo.png";
 import MobileMenu from "./MobileMenu";
 import { useTranslation } from "react-i18next";
 import i18n from "../i18n";

@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer";
-import Hero from "../Components/Hero";
+import Hero2 from "../Components/Hero2";
 
 export default function Ecosystem() {
   return (
     <div>
       <Header />
-      <Hero />
+      <Hero2 />
       <div className='section-padding bg-gray'>
         <div id='ecosystem' className='container'>
           <div className='row'>

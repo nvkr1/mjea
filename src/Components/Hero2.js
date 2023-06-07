@@ -11,7 +11,7 @@ import "swiper/css/effect-fade";
 // import required modules
 import { Pagination } from "swiper";
 
-const Hero = () => {
+const Hero2 = () => {
   return (
     <section className='agency-hero-wrapper hero-wrapper fix'>
       <Swiper
@@ -30,7 +30,8 @@ const Hero = () => {
                   <div className='col-xl-9 col-md-10 col-12'>
                     <div className='hero-contents'>
                       <h1 className='text-white'>
-                        Монголын Биржүүдийн Нэгдсэн Холбоо
+                        <br />
+                        <br />
                       </h1>
                     </div>
                   </div>
@@ -44,4 +45,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Hero2;
