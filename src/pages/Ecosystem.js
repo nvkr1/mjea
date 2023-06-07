@@ -144,6 +144,19 @@ export default function Ecosystem() {
               </div>
             </div>
           </div>
+          <h3 className='mt-150 text-center'>
+            {currentLanguage == "mn" ? (
+              <>
+                Монголын Крипто Экосистемийн Зураглал 2023-ын дэлгэрэнгүй
+                жагсаалт
+              </>
+            ) : (
+              <>
+                Монголын Крипто Экосистемийн Зураглал 2023-ын дэлгэрэнгүй
+                жагсаалт
+              </>
+            )}
+          </h3>
           <table className='table-auto w-full text-xs mt-70'>
             <thead>
               <tr className='text-[#2957a4] bg-[#f8f8f8]'>
