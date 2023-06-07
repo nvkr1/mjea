@@ -8,7 +8,6 @@ import Footer from "../Components/Footer";
 import FunFact from "../Components/FunFact";
 import About from "../Components/About";
 import Contacts from "../Components/Contacts";
-import Ecosystem from "../Components/Ecosystem";
 
 const Home = () => {
   return (
@@ -21,7 +20,6 @@ const Home = () => {
       <Timeline />
       <ServicesFour />
       <ServicesTwo />
-      <Ecosystem />
       {/* <Contacts /> */}
       <Footer />
     </div>

@@ -61,9 +61,7 @@ const Header = () => {
                   <a href='/Documents'> БАРИМТ БИЧИГ</a>
                 </li>
                 <li>
-                  <Link to='' spy={true} smooth={true}>
-                    ЭКОСИСТЕМ
-                  </Link>
+                  <a href='/Ecosystem'> ЭКОСИСТЕМ</a>
                 </li>
                 <li>
                   <Link to='contacts' spy={true} smooth={true}>

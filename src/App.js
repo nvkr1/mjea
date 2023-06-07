@@ -8,6 +8,7 @@ import { Helmet } from "react-helmet";
 import NotFound from "./Components/NotFound";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./Components/i18n";
+import Ecosystem from "./pages/Ecosystem";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -32,6 +33,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='*' element={<NotFound />} />
+            <Route path='/ecosystem' element={<Ecosystem />} />
             <Route path='/documents' element={<Documents />} />
           </Routes>
         </I18nextProvider>
