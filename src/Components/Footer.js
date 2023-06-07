@@ -6,7 +6,11 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { MdLocationPin } from "react-icons/md";
 import { IoMdCall } from "react-icons/io";
+import { useTranslation } from "react-i18next";
+import i18n from "./i18n";
 const Footer = () => {
+  const { t } = useTranslation();
+  const currentLanguage = i18n.language;
   return (
     <>
       <footer className='footer-4 footer-wrap'>
@@ -145,12 +149,21 @@ const Footer = () => {
               </div>
               <div className='mt-3 mt-lg-0 col text-center text-md-start'>
                 <div className='copyright-info text-center'>
-                  <p>Монголын Биржүүдийн Нэгдсэн Холбоо</p>
+                  <p>
+                    {" "}
+                    {currentLanguage == "mn" ? (
+                      <>Монголын Биржүүдийн Нэгдсэн Холбоо</>
+                    ) : (
+                      <>Mongolian Joint Association of Exchanges</>
+                    )}
+                  </p>
                 </div>
               </div>
               <div className='mt-3 mt-lg-0 col text-center text-md-start'>
                 <div className='flex justify-center gap-2 copyright-info text-center'>
-                  <p>Холбоо барих</p>
+                  <p>
+                    {currentLanguage == "mn" ? <>Холбоо барих</> : <>Phone</>}
+                  </p>
                   <span>+976 00000000</span>
                 </div>
               </div>

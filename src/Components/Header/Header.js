@@ -120,15 +120,11 @@ const Header = () => {
                 )}
                 {currentLanguage == "en" ? (
                   <li>
-                    <Link to='' spy={true} smooth={true}>
-                      <button onClick={() => changeLanguage("mn")}>MN</button>
-                    </Link>
+                    <a onClick={() => changeLanguage("mn")}>MN</a>
                   </li>
                 ) : (
                   <li>
-                    <Link to='' spy={true} smooth={true}>
-                      <button onClick={() => changeLanguage("en")}>EN</button>
-                    </Link>
+                    <a onClick={() => changeLanguage("en")}>EN</a>
                   </li>
                 )}
               </ul>
