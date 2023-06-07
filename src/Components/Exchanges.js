@@ -61,7 +61,6 @@ function IndividualIntervalsExample() {
                       src={company.img}
                       alt=''
                       layout='fill'
-                      objectFit=''
                       className='mx-auto mt-3 lg:h-8 h-5'
                       loading='lazy'
                     />
@@ -81,7 +80,6 @@ function IndividualIntervalsExample() {
                     src={idax}
                     alt=''
                     layout='fill'
-                    objectFit=''
                     className='mx-auto mt-3 sm:mt-2 lg:h-6 md:h-5 sm:h-4 h-3'
                     loading='lazy'
                   />
@@ -100,7 +98,6 @@ function IndividualIntervalsExample() {
                     src={coinhub}
                     alt=''
                     layout='fill'
-                    objectFit=''
                     className='mx-auto mt-3 sm:mt-4 md:h-4 h-2'
                     loading='lazy'
                   />
@@ -119,7 +116,6 @@ function IndividualIntervalsExample() {
                     src={xmeta}
                     layout='fill'
                     alt=''
-                    objectFit=''
                     className='mx-auto h-8 mt-4 sm:h-12'
                     loading='lazy'
                   />
@@ -149,7 +145,6 @@ function IndividualIntervalsExample() {
                         src={company.img}
                         alt=''
                         layout='fill'
-                        objectFit=''
                         className='mx-auto sm:h-8 h-5'
                       />
                     </a>
@@ -172,7 +167,6 @@ function IndividualIntervalsExample() {
                         src={company.img}
                         alt=''
                         layout='fill'
-                        objectFit=''
                         className='mx-auto sm:h-8 h-5'
                       />
                     </a>
@@ -193,7 +187,6 @@ function IndividualIntervalsExample() {
                       src={idax}
                       alt=''
                       layout='fill'
-                      objectFit=''
                       className='mx-auto mt-[5px] lg:mt-0 sm:h-6 h-4'
                     />
                   </a>
@@ -208,7 +201,6 @@ function IndividualIntervalsExample() {
                       src={coinhub}
                       alt=''
                       layout='fill'
-                      objectFit=''
                       className='mx-auto mt-0 lg:mt-2 sm:h-4 h-3'
                     />
                   </a>
@@ -223,7 +215,6 @@ function IndividualIntervalsExample() {
                       src={xmeta}
                       layout='fill'
                       alt=''
-                      objectFit=''
                       className='mx-auto mt-3 lg:mt-4 sm:h-16 h-10'
                     />
                   </a>
@@ -240,7 +231,6 @@ function IndividualIntervalsExample() {
                       src={zoos}
                       alt=''
                       layout='fill'
-                      objectFit=''
                       className='mx-auto sm:h-8 h-5'
                     />
                   </a>
