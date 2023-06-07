@@ -23,8 +23,7 @@ export default function Documents() {
           <h1 className={`text-[#09426C] font-[Roboto] font-bold text-2xl`}>
             {currentLanguage == "mn" ? <>Баримт бичиг</> : <>Documents</>}
           </h1>
-          <div
-            className={`${currentLanguage == "mn" ? "" : "ml-10 sm:ml-10"} `}>
+          <div className={`${currentLanguage == "mn" ? "" : "ml-0 sm:ml-10"} `}>
             {currentPage == 1 ? (
               <span className='text-xs md:text-xl lg:text-2xl font-bold p-4'>
                 {currentLanguage == "mn" ? <>Хууль</> : <>Law</>}
@@ -90,20 +89,32 @@ export default function Documents() {
             <button
               onClick={() => setCurrentPage(1)}
               className='flex justify-center items-center border-t-[2px] border-top border-[#f0f0f0] w-full p-2 text-start transition-colors hover:bg-[#2957a4] hover:text-white'>
-              <span className=''>Хууль</span>
+              <span className=''>
+                {currentLanguage == "mn" ? <>Хууль</> : <>Law</>}
+              </span>
               <img src='arrowDocs.png' className='w-4 h-4' />
             </button>
             <button
               onClick={() => setCurrentPage(2)}
               className='flex sm:justify-between items-center border-t-[2px] border-top border-[#f0f0f0] w-full p-2 text-start transition-colors hover:bg-[#2957a4] hover:text-white'>
-              <span className=''>СЗХ-ны батласан журам, заавар, аргачлал</span>
+              <span className=''>
+                {currentLanguage == "mn" ? (
+                  <>СЗХ-ны батласан журам, заавар, аргачлал</>
+                ) : (
+                  <>Regulations and instructions approved by the FRC</>
+                )}
+              </span>
               <img src='arrowDocs.png' className='w-4 h-4' />
             </button>
             <button
               onClick={() => setCurrentPage(3)}
               className='flex sm:justify-between items-center border-y-[2px] border-top sm:border-bottom border-[#f0f0f0] w-full p-2 text-start transition-colors hover:bg-[#2957a4] hover:text-white'>
               <span className=''>
-                Холбооны батласан журам, заавар, аргачлал
+                {currentLanguage == "mn" ? (
+                  <>Холбооны батласан журам, заавар, аргачлал</>
+                ) : (
+                  <>Regulations and instructions approved by the MJAE</>
+                )}
               </span>
               <img src='arrowDocs.png' className='w-4 h-4' />
             </button>
