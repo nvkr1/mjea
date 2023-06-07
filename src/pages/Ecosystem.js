@@ -22,7 +22,7 @@ export default function Ecosystem() {
         <div id='ecosystem' className='container'>
           <div className='row'>
             <div className='col-xl-12'>
-              <div className='block-contents text-center'>
+              <div className='block-contents sm:text-center'>
                 <div className='section-title'>
                   <h2>
                     {currentLanguage == "mn" ? (
@@ -32,7 +32,7 @@ export default function Ecosystem() {
                     )}
                   </h2>
                 </div>
-                <p className='mt-5 w-3/4 mx-auto'>
+                <p className='mt-5 text-sm sm:text-base w-full sm:w-3/4 mx-auto'>
                   {currentLanguage == "mn" ? (
                     <>
                       {" "}
@@ -64,8 +64,8 @@ export default function Ecosystem() {
           </div>
           <div className='row'>
             <div className='col-xl-12'>
-              <div className='block-contents text-center'>
-                <p className='mt-5 w-3/4 mx-auto'>
+              <div className='block-contents sm:text-center'>
+                <p className='mt-5 text-sm sm:text-base w-full sm:w-3/4 mx-auto'>
                   {currentLanguage == "mn" ? (
                     <>
                       {" "}
@@ -90,8 +90,8 @@ export default function Ecosystem() {
           </div>
           <div className='row'>
             <div className='col-xl-12'>
-              <div className='block-contents text-center'>
-                <p className='mt-5 w-3/4 mx-auto'>
+              <div className='block-contents sm:text-center'>
+                <p className='mt-5 text-sm sm:text-base w-full sm:w-3/4 mx-auto'>
                   {currentLanguage == "mn" ? (
                     <>
                       {" "}
@@ -117,8 +117,8 @@ export default function Ecosystem() {
           </div>
           <div className='row'>
             <div className='col-xl-12'>
-              <div className='block-contents text-center'>
-                <p className='mt-5 w-3/4 mx-auto'>
+              <div className='block-contents sm:text-center'>
+                <p className='mt-5 text-sm sm:text-base w-full sm:w-3/4 mx-auto'>
                   {currentLanguage == "mn" ? (
                     <>
                       Крипто экосистемийн зураглалыг байгууллагууд хөрөнгө
@@ -144,7 +144,7 @@ export default function Ecosystem() {
               </div>
             </div>
           </div>
-          <h3 className='mt-150 text-center'>
+          <h3 className='mt-100 sm:mt-150 text-center'>
             {currentLanguage == "mn" ? (
               <>
                 Монголын Крипто Экосистемийн Зураглал 2023-ын дэлгэрэнгүй
@@ -157,763 +157,1524 @@ export default function Ecosystem() {
               </>
             )}
           </h3>
-          <table className='table-auto w-full text-xs mt-70'>
-            <thead>
-              <tr className='text-[#2957a4] bg-[#f8f8f8]'>
-                <th className='w-auto text-center p-2 lg:p-4 border border-[#f0f0f0]'>
-                  №
-                </th>
-                <th className='w-auto whitespace-nowrap text-center p-2 lg:p-4 border border-[#f0f0f0]'>
-                  {currentLanguage == "mn" ? (
-                    <>Биржийн нэр</>
-                  ) : (
-                    <>Биржийн нэр</>
-                  )}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-full text-start px-4 py-2"
-                      : "w-full text-start px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? (
-                    <>Компанийн нэр</>
-                  ) : (
-                    <>Компанийн нэр</>
-                  )}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-full whitespace-nowrap text-center px-4 py-2"
-                      : "w-full whitespace-nowrap text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? (
-                    <>Үйл ажиллагааны чиглэл</>
-                  ) : (
-                    <>Үйл ажиллагааны чиглэл</>
-                  )}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-full text-center px-4 py-2"
-                      : "w-full text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? <>Website</> : <>Website</>}
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {table1.map((table) => (
-                <tr table={table} key={table.id}>
-                  <th className='px-4 py-2 border border-[#f0f0f0] text-[#2957a4]'>
-                    {table.id}
+          <div className='hidden sm:block'>
+            <table className='table-auto w-full text-xs mt-70'>
+              <thead>
+                <tr className='text-[#2957a4] bg-[#f8f8f8]'>
+                  <th className='w-auto text-center p-1 lg:p-4 border border-[#f0f0f0]'>
+                    №
                   </th>
-                  <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                  <th className='w-auto whitespace-nowrap text-center p-1 lg:p-4 border border-[#f0f0f0]'>
                     {currentLanguage == "mn" ? (
-                      <>{table.exchangeName}</>
+                      <>Биржийн нэр</>
                     ) : (
-                      <>{table.exchangeName}</>
+                      <>Биржийн нэр</>
                     )}
                   </th>
-                  <th className='font-normal w-auto whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-full text-start px-4 py-2"
+                        : "w-full text-start px-4 py-2"
+                    } border border-[#f0f0f0]`}>
                     {currentLanguage == "mn" ? (
-                      <>{table.companyName}</>
+                      <>Компанийн нэр</>
                     ) : (
-                      <>{table.companyName}</>
+                      <>Компанийн нэр</>
                     )}
                   </th>
-                  <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-full whitespace-nowrap text-center px-4 py-2"
+                        : "w-full whitespace-nowrap text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
                     {currentLanguage == "mn" ? (
-                      <>{table.operation}</>
+                      <>Үйл ажиллагааны чиглэл</>
                     ) : (
-                      <>{table.operation}</>
+                      <>Үйл ажиллагааны чиглэл</>
                     )}
                   </th>
-                  <th className='border border-[#f0f0f0]'>
-                    <a
-                      className='flex text-xs justify-center w-full px-4 py-2 text-[#02a3ea]'
-                      href={table.webLink}
-                      target='_blank'>
-                      {table.webLink}
-                    </a>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-full text-center px-4 py-2"
+                        : "w-full text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
                   </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-          <table className='table-auto w-full text-xs mt-70'>
-            <thead>
-              <tr className='text-[#2957a4] bg-[#f8f8f8]'>
-                <th className='w-auto text-center p-2 lg:p-4 border border-[#f0f0f0]'>
-                  №
-                </th>
-                <th className='w-1/4 whitespace-nowrap text-start px-4 py-2 border border-[#f0f0f0]'>
-                  {currentLanguage == "mn" ? <>Койны нэр</> : <>Койны нэр</>}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-1/4 text-start px-4 py-2"
-                      : "w-1/4 text-start px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? (
-                    <>Койны тикер</>
-                  ) : (
-                    <>Койны тикер</>
-                  )}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-1/2 whitespace-nowrap text-start px-4 py-2"
-                      : "w-1/2 whitespace-nowrap text-start px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? (
-                    <>Компанийн нэр</>
-                  ) : (
-                    <>Компанийн нэр</>
-                  )}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-full whitespace-nowrap text-center px-4 py-2"
-                      : "w-full whitespace-nowrap text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? (
-                    <>Үйл ажиллагааны чиглэл</>
-                  ) : (
-                    <>Үйл ажиллагааны чиглэл</>
-                  )}
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {table2.map((table, index) => (
-                <tr table={table} key={table.id}>
-                  <th className='px-4 py-2 border border-[#f0f0f0] text-[#2957a4]'>
-                    {index + 1}
+              </thead>
+              <tbody>
+                {table1.map((table) => (
+                  <tr table={table} key={table.id}>
+                    <th className='px-4 py-2 border border-[#f0f0f0] text-[#2957a4]'>
+                      {table.id}
+                    </th>
+                    <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.exchangeName}</>
+                      ) : (
+                        <>{table.exchangeName}</>
+                      )}
+                    </th>
+                    <th className='font-normal w-auto whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.companyName}</>
+                      ) : (
+                        <>{table.companyName}</>
+                      )}
+                    </th>
+                    <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.operation}</>
+                      ) : (
+                        <>{table.operation}</>
+                      )}
+                    </th>
+                    <th className='border border-[#f0f0f0]'>
+                      <a
+                        className='flex text-xs justify-center w-full px-4 py-2 text-[#02a3ea]'
+                        href={table.webLink}
+                        target='_blank'>
+                        {table.webLink}
+                      </a>
+                    </th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <table className='table-auto w-full text-xs mt-70'>
+              <thead>
+                <tr className='text-[#2957a4] bg-[#f8f8f8]'>
+                  <th className='w-auto text-center p-1 lg:p-4 border border-[#f0f0f0]'>
+                    №
                   </th>
-                  <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                  <th className='w-1/4 whitespace-nowrap text-start px-4 py-2 border border-[#f0f0f0]'>
+                    {currentLanguage == "mn" ? <>Койны нэр</> : <>Койны нэр</>}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-1/4 text-start px-4 py-2"
+                        : "w-1/4 text-start px-4 py-2"
+                    } border border-[#f0f0f0]`}>
                     {currentLanguage == "mn" ? (
-                      <>{table.coinName}</>
+                      <>Койны тикер</>
                     ) : (
-                      <>{table.coinName}</>
+                      <>Койны тикер</>
                     )}
                   </th>
-                  <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-1/2 whitespace-nowrap text-start px-4 py-2"
+                        : "w-1/2 whitespace-nowrap text-start px-4 py-2"
+                    } border border-[#f0f0f0]`}>
                     {currentLanguage == "mn" ? (
-                      <>{table.coinTicker}</>
+                      <>Компанийн нэр</>
                     ) : (
-                      <>{table.coinTicker}</>
+                      <>Компанийн нэр</>
                     )}
                   </th>
-                  <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-full whitespace-nowrap text-center px-4 py-2"
+                        : "w-full whitespace-nowrap text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
                     {currentLanguage == "mn" ? (
-                      <>{table.companyName}</>
+                      <>Үйл ажиллагааны чиглэл</>
                     ) : (
-                      <>{table.companyName}</>
+                      <>Үйл ажиллагааны чиглэл</>
                     )}
-                  </th>
-                  <th className='font-normal px-4 py-2 text-center border border-[#f0f0f0]'>
-                    {table.operation}
                   </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-          <table className='table-auto w-full text-xs mt-70'>
-            <thead>
-              <tr className='text-[#2957a4] bg-[#f8f8f8]'>
-                <th className='w-auto text-center p-2 lg:p-4 border border-[#f0f0f0]'>
-                  №
-                </th>
-                <th className='w-full whitespace-nowrap text-start px-4 py-2 border border-[#f0f0f0]'>
-                  {currentLanguage == "mn" ? (
-                    <>Байгууллагын нэр</>
-                  ) : (
-                    <>Байгууллагын нэр</>
-                  )}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-auto whitespace-nowrap text-center px-4 py-2"
-                      : "w-auto whitespace-nowrap text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? (
-                    <>Үйл ажиллагааны чиглэл</>
-                  ) : (
-                    <>Үйл ажиллагааны чиглэл</>
-                  )}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-full text-center px-4 py-2"
-                      : "w-full text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? <>Website</> : <>Website</>}
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {table3.map((table, index) => (
-                <tr table={table} key={table.id}>
-                  <th className='px-4 py-2 border border-[#f0f0f0] text-[#2957a4]'>
-                    {index + 1}
+              </thead>
+              <tbody>
+                {table2.map((table, index) => (
+                  <tr table={table} key={table.id}>
+                    <th className='px-4 py-2 border border-[#f0f0f0] text-[#2957a4]'>
+                      {index + 1}
+                    </th>
+                    <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.coinName}</>
+                      ) : (
+                        <>{table.coinName}</>
+                      )}
+                    </th>
+                    <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.coinTicker}</>
+                      ) : (
+                        <>{table.coinTicker}</>
+                      )}
+                    </th>
+                    <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.companyName}</>
+                      ) : (
+                        <>{table.companyName}</>
+                      )}
+                    </th>
+                    <th className='font-normal px-4 py-2 text-center border border-[#f0f0f0]'>
+                      {table.operation}
+                    </th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <table className='table-auto w-full text-xs mt-70'>
+              <thead>
+                <tr className='text-[#2957a4] bg-[#f8f8f8]'>
+                  <th className='w-auto text-center p-1 lg:p-4 border border-[#f0f0f0]'>
+                    №
                   </th>
+                  <th className='w-full whitespace-nowrap text-start px-4 py-2 border border-[#f0f0f0]'>
+                    {currentLanguage == "mn" ? (
+                      <>Байгууллагын нэр</>
+                    ) : (
+                      <>Байгууллагын нэр</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto whitespace-nowrap text-center px-4 py-2"
+                        : "w-auto whitespace-nowrap text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? (
+                      <>Үйл ажиллагааны чиглэл</>
+                    ) : (
+                      <>Үйл ажиллагааны чиглэл</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-full text-center px-4 py-2"
+                        : "w-full text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {table3.map((table, index) => (
+                  <tr table={table} key={table.id}>
+                    <th className='px-4 py-2 border border-[#f0f0f0] text-[#2957a4]'>
+                      {index + 1}
+                    </th>
 
-                  <th className='font-normal w-auto whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                    <th className='font-normal w-auto whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.companyName}</>
+                      ) : (
+                        <>{table.companyName}</>
+                      )}
+                    </th>
+                    <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.operation}</>
+                      ) : (
+                        <>{table.operation}</>
+                      )}
+                    </th>
+                    <th className='border border-[#f0f0f0]'>
+                      <a
+                        className='flex text-xs justify-center w-full px-4 py-2 text-[#02a3ea]'
+                        href={table.webLink}
+                        target='_blank'>
+                        {table.webLink}
+                      </a>
+                    </th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <table className='table-auto w-full text-xs mt-70'>
+              <thead>
+                <tr className='text-[#2957a4] bg-[#f8f8f8]'>
+                  <th className='w-auto text-center p-1 lg:p-4 border border-[#f0f0f0]'>
+                    №
+                  </th>
+                  <th className='w-full whitespace-nowrap text-start px-4 py-2 border border-[#f0f0f0]'>
                     {currentLanguage == "mn" ? (
-                      <>{table.companyName}</>
+                      <>Компанийн нэр</>
                     ) : (
-                      <>{table.companyName}</>
+                      <>Компанийн нэр</>
                     )}
                   </th>
-                  <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto whitespace-nowrap text-center px-4 py-2"
+                        : "w-auto whitespace-nowrap text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
                     {currentLanguage == "mn" ? (
-                      <>{table.operation}</>
+                      <>Үйл ажиллагааны чиглэл</>
                     ) : (
-                      <>{table.operation}</>
+                      <>Үйл ажиллагааны чиглэл</>
                     )}
                   </th>
-                  <th className='border border-[#f0f0f0]'>
-                    <a
-                      className='flex text-xs justify-center w-full px-4 py-2 text-[#02a3ea]'
-                      href={table.webLink}
-                      target='_blank'>
-                      {table.webLink}
-                    </a>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-full text-center px-4 py-2"
+                        : "w-full text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
                   </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-          <table className='table-auto w-full text-xs mt-70'>
-            <thead>
-              <tr className='text-[#2957a4] bg-[#f8f8f8]'>
-                <th className='w-auto text-center p-2 lg:p-4 border border-[#f0f0f0]'>
-                  №
-                </th>
-                <th className='w-full whitespace-nowrap text-start px-4 py-2 border border-[#f0f0f0]'>
-                  {currentLanguage == "mn" ? (
-                    <>Компанийн нэр</>
-                  ) : (
-                    <>Компанийн нэр</>
-                  )}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-auto whitespace-nowrap text-center px-4 py-2"
-                      : "w-auto whitespace-nowrap text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? (
-                    <>Үйл ажиллагааны чиглэл</>
-                  ) : (
-                    <>Үйл ажиллагааны чиглэл</>
-                  )}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-full text-center px-4 py-2"
-                      : "w-full text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? <>Website</> : <>Website</>}
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {table4.map((table, index) => (
-                <tr table={table} key={table.id}>
-                  <th className='px-4 py-2 border border-[#f0f0f0] text-[#2957a4]'>
-                    {index + 1}
-                  </th>
+              </thead>
+              <tbody>
+                {table4.map((table, index) => (
+                  <tr table={table} key={table.id}>
+                    <th className='px-4 py-2 border border-[#f0f0f0] text-[#2957a4]'>
+                      {index + 1}
+                    </th>
 
-                  <th className='font-normal w-auto whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                    <th className='font-normal w-auto whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.companyName}</>
+                      ) : (
+                        <>{table.companyName}</>
+                      )}
+                    </th>
+                    <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.operation}</>
+                      ) : (
+                        <>{table.operation}</>
+                      )}
+                    </th>
+                    <th className='border border-[#f0f0f0]'>
+                      <a
+                        className='flex text-xs justify-center w-full px-4 py-2 text-[#02a3ea]'
+                        href={table.webLink}
+                        target='_blank'>
+                        {table.webLink}
+                      </a>
+                    </th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <table className='table-auto w-full text-xs mt-70'>
+              <thead>
+                <tr className='text-[#2957a4] bg-[#f8f8f8]'>
+                  <th className='w-auto text-center p-1 lg:p-4 border border-[#f0f0f0]'>
+                    №
+                  </th>
+                  <th className='w-full whitespace-nowrap text-start px-4 py-2 border border-[#f0f0f0]'>
                     {currentLanguage == "mn" ? (
-                      <>{table.companyName}</>
+                      <>Оноосон нэр</>
                     ) : (
-                      <>{table.companyName}</>
+                      <>Оноосон нэр</>
                     )}
                   </th>
-                  <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto whitespace-nowrap text-center px-4 py-2"
+                        : "w-auto whitespace-nowrap text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
                     {currentLanguage == "mn" ? (
-                      <>{table.operation}</>
+                      <>Үйл ажиллагааны чиглэл</>
                     ) : (
-                      <>{table.operation}</>
+                      <>Үйл ажиллагааны чиглэл</>
                     )}
                   </th>
-                  <th className='border border-[#f0f0f0]'>
-                    <a
-                      className='flex text-xs justify-center w-full px-4 py-2 text-[#02a3ea]'
-                      href={table.webLink}
-                      target='_blank'>
-                      {table.webLink}
-                    </a>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto whitespace-nowrap text-center px-4 py-2"
+                        : "w-auto whitespace-nowrap text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? <>Project</> : <>Project</>}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-full text-center px-4 py-2"
+                        : "w-full text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
                   </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-          <table className='table-auto w-full text-xs mt-70'>
-            <thead>
-              <tr className='text-[#2957a4] bg-[#f8f8f8]'>
-                <th className='w-auto text-center p-2 lg:p-4 border border-[#f0f0f0]'>
-                  №
-                </th>
-                <th className='w-full whitespace-nowrap text-start px-4 py-2 border border-[#f0f0f0]'>
-                  {currentLanguage == "mn" ? (
-                    <>Оноосон нэр</>
-                  ) : (
-                    <>Оноосон нэр</>
-                  )}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-auto whitespace-nowrap text-center px-4 py-2"
-                      : "w-auto whitespace-nowrap text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? (
-                    <>Үйл ажиллагааны чиглэл</>
-                  ) : (
-                    <>Үйл ажиллагааны чиглэл</>
-                  )}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-auto whitespace-nowrap text-center px-4 py-2"
-                      : "w-auto whitespace-nowrap text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? <>Project</> : <>Project</>}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-full text-center px-4 py-2"
-                      : "w-full text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? <>Website</> : <>Website</>}
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {table5.map((table, index) => (
-                <tr table={table} key={table.id}>
-                  <th className='px-4 py-2 border border-[#f0f0f0] text-[#2957a4]'>
-                    {index + 1}
-                  </th>
+              </thead>
+              <tbody>
+                {table5.map((table, index) => (
+                  <tr table={table} key={table.id}>
+                    <th className='px-4 py-2 border border-[#f0f0f0] text-[#2957a4]'>
+                      {index + 1}
+                    </th>
 
-                  <th className='font-normal w-auto whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                    <th className='font-normal w-auto whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.nickname}</>
+                      ) : (
+                        <>{table.nickname}</>
+                      )}
+                    </th>
+                    <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-center'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.operation}</>
+                      ) : (
+                        <>{table.operation}</>
+                      )}
+                    </th>
+                    <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-center'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.project}</>
+                      ) : (
+                        <>{table.project}</>
+                      )}
+                    </th>
+                    <th className='border border-[#f0f0f0]'>
+                      <a
+                        className='flex text-xs justify-center w-full px-4 py-2 text-[#02a3ea]'
+                        href={table.webLink}
+                        target='_blank'>
+                        {table.webLink}
+                      </a>
+                    </th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <table className='table-auto w-full text-xs mt-70'>
+              <thead>
+                <tr className='text-[#2957a4] bg-[#f8f8f8]'>
+                  <th className='w-auto text-center p-1 lg:p-4 border border-[#f0f0f0]'>
+                    №
+                  </th>
+                  <th className='w-auto whitespace-nowrap text-start px-4 py-2 border border-[#f0f0f0]'>
+                    {currentLanguage == "mn" ? <>Project</> : <>Project</>}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto whitespace-nowrap text-center px-4 py-2"
+                        : "w-auto whitespace-nowrap text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? <>Exchange</> : <>Exchange</>}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto whitespace-nowrap text-center px-4 py-2"
+                        : "w-auto whitespace-nowrap text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
                     {currentLanguage == "mn" ? (
-                      <>{table.nickname}</>
+                      <>Marketplace</>
                     ) : (
-                      <>{table.nickname}</>
+                      <>Marketplace</>
                     )}
                   </th>
-                  <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-center'>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto text-center px-4 py-2"
+                        : "w-auto text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
                     {currentLanguage == "mn" ? (
-                      <>{table.operation}</>
+                      <>Үйл ажиллагааны чиглэл</>
                     ) : (
-                      <>{table.operation}</>
+                      <>Үйл ажиллагааны чиглэл</>
                     )}
                   </th>
-                  <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-center'>
-                    {currentLanguage == "mn" ? (
-                      <>{table.project}</>
-                    ) : (
-                      <>{table.project}</>
-                    )}
-                  </th>
-                  <th className='border border-[#f0f0f0]'>
-                    <a
-                      className='flex text-xs justify-center w-full px-4 py-2 text-[#02a3ea]'
-                      href={table.webLink}
-                      target='_blank'>
-                      {table.webLink}
-                    </a>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto text-center px-4 py-2"
+                        : "w-auto text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
                   </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-          <table className='table-auto w-full text-xs mt-70'>
-            <thead>
-              <tr className='text-[#2957a4] bg-[#f8f8f8]'>
-                <th className='w-auto text-center p-2 lg:p-4 border border-[#f0f0f0]'>
-                  №
-                </th>
-                <th className='w-auto whitespace-nowrap text-start px-4 py-2 border border-[#f0f0f0]'>
-                  {currentLanguage == "mn" ? <>Project</> : <>Project</>}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-auto whitespace-nowrap text-center px-4 py-2"
-                      : "w-auto whitespace-nowrap text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? <>Exchange</> : <>Exchange</>}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-auto whitespace-nowrap text-center px-4 py-2"
-                      : "w-auto whitespace-nowrap text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? (
-                    <>Marketplace</>
-                  ) : (
-                    <>Marketplace</>
-                  )}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-auto text-center px-4 py-2"
-                      : "w-auto text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? (
-                    <>Үйл ажиллагааны чиглэл</>
-                  ) : (
-                    <>Үйл ажиллагааны чиглэл</>
-                  )}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-auto text-center px-4 py-2"
-                      : "w-auto text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? <>Website</> : <>Website</>}
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {table6.map((table, index) => (
-                <tr table={table} key={table.id}>
-                  <th className='w-auto text-center px-4 py-2 border border-[#f0f0f0] text-[#2957a4]'>
-                    {index + 1}
-                  </th>
+              </thead>
+              <tbody>
+                {table6.map((table, index) => (
+                  <tr table={table} key={table.id}>
+                    <th className='w-auto text-center px-4 py-2 border border-[#f0f0f0] text-[#2957a4]'>
+                      {index + 1}
+                    </th>
 
-                  <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
-                    {currentLanguage == "mn" ? (
-                      <>{table.project}</>
-                    ) : (
-                      <>{table.project}</>
-                    )}
-                  </th>
-                  <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-center'>
-                    {currentLanguage == "mn" ? (
-                      <>{table.exchange}</>
-                    ) : (
-                      <>{table.exchange}</>
-                    )}
-                  </th>
-                  <th className='border border-[#f0f0f0]'>
-                    <a
-                      className='flex text-xs justify-center w-full px-4 py-2 text-[#02a3ea]'
-                      href={table.marketplace}
-                      target='_blank'>
-                      {table.marketplace}
-                    </a>
-                  </th>
-                  <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-center'>
-                    {currentLanguage == "mn" ? (
-                      <>{table.operation}</>
-                    ) : (
-                      <>{table.operation}</>
-                    )}
-                  </th>
+                    <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.project}</>
+                      ) : (
+                        <>{table.project}</>
+                      )}
+                    </th>
+                    <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-center'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.exchange}</>
+                      ) : (
+                        <>{table.exchange}</>
+                      )}
+                    </th>
+                    <th className='border border-[#f0f0f0]'>
+                      <a
+                        className='flex text-xs justify-center w-full px-4 py-2 text-[#02a3ea]'
+                        href={table.marketplace}
+                        target='_blank'>
+                        {table.marketplace}
+                      </a>
+                    </th>
+                    <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-center'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.operation}</>
+                      ) : (
+                        <>{table.operation}</>
+                      )}
+                    </th>
 
-                  <th className='border border-[#f0f0f0]'>
-                    <a
-                      className='flex text-xs justify-center w-full px-4 py-2 text-[#02a3ea]'
-                      href={table.webLink}
-                      target='_blank'>
-                      {table.webLink}
-                    </a>
+                    <th className='border border-[#f0f0f0]'>
+                      <a
+                        className='flex text-xs justify-center w-full px-4 py-2 text-[#02a3ea]'
+                        href={table.webLink}
+                        target='_blank'>
+                        {table.webLink}
+                      </a>
+                    </th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <table className='table-auto w-full text-xs mt-70'>
+              <thead>
+                <tr className='text-[#2957a4] bg-[#f8f8f8]'>
+                  <th className='w-auto text-center p-1 lg:p-4 border border-[#f0f0f0]'>
+                    №
+                  </th>
+                  <th className='w-full whitespace-nowrap text-start px-4 py-2 border border-[#f0f0f0]'>
+                    {currentLanguage == "mn" ? (
+                      <>Компанийн нэр</>
+                    ) : (
+                      <>Компанийн нэр</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto whitespace-nowrap text-center px-4 py-2"
+                        : "w-auto whitespace-nowrap text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? (
+                      <>Үйл ажиллагааны чиглэл</>
+                    ) : (
+                      <>Үйл ажиллагааны чиглэл</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-full text-center px-4 py-2"
+                        : "w-full text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
                   </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-          <table className='table-auto w-full text-xs mt-70'>
-            <thead>
-              <tr className='text-[#2957a4] bg-[#f8f8f8]'>
-                <th className='w-auto text-center p-2 lg:p-4 border border-[#f0f0f0]'>
-                  №
-                </th>
-                <th className='w-full whitespace-nowrap text-start px-4 py-2 border border-[#f0f0f0]'>
-                  {currentLanguage == "mn" ? (
-                    <>Компанийн нэр</>
-                  ) : (
-                    <>Компанийн нэр</>
-                  )}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-auto whitespace-nowrap text-center px-4 py-2"
-                      : "w-auto whitespace-nowrap text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? (
-                    <>Үйл ажиллагааны чиглэл</>
-                  ) : (
-                    <>Үйл ажиллагааны чиглэл</>
-                  )}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-full text-center px-4 py-2"
-                      : "w-full text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? <>Website</> : <>Website</>}
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {table7.map((table, index) => (
-                <tr table={table} key={table.id}>
-                  <th className='px-4 py-2 border border-[#f0f0f0] text-[#2957a4]'>
-                    {index + 1}
-                  </th>
+              </thead>
+              <tbody>
+                {table7.map((table, index) => (
+                  <tr table={table} key={table.id}>
+                    <th className='px-4 py-2 border border-[#f0f0f0] text-[#2957a4]'>
+                      {index + 1}
+                    </th>
 
-                  <th className='font-normal w-auto whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                    <th className='font-normal w-auto whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.companyName}</>
+                      ) : (
+                        <>{table.companyName}</>
+                      )}
+                    </th>
+                    <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.operation}</>
+                      ) : (
+                        <>{table.operation}</>
+                      )}
+                    </th>
+                    <th className='border border-[#f0f0f0]'>
+                      <a
+                        className='flex text-xs justify-center w-full px-4 py-2 text-[#02a3ea]'
+                        href={table.webLink}
+                        target='_blank'>
+                        {table.webLink}
+                      </a>
+                    </th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <table className='table-auto w-full text-xs mt-70'>
+              <thead>
+                <tr className='text-[#2957a4] bg-[#f8f8f8]'>
+                  <th className='w-auto text-center p-1 lg:p-4 border border-[#f0f0f0]'>
+                    №
+                  </th>
+                  <th className='w-auto whitespace-nowrap text-start px-4 py-2 border border-[#f0f0f0]'>
+                    {currentLanguage == "mn" ? <>Events</> : <>Events</>}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto whitespace-nowrap text-start px-4 py-2"
+                        : "w-auto whitespace-nowrap text-start px-4 py-2"
+                    } border border-[#f0f0f0]`}>
                     {currentLanguage == "mn" ? (
-                      <>{table.companyName}</>
+                      <>Зохион байгуулагч</>
                     ) : (
-                      <>{table.companyName}</>
+                      <>Зохион байгуулагч</>
                     )}
                   </th>
-                  <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto text-center px-4 py-2"
+                        : "w-auto text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
                     {currentLanguage == "mn" ? (
-                      <>{table.operation}</>
+                      <>Үйл ажиллагааны чиглэл</>
                     ) : (
-                      <>{table.operation}</>
+                      <>Үйл ажиллагааны чиглэл</>
                     )}
                   </th>
-                  <th className='border border-[#f0f0f0]'>
-                    <a
-                      className='flex text-xs justify-center w-full px-4 py-2 text-[#02a3ea]'
-                      href={table.webLink}
-                      target='_blank'>
-                      {table.webLink}
-                    </a>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto text-center px-4 py-2"
+                        : "w-auto text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
                   </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-          <table className='table-auto w-full text-xs mt-70'>
-            <thead>
-              <tr className='text-[#2957a4] bg-[#f8f8f8]'>
-                <th className='w-auto text-center p-2 lg:p-4 border border-[#f0f0f0]'>
-                  №
-                </th>
-                <th className='w-auto whitespace-nowrap text-start px-4 py-2 border border-[#f0f0f0]'>
-                  {currentLanguage == "mn" ? <>Events</> : <>Events</>}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-auto whitespace-nowrap text-start px-4 py-2"
-                      : "w-auto whitespace-nowrap text-start px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? (
-                    <>Зохион байгуулагч</>
-                  ) : (
-                    <>Зохион байгуулагч</>
-                  )}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-auto text-center px-4 py-2"
-                      : "w-auto text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? (
-                    <>Үйл ажиллагааны чиглэл</>
-                  ) : (
-                    <>Үйл ажиллагааны чиглэл</>
-                  )}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-auto text-center px-4 py-2"
-                      : "w-auto text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? <>Website</> : <>Website</>}
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {table8.map((table, index) => (
-                <tr table={table} key={table.id}>
-                  <th className='w-auto text-center px-4 py-2 border border-[#f0f0f0] text-[#2957a4]'>
-                    {index + 1}
-                  </th>
-                  <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
-                    {currentLanguage == "mn" ? (
-                      <>{table.events}</>
-                    ) : (
-                      <>{table.events}</>
-                    )}
-                  </th>
-                  <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
-                    {currentLanguage == "mn" ? (
-                      <>{table.organizer}</>
-                    ) : (
-                      <>{table.organizer}</>
-                    )}
-                  </th>
-                  <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-center'>
-                    {currentLanguage == "mn" ? (
-                      <>{table.operation}</>
-                    ) : (
-                      <>{table.operation}</>
-                    )}
-                  </th>
+              </thead>
+              <tbody>
+                {table8.map((table, index) => (
+                  <tr table={table} key={table.id}>
+                    <th className='w-auto text-center px-4 py-2 border border-[#f0f0f0] text-[#2957a4]'>
+                      {index + 1}
+                    </th>
+                    <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.events}</>
+                      ) : (
+                        <>{table.events}</>
+                      )}
+                    </th>
+                    <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.organizer}</>
+                      ) : (
+                        <>{table.organizer}</>
+                      )}
+                    </th>
+                    <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-center'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.operation}</>
+                      ) : (
+                        <>{table.operation}</>
+                      )}
+                    </th>
 
-                  <th className='border border-[#f0f0f0]'>
-                    <a
-                      className='flex text-xs justify-center w-full px-4 py-2 text-[#02a3ea]'
-                      href={table.webLink}
-                      target='_blank'>
-                      {table.webLink}
-                    </a>
+                    <th className='border border-[#f0f0f0]'>
+                      <a
+                        className='flex text-xs justify-center w-full px-4 py-2 text-[#02a3ea]'
+                        href={table.webLink}
+                        target='_blank'>
+                        {table.webLink}
+                      </a>
+                    </th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <table className='table-auto w-full text-xs mt-70'>
+              <thead>
+                <tr className='text-[#2957a4] bg-[#f8f8f8]'>
+                  <th className='w-auto text-center p-1 lg:p-4 border border-[#f0f0f0]'>
+                    №
+                  </th>
+                  <th className='w-full whitespace-nowrap text-start px-4 py-2 border border-[#f0f0f0]'>
+                    {currentLanguage == "mn" ? (
+                      <>Байгууллагын нэр</>
+                    ) : (
+                      <>Байгууллагын нэр</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto whitespace-nowrap text-center px-4 py-2"
+                        : "w-auto whitespace-nowrap text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? (
+                      <>Үйл ажиллагааны чиглэл</>
+                    ) : (
+                      <>Үйл ажиллагааны чиглэл</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-full text-center px-4 py-2"
+                        : "w-full text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
                   </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-          <table className='table-auto w-full text-xs mt-70'>
-            <thead>
-              <tr className='text-[#2957a4] bg-[#f8f8f8]'>
-                <th className='w-auto text-center p-2 lg:p-4 border border-[#f0f0f0]'>
-                  №
-                </th>
-                <th className='w-full whitespace-nowrap text-start px-4 py-2 border border-[#f0f0f0]'>
-                  {currentLanguage == "mn" ? (
-                    <>Байгууллагын нэр</>
-                  ) : (
-                    <>Байгууллагын нэр</>
-                  )}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-auto whitespace-nowrap text-center px-4 py-2"
-                      : "w-auto whitespace-nowrap text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? (
-                    <>Үйл ажиллагааны чиглэл</>
-                  ) : (
-                    <>Үйл ажиллагааны чиглэл</>
-                  )}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-full text-center px-4 py-2"
-                      : "w-full text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? <>Website</> : <>Website</>}
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {table9.map((table, index) => (
-                <tr table={table} key={table.id}>
-                  <th className='px-4 py-2 border border-[#f0f0f0] text-[#2957a4]'>
-                    {index + 1}
-                  </th>
+              </thead>
+              <tbody>
+                {table9.map((table, index) => (
+                  <tr table={table} key={table.id}>
+                    <th className='px-4 py-2 border border-[#f0f0f0] text-[#2957a4]'>
+                      {index + 1}
+                    </th>
 
-                  <th className='font-normal w-auto whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                    <th className='font-normal w-auto whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.companyName}</>
+                      ) : (
+                        <>{table.companyName}</>
+                      )}
+                    </th>
+                    <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.operation}</>
+                      ) : (
+                        <>{table.operation}</>
+                      )}
+                    </th>
+                    <th className='border border-[#f0f0f0]'>
+                      <a
+                        className='flex text-xs justify-center w-full px-4 py-2 text-[#02a3ea]'
+                        href={table.webLink}
+                        target='_blank'>
+                        {table.webLink}
+                      </a>
+                    </th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <table className='table-auto w-full text-xs mt-70'>
+              <thead>
+                <tr className='text-[#2957a4] bg-[#f8f8f8]'>
+                  <th className='w-auto text-center p-1 lg:p-4 border border-[#f0f0f0]'>
+                    №
+                  </th>
+                  <th className='w-full whitespace-nowrap text-start px-4 py-2 border border-[#f0f0f0]'>
                     {currentLanguage == "mn" ? (
-                      <>{table.companyName}</>
+                      <>Оноосон нэр</>
                     ) : (
-                      <>{table.companyName}</>
+                      <>Оноосон нэр</>
                     )}
                   </th>
-                  <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto whitespace-nowrap text-center px-4 py-2"
+                        : "w-auto whitespace-nowrap text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
                     {currentLanguage == "mn" ? (
-                      <>{table.operation}</>
+                      <>Үйл ажиллагааны чиглэл</>
                     ) : (
-                      <>{table.operation}</>
-                    )}
-                  </th>
-                  <th className='border border-[#f0f0f0]'>
-                    <a
-                      className='flex text-xs justify-center w-full px-4 py-2 text-[#02a3ea]'
-                      href={table.webLink}
-                      target='_blank'>
-                      {table.webLink}
-                    </a>
-                  </th>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-          <table className='table-auto w-full text-xs mt-70'>
-            <thead>
-              <tr className='text-[#2957a4] bg-[#f8f8f8]'>
-                <th className='w-auto text-center p-2 lg:p-4 border border-[#f0f0f0]'>
-                  №
-                </th>
-                <th className='w-full whitespace-nowrap text-start px-4 py-2 border border-[#f0f0f0]'>
-                  {currentLanguage == "mn" ? (
-                    <>Оноосон нэр</>
-                  ) : (
-                    <>Оноосон нэр</>
-                  )}
-                </th>
-                <th
-                  className={` ${
-                    currentLanguage == "mn"
-                      ? "w-auto whitespace-nowrap text-center px-4 py-2"
-                      : "w-auto whitespace-nowrap text-center px-4 py-2"
-                  } border border-[#f0f0f0]`}>
-                  {currentLanguage == "mn" ? (
-                    <>Үйл ажиллагааны чиглэл</>
-                  ) : (
-                    <>Үйл ажиллагааны чиглэл</>
-                  )}
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {table10.map((table, index) => (
-                <tr table={table} key={table.id}>
-                  <th className='px-4 py-2 border border-[#f0f0f0] text-[#2957a4]'>
-                    {index + 1}
-                  </th>
-
-                  <th className='font-normal w-auto whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
-                    {currentLanguage == "mn" ? (
-                      <>{table.nickname}</>
-                    ) : (
-                      <>{table.nickname}</>
-                    )}
-                  </th>
-                  <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-center'>
-                    {currentLanguage == "mn" ? (
-                      <>{table.operation}</>
-                    ) : (
-                      <>{table.operation}</>
+                      <>Үйл ажиллагааны чиглэл</>
                     )}
                   </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {table10.map((table, index) => (
+                  <tr table={table} key={table.id}>
+                    <th className='px-4 py-2 border border-[#f0f0f0] text-[#2957a4]'>
+                      {index + 1}
+                    </th>
+
+                    <th className='font-normal w-auto whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.nickname}</>
+                      ) : (
+                        <>{table.nickname}</>
+                      )}
+                    </th>
+                    <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-center'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.operation}</>
+                      ) : (
+                        <>{table.operation}</>
+                      )}
+                    </th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className='block sm:hidden'>
+            <table className='table-auto w-full small-text mt-70'>
+              <thead>
+                <tr className='text-[#2957a4] bg-[#f8f8f8]'>
+                  <th className='w-auto text-center text-[8px] p-1 lg:p-4 border border-[#f0f0f0]'>
+                    №
+                  </th>
+                  <th className='w-auto sm:whitespace-nowrap text-center p-1 lg:p-4 border border-[#f0f0f0]'>
+                    {currentLanguage == "mn" ? (
+                      <>Биржийн нэр</>
+                    ) : (
+                      <>Биржийн нэр</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto sm:w-full text-start p-1"
+                        : "w-auto sm:w-full text-start p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? (
+                      <>Компанийн нэр</>
+                    ) : (
+                      <>Компанийн нэр</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto sm:w-full sm:whitespace-nowrap text-center p-1"
+                        : "w-auto sm:w-full sm:whitespace-nowrap text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? (
+                      <>Үйл ажиллагааны чиглэл</>
+                    ) : (
+                      <>Үйл ажиллагааны чиглэл</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-full text-center p-1"
+                        : "w-full text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {table1.map((table) => (
+                  <tr table={table} key={table.id}>
+                    <th className='p-1 border text-[8px] text-center border-[#f0f0f0] text-[#2957a4]'>
+                      {table.id}
+                    </th>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.exchangeName}</>
+                      ) : (
+                        <>{table.exchangeName}</>
+                      )}
+                    </th>
+                    <th className='font-normal w-auto sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.companyName}</>
+                      ) : (
+                        <>{table.companyName}</>
+                      )}
+                    </th>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.operation}</>
+                      ) : (
+                        <>{table.operation}</>
+                      )}
+                    </th>
+                    <th className='border border-[#f0f0f0]'>
+                      <a
+                        className='flex text-[8px] sm:text-xs justify-center w-full p-1 text-[#02a3ea]'
+                        href={table.webLink}
+                        target='_blank'>
+                        {table.webLink}
+                      </a>
+                    </th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <table className='table-auto w-full small-text mt-70'>
+              <thead>
+                <tr className='text-[#2957a4] bg-[#f8f8f8]'>
+                  <th className='w-auto text-[8px] text-center p-1 lg:p-4 border border-[#f0f0f0]'>
+                    №
+                  </th>
+                  <th className='w-1/4 sm:whitespace-nowrap text-start p-1 border border-[#f0f0f0]'>
+                    {currentLanguage == "mn" ? <>Койны нэр</> : <>Койны нэр</>}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-1/4 text-start p-1"
+                        : "w-1/4 text-start p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? (
+                      <>Койны тикер</>
+                    ) : (
+                      <>Койны тикер</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-1/2 sm:whitespace-nowrap text-start p-1"
+                        : "w-1/2 sm:whitespace-nowrap text-start p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? (
+                      <>Компанийн нэр</>
+                    ) : (
+                      <>Компанийн нэр</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-full sm:whitespace-nowrap text-center p-1"
+                        : "w-full sm:whitespace-nowrap text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? (
+                      <>Үйл ажиллагааны чиглэл</>
+                    ) : (
+                      <>Үйл ажиллагааны чиглэл</>
+                    )}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {table2.map((table, index) => (
+                  <tr table={table} key={table.id}>
+                    <th className='p-1 border text-[8px] text-center border-[#f0f0f0] text-[#2957a4]'>
+                      {index + 1}
+                    </th>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.coinName}</>
+                      ) : (
+                        <>{table.coinName}</>
+                      )}
+                    </th>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.coinTicker}</>
+                      ) : (
+                        <>{table.coinTicker}</>
+                      )}
+                    </th>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.companyName}</>
+                      ) : (
+                        <>{table.companyName}</>
+                      )}
+                    </th>
+                    <th className='font-normal p-1 text-center border border-[#f0f0f0]'>
+                      {table.operation}
+                    </th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <table className='table-auto w-full small-text mt-70'>
+              <thead>
+                <tr className='text-[#2957a4] bg-[#f8f8f8]'>
+                  <th className='w-auto text-[8px] text-center p-1 lg:p-4 border border-[#f0f0f0]'>
+                    №
+                  </th>
+                  <th className='w-full sm:whitespace-nowrap text-start p-1 border border-[#f0f0f0]'>
+                    {currentLanguage == "mn" ? (
+                      <>Байгууллагын нэр</>
+                    ) : (
+                      <>Байгууллагын нэр</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto sm:whitespace-nowrap text-center p-1"
+                        : "w-auto sm:whitespace-nowrap text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? (
+                      <>Үйл ажиллагааны чиглэл</>
+                    ) : (
+                      <>Үйл ажиллагааны чиглэл</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-full text-center p-1"
+                        : "w-full text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {table3.map((table, index) => (
+                  <tr table={table} key={table.id}>
+                    <th className='p-1 border text-[8px] text-center border-[#f0f0f0] text-[#2957a4]'>
+                      {index + 1}
+                    </th>
+
+                    <th className='font-normal w-auto sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.companyName}</>
+                      ) : (
+                        <>{table.companyName}</>
+                      )}
+                    </th>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.operation}</>
+                      ) : (
+                        <>{table.operation}</>
+                      )}
+                    </th>
+                    <th className='border border-[#f0f0f0]'>
+                      <a
+                        className='flex text-[8px] sm:text-xs justify-center w-full p-1 text-[#02a3ea]'
+                        href={table.webLink}
+                        target='_blank'>
+                        {table.webLink}
+                      </a>
+                    </th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <table className='table-auto w-full small-text mt-70'>
+              <thead>
+                <tr className='text-[#2957a4] bg-[#f8f8f8]'>
+                  <th className='w-auto text-[8px] text-center p-1 lg:p-4 border border-[#f0f0f0]'>
+                    №
+                  </th>
+                  <th className='w-full sm:whitespace-nowrap text-start p-1 border border-[#f0f0f0]'>
+                    {currentLanguage == "mn" ? (
+                      <>Компанийн нэр</>
+                    ) : (
+                      <>Компанийн нэр</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto sm:whitespace-nowrap text-center p-1"
+                        : "w-auto sm:whitespace-nowrap text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? (
+                      <>Үйл ажиллагааны чиглэл</>
+                    ) : (
+                      <>Үйл ажиллагааны чиглэл</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-full text-center p-1"
+                        : "w-full text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {table4.map((table, index) => (
+                  <tr table={table} key={table.id}>
+                    <th className='p-1 text-[8px] text-center border border-[#f0f0f0] text-[#2957a4]'>
+                      {index + 1}
+                    </th>
+
+                    <th className='font-normal w-auto sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.companyName}</>
+                      ) : (
+                        <>{table.companyName}</>
+                      )}
+                    </th>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.operation}</>
+                      ) : (
+                        <>{table.operation}</>
+                      )}
+                    </th>
+                    <th className='border border-[#f0f0f0]'>
+                      <a
+                        className='flex text-[8px] sm:text-xs justify-center w-full p-1 text-[#02a3ea]'
+                        href={table.webLink}
+                        target='_blank'>
+                        {table.webLink}
+                      </a>
+                    </th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <table className='table-auto w-full small-text mt-70'>
+              <thead>
+                <tr className='text-[#2957a4] bg-[#f8f8f8]'>
+                  <th className='w-auto text-[8px] text-center p-1 lg:p-4 border border-[#f0f0f0]'>
+                    №
+                  </th>
+                  <th className='w-full sm:whitespace-nowrap text-start p-1 border border-[#f0f0f0]'>
+                    {currentLanguage == "mn" ? (
+                      <>Оноосон нэр</>
+                    ) : (
+                      <>Оноосон нэр</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto sm:whitespace-nowrap text-center p-1"
+                        : "w-auto sm:whitespace-nowrap text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? (
+                      <>Үйл ажиллагааны чиглэл</>
+                    ) : (
+                      <>Үйл ажиллагааны чиглэл</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto sm:whitespace-nowrap text-center p-1"
+                        : "w-auto sm:whitespace-nowrap text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? <>Project</> : <>Project</>}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-full text-center p-1"
+                        : "w-full text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {table5.map((table, index) => (
+                  <tr table={table} key={table.id}>
+                    <th className='p-1 text-[8px] text-center border border-[#f0f0f0] text-[#2957a4]'>
+                      {index + 1}
+                    </th>
+
+                    <th className='font-normal w-auto sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.nickname}</>
+                      ) : (
+                        <>{table.nickname}</>
+                      )}
+                    </th>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-center'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.operation}</>
+                      ) : (
+                        <>{table.operation}</>
+                      )}
+                    </th>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-center'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.project}</>
+                      ) : (
+                        <>{table.project}</>
+                      )}
+                    </th>
+                    <th className='border border-[#f0f0f0]'>
+                      <a
+                        className='flex text-[8px] sm:text-xs justify-center w-full p-1 text-[#02a3ea]'
+                        href={table.webLink}
+                        target='_blank'>
+                        {table.webLink}
+                      </a>
+                    </th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <table className='table-auto w-full small-text mt-70'>
+              <thead>
+                <tr className='text-[#2957a4] bg-[#f8f8f8]'>
+                  <th className='w-auto text-[8px] text-center p-1 lg:p-4 border border-[#f0f0f0]'>
+                    №
+                  </th>
+                  <th className='w-auto sm:whitespace-nowrap text-start p-1 border border-[#f0f0f0]'>
+                    {currentLanguage == "mn" ? <>Project</> : <>Project</>}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto sm:whitespace-nowrap text-center p-1"
+                        : "w-auto sm:whitespace-nowrap text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? <>Exchange</> : <>Exchange</>}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto sm:whitespace-nowrap text-center p-1"
+                        : "w-auto sm:whitespace-nowrap text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? (
+                      <>Marketplace</>
+                    ) : (
+                      <>Marketplace</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto text-center p-1"
+                        : "w-auto text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? (
+                      <>Үйл ажиллагааны чиглэл</>
+                    ) : (
+                      <>Үйл ажиллагааны чиглэл</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto text-center p-1"
+                        : "w-auto text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {table6.map((table, index) => (
+                  <tr table={table} key={table.id}>
+                    <th className='w-auto text-[8px] text-center p-1 border border-[#f0f0f0] text-[#2957a4]'>
+                      {index + 1}
+                    </th>
+
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.project}</>
+                      ) : (
+                        <>{table.project}</>
+                      )}
+                    </th>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-center'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.exchange}</>
+                      ) : (
+                        <>{table.exchange}</>
+                      )}
+                    </th>
+                    <th className='border border-[#f0f0f0]'>
+                      <a
+                        className='flex text-[8px] sm:text-xs justify-center w-full p-1 text-[#02a3ea]'
+                        href={table.marketplace}
+                        target='_blank'>
+                        {table.marketplace}
+                      </a>
+                    </th>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-center'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.operation}</>
+                      ) : (
+                        <>{table.operation}</>
+                      )}
+                    </th>
+
+                    <th className='border border-[#f0f0f0]'>
+                      <a
+                        className='flex text-[8px] sm:text-xs justify-center w-full p-1 text-[#02a3ea]'
+                        href={table.webLink}
+                        target='_blank'>
+                        {table.webLink}
+                      </a>
+                    </th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <table className='table-auto w-full small-text mt-70'>
+              <thead>
+                <tr className='text-[#2957a4] bg-[#f8f8f8]'>
+                  <th className='w-auto text-[8px] text-center p-1 lg:p-4 border border-[#f0f0f0]'>
+                    №
+                  </th>
+                  <th className='w-full sm:whitespace-nowrap text-start p-1 border border-[#f0f0f0]'>
+                    {currentLanguage == "mn" ? (
+                      <>Компанийн нэр</>
+                    ) : (
+                      <>Компанийн нэр</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto sm:whitespace-nowrap text-center p-1"
+                        : "w-auto sm:whitespace-nowrap text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? (
+                      <>Үйл ажиллагааны чиглэл</>
+                    ) : (
+                      <>Үйл ажиллагааны чиглэл</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-full text-center p-1"
+                        : "w-full text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {table7.map((table, index) => (
+                  <tr table={table} key={table.id}>
+                    <th className='p-1 text-[8px] text-center border border-[#f0f0f0] text-[#2957a4]'>
+                      {index + 1}
+                    </th>
+
+                    <th className='font-normal w-auto sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.companyName}</>
+                      ) : (
+                        <>{table.companyName}</>
+                      )}
+                    </th>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.operation}</>
+                      ) : (
+                        <>{table.operation}</>
+                      )}
+                    </th>
+                    <th className='border border-[#f0f0f0]'>
+                      <a
+                        className='flex text-[8px] sm:text-xs justify-center w-full p-1 text-[#02a3ea]'
+                        href={table.webLink}
+                        target='_blank'>
+                        {table.webLink}
+                      </a>
+                    </th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <table className='table-auto w-full small-text mt-70'>
+              <thead>
+                <tr className='text-[#2957a4] bg-[#f8f8f8]'>
+                  <th className='w-auto text-[8px] text-center p-1 lg:p-4 border border-[#f0f0f0]'>
+                    №
+                  </th>
+                  <th className='w-auto sm:whitespace-nowrap text-start text-xs p-1 border border-[#f0f0f0]'>
+                    {currentLanguage == "mn" ? <>Events</> : <>Events</>}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto sm:whitespace-nowrap text-start p-1"
+                        : "w-auto sm:whitespace-nowrap text-start p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? (
+                      <>Зохион байгуулагч</>
+                    ) : (
+                      <>Зохион байгуулагч</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto text-center p-1"
+                        : "w-auto text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? (
+                      <>Үйл ажиллагааны чиглэл</>
+                    ) : (
+                      <>Үйл ажиллагааны чиглэл</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto text-center p-1"
+                        : "w-auto text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {table8.map((table, index) => (
+                  <tr table={table} key={table.id}>
+                    <th className='w-auto text-[8px] text-center p-1 border border-[#f0f0f0] text-[#2957a4]'>
+                      {index + 1}
+                    </th>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.events}</>
+                      ) : (
+                        <>{table.events}</>
+                      )}
+                    </th>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.organizer}</>
+                      ) : (
+                        <>{table.organizer}</>
+                      )}
+                    </th>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-center'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.operation}</>
+                      ) : (
+                        <>{table.operation}</>
+                      )}
+                    </th>
+
+                    <th className='border border-[#f0f0f0]'>
+                      <a
+                        className='flex text-[8px] sm:text-xs justify-center w-full p-1 text-[#02a3ea]'
+                        href={table.webLink}
+                        target='_blank'>
+                        {table.webLink}
+                      </a>
+                    </th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <table className='table-auto w-full small-text mt-70'>
+              <thead>
+                <tr className='text-[#2957a4] bg-[#f8f8f8]'>
+                  <th className='w-auto text-[8px] text-center p-1 lg:p-4 border border-[#f0f0f0]'>
+                    №
+                  </th>
+                  <th className='w-full sm:whitespace-nowrap text-start p-1 border border-[#f0f0f0]'>
+                    {currentLanguage == "mn" ? (
+                      <>Байгууллагын нэр</>
+                    ) : (
+                      <>Байгууллагын нэр</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto sm:whitespace-nowrap text-center p-1"
+                        : "w-auto sm:whitespace-nowrap text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? (
+                      <>Үйл ажиллагааны чиглэл</>
+                    ) : (
+                      <>Үйл ажиллагааны чиглэл</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-full text-center p-1"
+                        : "w-full text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {table9.map((table, index) => (
+                  <tr table={table} key={table.id}>
+                    <th className='p-1 text-[8px] text-center border border-[#f0f0f0] text-[#2957a4]'>
+                      {index + 1}
+                    </th>
+
+                    <th className='font-normal w-auto sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.companyName}</>
+                      ) : (
+                        <>{table.companyName}</>
+                      )}
+                    </th>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.operation}</>
+                      ) : (
+                        <>{table.operation}</>
+                      )}
+                    </th>
+                    <th className='border border-[#f0f0f0]'>
+                      <a
+                        className='flex text-[8px] sm:text-xs justify-center w-full p-1 text-[#02a3ea]'
+                        href={table.webLink}
+                        target='_blank'>
+                        {table.webLink}
+                      </a>
+                    </th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <table className='table-auto w-full small-text mt-70'>
+              <thead>
+                <tr className='text-[#2957a4] bg-[#f8f8f8]'>
+                  <th className='w-auto text-[8px] text-center p-1 border border-[#f0f0f0]'>
+                    №
+                  </th>
+                  <th className='w-full sm:whitespace-nowrap text-start p-1 border border-[#f0f0f0]'>
+                    {currentLanguage == "mn" ? (
+                      <>Оноосон нэр</>
+                    ) : (
+                      <>Оноосон нэр</>
+                    )}
+                  </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto sm:whitespace-nowrap text-center p-1"
+                        : "w-auto sm:whitespace-nowrap text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? (
+                      <>Үйл ажиллагааны чиглэл</>
+                    ) : (
+                      <>Үйл ажиллагааны чиглэл</>
+                    )}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {table10.map((table, index) => (
+                  <tr table={table} key={table.id}>
+                    <th className='p-1 text-[8px] text-center border border-[#f0f0f0] text-[#2957a4]'>
+                      {index + 1}
+                    </th>
+
+                    <th className='font-normal w-auto sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.nickname}</>
+                      ) : (
+                        <>{table.nickname}</>
+                      )}
+                    </th>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-center'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.operation}</>
+                      ) : (
+                        <>{table.operation}</>
+                      )}
+                    </th>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
       <Footer />
