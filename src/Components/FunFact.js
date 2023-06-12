@@ -37,7 +37,8 @@ const FunFact = () => {
           <div className='col-lg-2 col-md-3 mt-30 col-6'>
             <div className='single-fun-fact'>
               <h2>
-                ₮<CountUp end={384.3} duration={5}></CountUp>тэрбум
+                ₮<CountUp end={384.3} duration={5}></CountUp>
+                {currentLanguage == "mn" ? <>тэрбум</> : <>billion</>}
               </h2>
               <h3>
                 {currentLanguage == "mn" ? (
@@ -51,7 +52,8 @@ const FunFact = () => {
           <div className='col-lg-2 col-md-3 mt-30 col-6'>
             <div className='single-fun-fact'>
               <h2>
-                ₮<CountUp end={411.0} duration={6}></CountUp>сая
+                ₮<CountUp end={411.0} duration={6}></CountUp>
+                {currentLanguage == "mn" ? <>сая</> : <>million</>}
               </h2>
               <h3>
                 {currentLanguage == "mn" ? (
