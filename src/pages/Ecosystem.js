@@ -896,14 +896,6 @@ export default function Ecosystem() {
                       <>Үйл ажиллагааны чиглэл</>
                     )}
                   </th>
-                  <th
-                    className={` ${
-                      currentLanguage == "mn"
-                        ? "w-full text-center p-1"
-                        : "w-full text-center p-1"
-                    } border border-[#f0f0f0]`}>
-                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
-                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -914,9 +906,19 @@ export default function Ecosystem() {
                     </th>
                     <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
                       {currentLanguage == "mn" ? (
-                        <>{table.exchangeName}</>
+                        <a
+                          className='small-text'
+                          target='_blank'
+                          href={table.webLink}>
+                          {table.exchangeName}
+                        </a>
                       ) : (
-                        <>{table.exchangeName}</>
+                        <a
+                          className='small-text'
+                          target='_blank'
+                          href={table.webLink}>
+                          {table.exchangeName}
+                        </a>
                       )}
                     </th>
                     <th className='font-normal w-auto sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
@@ -926,20 +928,12 @@ export default function Ecosystem() {
                         <>{table.companyName}</>
                       )}
                     </th>
-                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-center'>
                       {currentLanguage == "mn" ? (
                         <>{table.operation}</>
                       ) : (
                         <>{table.operation}</>
                       )}
-                    </th>
-                    <th className='border border-[#f0f0f0]'>
-                      <a
-                        className='flex text-[8px] sm:text-xs justify-center w-full p-1 text-[#02a3ea]'
-                        href={table.webLink}
-                        target='_blank'>
-                        {table.webLink}
-                      </a>
                     </th>
                   </tr>
                 ))}
@@ -1051,14 +1045,6 @@ export default function Ecosystem() {
                       <>Үйл ажиллагааны чиглэл</>
                     )}
                   </th>
-                  <th
-                    className={` ${
-                      currentLanguage == "mn"
-                        ? "w-full text-center p-1"
-                        : "w-full text-center p-1"
-                    } border border-[#f0f0f0]`}>
-                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
-                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -1070,25 +1056,27 @@ export default function Ecosystem() {
 
                     <th className='font-normal w-auto sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
                       {currentLanguage == "mn" ? (
-                        <>{table.companyName}</>
+                        <a
+                          className='small-text'
+                          target='_blank'
+                          href={table.webLink}>
+                          {table.companyName}
+                        </a>
                       ) : (
-                        <>{table.companyName}</>
+                        <a
+                          className='small-text'
+                          target='_blank'
+                          href={table.webLink}>
+                          {table.companyName}
+                        </a>
                       )}
                     </th>
-                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-center'>
                       {currentLanguage == "mn" ? (
                         <>{table.operation}</>
                       ) : (
                         <>{table.operation}</>
                       )}
-                    </th>
-                    <th className='border border-[#f0f0f0]'>
-                      <a
-                        className='flex text-[8px] sm:text-xs justify-center w-full p-1 text-[#02a3ea]'
-                        href={table.webLink}
-                        target='_blank'>
-                        {table.webLink}
-                      </a>
                     </th>
                   </tr>
                 ))}
@@ -1100,7 +1088,7 @@ export default function Ecosystem() {
                   <th className='w-auto text-[8px] text-center p-1 lg:p-4 border border-[#f0f0f0]'>
                     №
                   </th>
-                  <th className='w-full sm:whitespace-nowrap text-start p-1 border border-[#f0f0f0]'>
+                  <th className='w-auto sm:whitespace-nowrap text-start p-1 border border-[#f0f0f0]'>
                     {currentLanguage == "mn" ? (
                       <>Компанийн нэр</>
                     ) : (
@@ -1119,14 +1107,6 @@ export default function Ecosystem() {
                       <>Үйл ажиллагааны чиглэл</>
                     )}
                   </th>
-                  <th
-                    className={` ${
-                      currentLanguage == "mn"
-                        ? "w-full text-center p-1"
-                        : "w-full text-center p-1"
-                    } border border-[#f0f0f0]`}>
-                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
-                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -1138,25 +1118,27 @@ export default function Ecosystem() {
 
                     <th className='font-normal w-auto sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
                       {currentLanguage == "mn" ? (
-                        <>{table.companyName}</>
+                        <a
+                          className='small-text'
+                          target='_blank'
+                          href={table.webLink}>
+                          {table.companyName}
+                        </a>
                       ) : (
-                        <>{table.companyName}</>
+                        <a
+                          className='small-text'
+                          target='_blank'
+                          href={table.webLink}>
+                          {table.companyName}
+                        </a>
                       )}
                     </th>
-                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-center'>
                       {currentLanguage == "mn" ? (
                         <>{table.operation}</>
                       ) : (
                         <>{table.operation}</>
                       )}
-                    </th>
-                    <th className='border border-[#f0f0f0]'>
-                      <a
-                        className='flex text-[8px] sm:text-xs justify-center w-full p-1 text-[#02a3ea]'
-                        href={table.webLink}
-                        target='_blank'>
-                        {table.webLink}
-                      </a>
                     </th>
                   </tr>
                 ))}
@@ -1168,7 +1150,7 @@ export default function Ecosystem() {
                   <th className='w-auto text-[8px] text-center p-1 lg:p-4 border border-[#f0f0f0]'>
                     №
                   </th>
-                  <th className='w-full sm:whitespace-nowrap text-start p-1 border border-[#f0f0f0]'>
+                  <th className='w-auto sm:whitespace-nowrap text-start p-1 border border-[#f0f0f0]'>
                     {currentLanguage == "mn" ? (
                       <>Оноосон нэр</>
                     ) : (
@@ -1194,14 +1176,6 @@ export default function Ecosystem() {
                         : "w-auto sm:whitespace-nowrap text-center p-1"
                     } border border-[#f0f0f0]`}>
                     {currentLanguage == "mn" ? <>Project</> : <>Project</>}
-                  </th>
-                  <th
-                    className={` ${
-                      currentLanguage == "mn"
-                        ? "w-full text-center p-1"
-                        : "w-full text-center p-1"
-                    } border border-[#f0f0f0]`}>
-                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
                   </th>
                 </tr>
               </thead>
@@ -1229,27 +1203,19 @@ export default function Ecosystem() {
                     <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-center'>
                       {currentLanguage == "mn" ? (
                         <a
-                          className='text-xs'
+                          className='small-text'
                           href={table.webLink}
                           target='_blank'>
                           {table.project}
                         </a>
                       ) : (
                         <a
-                          className='text-xs'
+                          className='small-text'
                           href={table.webLink}
                           target='_blank'>
                           {table.project}
                         </a>
                       )}
-                    </th>
-                    <th className='border border-[#f0f0f0]'>
-                      <a
-                        className='flex text-[8px] sm:text-xs justify-center w-full p-1 text-[#02a3ea]'
-                        href={table.webLink}
-                        target='_blank'>
-                        {table.webLink}
-                      </a>
                     </th>
                   </tr>
                 ))}
@@ -1272,18 +1238,7 @@ export default function Ecosystem() {
                     } border border-[#f0f0f0]`}>
                     {currentLanguage == "mn" ? <>Exchange</> : <>Exchange</>}
                   </th>
-                  <th
-                    className={` ${
-                      currentLanguage == "mn"
-                        ? "w-auto sm:whitespace-nowrap text-center p-1"
-                        : "w-auto sm:whitespace-nowrap text-center p-1"
-                    } border border-[#f0f0f0]`}>
-                    {currentLanguage == "mn" ? (
-                      <>Marketplace</>
-                    ) : (
-                      <>Marketplace</>
-                    )}
-                  </th>
+
                   <th
                     className={` ${
                       currentLanguage == "mn"
@@ -1295,14 +1250,6 @@ export default function Ecosystem() {
                     ) : (
                       <>Үйл ажиллагааны чиглэл</>
                     )}
-                  </th>
-                  <th
-                    className={` ${
-                      currentLanguage == "mn"
-                        ? "w-auto text-center p-1"
-                        : "w-auto text-center p-1"
-                    } border border-[#f0f0f0]`}>
-                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
                   </th>
                 </tr>
               </thead>
@@ -1315,41 +1262,45 @@ export default function Ecosystem() {
 
                     <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
                       {currentLanguage == "mn" ? (
-                        <>{table.project}</>
+                        <a
+                          href={table.webLink}
+                          target='_blank'
+                          className='small-text'>
+                          {table.project}
+                        </a>
                       ) : (
-                        <>{table.project}</>
+                        <a
+                          href={table.webLink}
+                          target='_blank'
+                          className='small-text'>
+                          {table.project}
+                        </a>
                       )}
                     </th>
                     <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-center'>
                       {currentLanguage == "mn" ? (
-                        <>{table.exchange}</>
+                        <a
+                          className='small-text'
+                          href={table.marketplace}
+                          target='_blank'>
+                          {table.exchange}
+                        </a>
                       ) : (
-                        <>{table.exchange}</>
-                      )}
-                    </th>
-                    <th className='border border-[#f0f0f0]'>
-                      <a
-                        className='flex text-[8px] sm:text-xs justify-center w-full p-1 text-[#02a3ea]'
-                        href={table.marketplace}
-                        target='_blank'>
-                        {table.marketplace}
-                      </a>
-                    </th>
-                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-center'>
-                      {currentLanguage == "mn" ? (
-                        <>{table.operation}</>
-                      ) : (
-                        <>{table.operation}</>
+                        <a
+                          className='small-text'
+                          href={table.marketplace}
+                          target='_blank'>
+                          {table.exchange}
+                        </a>
                       )}
                     </th>
 
-                    <th className='border border-[#f0f0f0]'>
-                      <a
-                        className='flex text-[8px] sm:text-xs justify-center w-full p-1 text-[#02a3ea]'
-                        href={table.webLink}
-                        target='_blank'>
-                        {table.webLink}
-                      </a>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-center'>
+                      {currentLanguage == "mn" ? (
+                        <>{table.operation}</>
+                      ) : (
+                        <>{table.operation}</>
+                      )}
                     </th>
                   </tr>
                 ))}
@@ -1361,7 +1312,7 @@ export default function Ecosystem() {
                   <th className='w-auto text-[8px] text-center p-1 lg:p-4 border border-[#f0f0f0]'>
                     №
                   </th>
-                  <th className='w-full sm:whitespace-nowrap text-start p-1 border border-[#f0f0f0]'>
+                  <th className='w-auto sm:whitespace-nowrap text-start p-1 border border-[#f0f0f0]'>
                     {currentLanguage == "mn" ? (
                       <>Компанийн нэр</>
                     ) : (
@@ -1380,14 +1331,6 @@ export default function Ecosystem() {
                       <>Үйл ажиллагааны чиглэл</>
                     )}
                   </th>
-                  <th
-                    className={` ${
-                      currentLanguage == "mn"
-                        ? "w-full text-center p-1"
-                        : "w-full text-center p-1"
-                    } border border-[#f0f0f0]`}>
-                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
-                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -1399,25 +1342,27 @@ export default function Ecosystem() {
 
                     <th className='font-normal w-auto sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
                       {currentLanguage == "mn" ? (
-                        <>{table.companyName}</>
+                        <a
+                          className='small-text'
+                          href={table.marketplace}
+                          target='_blank'>
+                          {table.companyName}
+                        </a>
                       ) : (
-                        <>{table.companyName}</>
+                        <a
+                          className='small-text'
+                          href={table.marketplace}
+                          target='_blank'>
+                          {table.companyName}
+                        </a>
                       )}
                     </th>
-                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-center'>
                       {currentLanguage == "mn" ? (
                         <>{table.operation}</>
                       ) : (
                         <>{table.operation}</>
                       )}
-                    </th>
-                    <th className='border border-[#f0f0f0]'>
-                      <a
-                        className='flex text-[8px] sm:text-xs justify-center w-full p-1 text-[#02a3ea]'
-                        href={table.webLink}
-                        target='_blank'>
-                        {table.webLink}
-                      </a>
                     </th>
                   </tr>
                 ))}
@@ -1429,7 +1374,7 @@ export default function Ecosystem() {
                   <th className='w-auto text-[8px] text-center p-1 lg:p-4 border border-[#f0f0f0]'>
                     №
                   </th>
-                  <th className='w-auto sm:whitespace-nowrap text-start text-xs p-1 border border-[#f0f0f0]'>
+                  <th className='w-auto sm:whitespace-nowrap text-start p-1 border border-[#f0f0f0]'>
                     {currentLanguage == "mn" ? <>Events</> : <>Events</>}
                   </th>
                   <th
@@ -1456,14 +1401,6 @@ export default function Ecosystem() {
                       <>Үйл ажиллагааны чиглэл</>
                     )}
                   </th>
-                  <th
-                    className={` ${
-                      currentLanguage == "mn"
-                        ? "w-auto text-center p-1"
-                        : "w-auto text-center p-1"
-                    } border border-[#f0f0f0]`}>
-                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
-                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -1481,9 +1418,19 @@ export default function Ecosystem() {
                     </th>
                     <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
                       {currentLanguage == "mn" ? (
-                        <>{table.organizer}</>
+                        <a
+                          className='small-text'
+                          href={table.marketplace}
+                          target='_blank'>
+                          {table.organizer}
+                        </a>
                       ) : (
-                        <>{table.organizer}</>
+                        <a
+                          className='small-text'
+                          href={table.marketplace}
+                          target='_blank'>
+                          {table.organizer}
+                        </a>
                       )}
                     </th>
                     <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-center'>
@@ -1492,15 +1439,6 @@ export default function Ecosystem() {
                       ) : (
                         <>{table.operation}</>
                       )}
-                    </th>
-
-                    <th className='border border-[#f0f0f0]'>
-                      <a
-                        className='flex text-[8px] sm:text-xs justify-center w-full p-1 text-[#02a3ea]'
-                        href={table.webLink}
-                        target='_blank'>
-                        {table.webLink}
-                      </a>
                     </th>
                   </tr>
                 ))}
@@ -1512,7 +1450,7 @@ export default function Ecosystem() {
                   <th className='w-auto text-[8px] text-center p-1 lg:p-4 border border-[#f0f0f0]'>
                     №
                   </th>
-                  <th className='w-full sm:whitespace-nowrap text-start p-1 border border-[#f0f0f0]'>
+                  <th className='w-auto sm:whitespace-nowrap text-start p-1 border border-[#f0f0f0]'>
                     {currentLanguage == "mn" ? (
                       <>Байгууллагын нэр</>
                     ) : (
@@ -1531,14 +1469,6 @@ export default function Ecosystem() {
                       <>Үйл ажиллагааны чиглэл</>
                     )}
                   </th>
-                  <th
-                    className={` ${
-                      currentLanguage == "mn"
-                        ? "w-full text-center p-1"
-                        : "w-full text-center p-1"
-                    } border border-[#f0f0f0]`}>
-                    {currentLanguage == "mn" ? <>Website</> : <>Website</>}
-                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -1550,25 +1480,27 @@ export default function Ecosystem() {
 
                     <th className='font-normal w-auto sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
                       {currentLanguage == "mn" ? (
-                        <>{table.companyName}</>
+                        <a
+                          className='small-text'
+                          href={table.marketplace}
+                          target='_blank'>
+                          {table.companyName}
+                        </a>
                       ) : (
-                        <>{table.companyName}</>
+                        <a
+                          className='small-text'
+                          href={table.marketplace}
+                          target='_blank'>
+                          {table.companyName}
+                        </a>
                       )}
                     </th>
-                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-start'>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-center'>
                       {currentLanguage == "mn" ? (
                         <>{table.operation}</>
                       ) : (
                         <>{table.operation}</>
                       )}
-                    </th>
-                    <th className='border border-[#f0f0f0]'>
-                      <a
-                        className='flex text-[8px] sm:text-xs justify-center w-full p-1 text-[#02a3ea]'
-                        href={table.webLink}
-                        target='_blank'>
-                        {table.webLink}
-                      </a>
                     </th>
                   </tr>
                 ))}
@@ -1580,7 +1512,7 @@ export default function Ecosystem() {
                   <th className='w-auto text-[8px] text-center p-1 border border-[#f0f0f0]'>
                     №
                   </th>
-                  <th className='w-full sm:whitespace-nowrap text-start p-1 border border-[#f0f0f0]'>
+                  <th className='w-auto sm:whitespace-nowrap text-start p-1 border border-[#f0f0f0]'>
                     {currentLanguage == "mn" ? (
                       <>Оноосон нэр</>
                     ) : (
