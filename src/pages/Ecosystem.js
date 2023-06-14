@@ -537,6 +537,18 @@ export default function Ecosystem() {
                     } border border-[#f0f0f0]`}>
                     {currentLanguage == "mn" ? <>Exchange</> : <>Exchange</>}
                   </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto whitespace-nowrap text-center px-4 py-2"
+                        : "w-auto whitespace-nowrap text-center px-4 py-2"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? (
+                      <>Marketplace</>
+                    ) : (
+                      <>Marketplace</>
+                    )}
+                  </th>
 
                   <th
                     className={` ${
@@ -578,22 +590,28 @@ export default function Ecosystem() {
                     </th>
                     <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-center'>
                       {currentLanguage == "mn" ? (
+                        <>{table.exchange}</>
+                      ) : (
+                        <>{table.exchange}</>
+                      )}
+                    </th>
+                    <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-center'>
+                      {currentLanguage == "mn" ? (
                         <a
                           className='text-xs'
                           href={table.marketplace}
                           target='_blank'>
-                          {table.exchange}
+                          {table.marketplace}
                         </a>
                       ) : (
                         <a
                           className='text-xs'
                           href={table.marketplace}
                           target='_blank'>
-                          {table.exchange}
+                          {table.marketplace}
                         </a>
                       )}
                     </th>
-
                     <th className='font-normal whitespace-nowrap px-4 py-2 border border-[#f0f0f0] text-center'>
                       {currentLanguage == "mn" ? (
                         <>{table.operation}</>
@@ -1238,6 +1256,18 @@ export default function Ecosystem() {
                     } border border-[#f0f0f0]`}>
                     {currentLanguage == "mn" ? <>Exchange</> : <>Exchange</>}
                   </th>
+                  <th
+                    className={` ${
+                      currentLanguage == "mn"
+                        ? "w-auto sm:whitespace-nowrap text-center p-1"
+                        : "w-auto sm:whitespace-nowrap text-center p-1"
+                    } border border-[#f0f0f0]`}>
+                    {currentLanguage == "mn" ? (
+                      <>Marketplace</>
+                    ) : (
+                      <>Marketplace</>
+                    )}
+                  </th>
 
                   <th
                     className={` ${
@@ -1279,18 +1309,25 @@ export default function Ecosystem() {
                     </th>
                     <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-center'>
                       {currentLanguage == "mn" ? (
+                        <>{table.exchange}</>
+                      ) : (
+                        <>{table.exchange}</>
+                      )}
+                    </th>
+                    <th className='font-normal sm:whitespace-nowrap p-1 border border-[#f0f0f0] text-center'>
+                      {currentLanguage == "mn" ? (
                         <a
                           className='small-text'
                           href={table.marketplace}
                           target='_blank'>
-                          {table.exchange}
+                          {table.marketplace}
                         </a>
                       ) : (
                         <a
                           className='small-text'
                           href={table.marketplace}
                           target='_blank'>
-                          {table.exchange}
+                          {table.marketplace}
                         </a>
                       )}
                     </th>
