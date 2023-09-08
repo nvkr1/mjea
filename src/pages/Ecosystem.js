@@ -1712,7 +1712,7 @@ const table1 = [
   },
   {
     id: 9,
-    exchangeName: "trade",
+    exchangeName: "Trade",
     companyName: "Дижитал эксчейнж Монголиа ХХК",
     operation: "Крипто хөрөнгийн бирж",
     webLink: "https://trade.mn",
