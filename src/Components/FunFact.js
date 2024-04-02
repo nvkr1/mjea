@@ -9,19 +9,20 @@ const FunFact = () => {
   const currentLanguage = i18n.language;
   return (
     <section
-      className='fun-fact-banner bg-overlay text-white bg-cover'
-      style={{ backgroundImage: `url(${bannerImg})` }}>
-      <div className='container'>
-        <h4 className='mt-20 align-items-center justify-content-center d-flex'>
+      className="fun-fact-banner bg-overlay text-white bg-cover"
+      style={{ backgroundImage: `url(${bannerImg})` }}
+    >
+      <div className="container">
+        <h4 className="mt-20 align-items-center justify-content-center d-flex">
           {currentLanguage == "mn" ? (
-            <>2023 оны I улирал</>
+            <>2023 оны төгсгөлд</>
           ) : (
-            <>First season of 2023</>
+            <>At the end of 2023</>
           )}
         </h4>
-        <div className='align-items-center justify-content-center d-flex row text-center text-md-start'>
-          <div className='col-lg-2 col-md-3 mt-30 col-6'>
-            <div className='align-items-center single-fun-fact'>
+        <div className="align-items-center justify-content-center d-flex row text-center text-md-start">
+          <div className="col-lg-2 col-md-3 mt-30 col-6">
+            <div className="align-items-center single-fun-fact">
               <h2>
                 <CountUp end={12} duration={4}></CountUp>
               </h2>
@@ -34,8 +35,8 @@ const FunFact = () => {
               </h3>
             </div>
           </div>
-          <div className='col-lg-2 col-md-3 mt-30 col-6'>
-            <div className='single-fun-fact'>
+          <div className="col-lg-2 col-md-3 mt-30 col-6">
+            <div className="single-fun-fact">
               <h2>
                 ₮<CountUp end={384.3} duration={5}></CountUp>
                 {currentLanguage == "mn" ? <>тэрбум</> : <>billion</>}
@@ -49,8 +50,8 @@ const FunFact = () => {
               </h3>
             </div>
           </div>
-          <div className='col-lg-2 col-md-3 mt-30 col-6'>
-            <div className='single-fun-fact'>
+          <div className="col-lg-2 col-md-3 mt-30 col-6">
+            <div className="single-fun-fact">
               <h2>
                 ₮<CountUp end={411.0} duration={6}></CountUp>
                 {currentLanguage == "mn" ? <>сая</> : <>million</>}
@@ -64,8 +65,8 @@ const FunFact = () => {
               </h3>
             </div>
           </div>
-          <div className='col-lg-2 col-md-3 mt-30 col-6'>
-            <div className='single-fun-fact'>
+          <div className="col-lg-2 col-md-3 mt-30 col-6">
+            <div className="single-fun-fact">
               <h2>
                 <CountUp end={832764} duration={7}></CountUp>
               </h2>
@@ -79,8 +80,8 @@ const FunFact = () => {
               </h3>
             </div>
           </div>
-          <div className='col-lg-2 col-md-3 mt-30 col-6'>
-            <div className='align-items-center single-fun-fact'>
+          <div className="col-lg-2 col-md-3 mt-30 col-6">
+            <div className="align-items-center single-fun-fact">
               <h2>
                 <CountUp end={211} duration={8}></CountUp>
               </h2>

@@ -1,46 +1,46 @@
-import img1 from "../../assets/img/person1.png";
-import img2 from "../../assets/img/person2.png";
+import img1 from "../../assets/img/person1(copy).png";
+import img2 from "../../assets/img/person (copy).jpg";
 import { useTranslation } from "react-i18next";
 import i18n from "../i18n";
 const ServicesFour = () => {
   const { t } = useTranslation();
   const currentLanguage = i18n.language;
   return (
-    <section className='our-service-wrapper bg-black section-padding'>
-      <div id='ceos' className='container'>
-        <div className='row mtm-30'>
-          <h2 className='text-white'>
+    <section className="our-service-wrapper bg-black section-padding">
+      <div id="ceos" className="container">
+        <div className="row mtm-30">
+          <h2 className="text-white">
             {" "}
-            {currentLanguage == "mn" ? <>УДИРДЛАГА</> : <>MANAGEMENT</>}
+            {currentLanguage === "mn" ? <>УДИРДЛАГА</> : <>MANAGEMENT</>}
           </h2>
-          <div className='col-md-6 col-12 col-lg-6 mt-30'>
-            <div className='service-item-card'>
-              <div className='flex flex-col sm:gap-20 sm:flex-row'>
-                <div className=''>
-                  <div className='icon'>
+          <div className="col-md-6 col-12 col-lg-6 mt-30">
+            <div className="service-item-card">
+              <div className="flex flex-col xl:gap-20 xl:flex-row">
+                <div className="">
+                  <div className="icon">
                     <img
                       src={img1}
-                      alt=''
-                      className='w-full sm:w-[200px]'
-                      loading='lazy'
+                      alt=""
+                      className="w-[200px] h-[200px] sm:w-[200px] mx-auto"
+                      loading="lazy"
                     />
-                    <div className='contents'></div>
+                    <div className="contents"></div>
                   </div>
                 </div>
 
-                <div className='flex flex-col justify-center align-items-center'>
-                  <div className='contents'>
+                <div className="flex flex-col justify-center align-items-center">
+                  <div className="contents">
                     <h4>
-                      <p className='row text-nowrap ' to='/'>
-                        {currentLanguage == "mn" ? (
-                          <>ГАНЗОРИГ Чулуун</>
+                      <p className="row text-nowrap " to="/">
+                        {currentLanguage === "mn" ? (
+                          <>ЦОГТБАЛЫН МАНДАХ</>
                         ) : (
-                          <>GANZORIG Chuluun</>
+                          <>MANDAH TSOGTBAL </>
                         )}
                       </p>
                     </h4>
-                    <p className='row text-white font-bold'>
-                      {currentLanguage == "mn" ? (
+                    <p className="row text-white font-bold">
+                      {currentLanguage === "mn" ? (
                         <>Удирдах зөвлөлийн дарга</>
                       ) : (
                         <>Chairman</>
@@ -49,57 +49,53 @@ const ServicesFour = () => {
                   </div>
                 </div>
               </div>
-              <div className='contents'>
+              <div className="contents">
                 <p>
                   <br />
-                  {currentLanguage == "mn" ? (
+                  {currentLanguage === "mn" ? (
                     <>
-                      Ч.Ганзориг нь Унгар улсын Будапешт хотын Корвинусын их
-                      сургуульд бизнес менежментийн бакалавр зэрэг эзэмшсэн
-                      бөгөөд Ард Секюритиз ҮЦК, Ард Санхүүгийн Нэгдэл ХК, Унгар
-                      улсын Wallis Asset Management, ХасБанк, ТэнГэр Санхүүгийн
-                      Нэгдэл, ТэнГэр Даатгал зэрэг бизнесийн байгууллагад
-                      ажиллаж байсан туршлагатай юм.
+                      Ц.Мандах нь 2013 онд Санхүү Эдийн Засгийн Их Сургуулийн
+                      Санхүүгийн удирдлагын мэргэжлээр төгссөн бөгөөд Монголын
+                      ипотекийн корпораци ОССК ХХК-аас ажлын гараагаа эхэлж
+                      Төлөвлөлт шинжилгээ хариуцсан захирал, Судалгаа,
+                      хөгжүүлэлт хариуцсан захирлаар ажиллаж байгаад 2021 оноос
+                      Coinhub крипто биржийн дэд захирал, 2022 оноос гүйцэтгэх
+                      захирлаар ажиллаж буй виртуал хөрөнгийн зах зээлийн
+                      томоохон төлөөлөл, тоглогчийн нэг юм.
                     </>
                   ) : (
                     <>
-                      Ganzorig Ch. graduated from Corvinus University in
-                      Budapest, Hungary with a bachelor's degree in business
-                      management. He has experience working in business
-                      organizations such as Ard Securities, Ard Financial Union,
-                      Hungary's Wallis Asset Management, KhasBank, TenGer
-                      Financial Union, and TenGer Insurance.{" "}
+                      Mandah Ts., graduated from the University of Finance and
+                      Economics with a degree in Financial Management in 2013.
+                      He started his career at the Mongolian Mortgage
+                      Corporation HFC LLC, where he worked as the Head of
+                      Planning and Analysis and Head of Research and
+                      Development, respectively. He is one of the major
+                      representatives and players of the crypto market and has
+                      been working as the deputy CEO from 2021 and as the CEO of
+                      the Coinhub VASP from 2022.
                     </>
                   )}
                 </p>
                 <p>
                   <br />
-                  {currentLanguage == "mn" ? (
+                  {currentLanguage === "mn" ? (
                     <>
-                      Ч.Ганзориг нь салбартаа тэргүүлгэх Digital Assets Exchange
-                      (DAX) буюу одоогийн idax виртуал хөрөнгийн биржийг үүсгэн
-                      байгуулагч, ТУЗ-ийн гишүүн агаад Гүйцэтгэх захирал, Ард
-                      Кредит ББСБ ХК, Ард Даатгал ХК, Ард Секюритиз ХХК
-                      компаниудын ТУЗ-ийн гишүүн, Номадик Офрөүд ХХК-ийн
-                      Гүйцэтгэх захирал зэрэг албан тушаалуудыг хашдаг бөгөөд
-                      Нийгмийн Ардчилал Монголын Залуучуудын Холбооны удирдах
-                      зөвлөлийн гишүүнээр ажиллаж байна. Тэрээр 2013 онд Ард
-                      Кредит ББСБ ХК-г үүсгэн байгуулж 2020 оныг дуустал тус
-                      компанийн Гүйцэтгэх захирал, 2020 оноос ТУЗ-ийн даргаар
-                      ажиллаж байна.
+                      Тэрээр 2022 оноос Холбооны удирдах зөвлөлийн гишүүнээр
+                      ажиллаж буй бөгөөд “Монголын виртуал хөрөнгийн зах зээлийг
+                      хөгжүүлэх болон энэхүү салбарт үйл ажиллагаа явуулдаг аж
+                      ахуйн нэгж, байгууллагуудын эрх ашгийг хамгаалах”
+                      зорилготой Монголын Биржүүдийн Нэгдсэн Холбоо (МБНХ)-ны
+                      2024 оны Удирдах зөвлөлийн даргаар томилогдлоо.
                     </>
                   ) : (
                     <>
-                      Ganzorig Ch. is the founder of Digital Assets Exchange
-                      (DAX) or the current idax virtual asset exchange which is
-                      the leader in the field, Member of the Board of Directors
-                      and CEO, Member of the board of directors of Ard Credit
-                      BBSB JSC, Ard Daatgal JSC, Ard Securities LLC, CEO of
-                      Nomadic Offroad LLC and Working as a member of the board
-                      of The Mongolian Social Democratic Youth Union. In 2013,
-                      he founded Ard Credit BBSB JSC, Until the end of 2020, the
-                      company's CEO and has been working as the chairman of the
-                      board of directors since 2020.
+                      He has been a member of the Board of Directors of the
+                      Association since 2022, and has been appointed as the
+                      Chairman of the Board of Directors of the MJAE in 2024,
+                      which aims to "To develop the Mongolian Crypto Market and
+                      protect the interests of enterprises and organizations
+                      operating in this field".
                     </>
                   )}
                 </p>
@@ -107,34 +103,34 @@ const ServicesFour = () => {
             </div>
           </div>
 
-          <div className='col-md-6 col-12 col-lg-6 mt-30'>
-            <div className='service-item-card'>
-              <div className='flex flex-col sm:flex-row'>
-                <div className='col'>
-                  <div className='icon'>
+          <div className="col-md-6 col-12 col-lg-6 mt-30">
+            <div className="service-item-card">
+              <div className="flex flex-col xl:flex-row">
+                <div className="col">
+                  <div className="icon">
                     <img
                       src={img2}
-                      alt=''
-                      className='w-full sm:w-[200px]'
-                      loading='lazy'
+                      alt=""
+                      className="w-[200px] h-[200px] sm:w-[200px] mx-auto"
+                      loading="lazy"
                     />
-                    <div className='contents'></div>
+                    <div className="contents"></div>
                   </div>
                 </div>
 
-                <div className='col flex flex-col justify-center align-items-center'>
-                  <div className='contents'>
+                <div className="col flex flex-col justify-center align-items-center">
+                  <div className="contents">
                     <h4>
-                      <p className='row text-nowrap ' to='/'>
-                        {currentLanguage == "mn" ? (
+                      <p className="row text-nowrap " to="/">
+                        {currentLanguage === "mn" ? (
                           <>ТӨРТОГТОХ ЭРДЭНЭБААТАР</>
                         ) : (
                           <>TURTOGTOKH ERDENEBAATAR </>
                         )}
                       </p>
                     </h4>
-                    <p className='row text-white font-bold'>
-                      {currentLanguage == "mn" ? (
+                    <p className="row text-white font-bold">
+                      {currentLanguage === "mn" ? (
                         <>Гүйцэтгэх захирал</>
                       ) : (
                         <>Chief Executive Officer </>
@@ -143,16 +139,20 @@ const ServicesFour = () => {
                   </div>
                 </div>
               </div>
-              <div className='contents'>
+              <div className="contents">
                 <p>
                   <br />
-                  {currentLanguage == "mn" ? (
+                  {currentLanguage === "mn" ? (
                     <>
                       {" "}
-                      Э.Төртогтох нь МУИС-ийг Хэрэглээний математикийн
-                      мэргэжлээр бакалавр, Япон улсын Иватэ ИС-ийг Хэрэглээний
-                      математик, загварчлалын мэргэжлээр магистр зэрэгтэй тус
-                      тус төгссөн.
+                      Э.Төртогтох нь Монгол Улсын Их Сургуулийг Хэрэглээний
+                      математикийн мэргэжлээр бакалавр, Япон улсын Иватэ Их
+                      Сургуулийг Хэрэглээний математик, загварчлалын мэргэжлээр
+                      магистрын зэрэгтэй тус тус төгссөн. Ажлын гараагаа банк,
+                      санхүүгийн салбараас эхлүүлсэн бөгөөд эрсдэлийн удирдлага,
+                      тогтвортой санхүүжилт, бүтээгдэхүүн хөгжүүлэлт, өгөгдлийн
+                      шинжилгээ-кредит скорингийн чиглэлээр 8 гаруй жил
+                      ажилласан туршлагатай.
                     </>
                   ) : (
                     <>
@@ -162,7 +162,7 @@ const ServicesFour = () => {
                       and a master's degree in Applied mathematics and modeling
                       from Iwate University, Japan. He started his career in the
                       banking and financial sector and has 8+ years of
-                      experience in the risk management, sustainable financing,
+                      experience in risk management, sustainable financing,
                       product development, data analysis and credit scoring.
                     </>
                   )}
@@ -170,34 +170,30 @@ const ServicesFour = () => {
                 <p>
                   <br />
 
-                  {currentLanguage == "mn" ? (
+                  {currentLanguage === "mn" ? (
                     <>
                       {" "}
-                      Ажлын гараагаа банк, санхүүгийн салбараас эхлүүлсэн бөгөөд
-                      эрсдэлийн удирдлага, тогтвортой санхүүжилт, бүтээгдэхүүн
-                      хөгжүүлэлт, өгөгдлийн шинжилгээ-кредит скорингийн
-                      чиглэлээр 8 гаруй жил ажилласан туршлагатай. 2012-2017 онд
-                      Капитал, Богд банк, 2020-2021 онд Бүрэн Скор ЗМС,
-                      2022-2023 онд Монголын Финтекийн Холбоо, 2023 оноос Ард
-                      Санхүүгийн Нэгдлийн Эрсдэл Эрхэлсэн захирлаар, 2023 оны 03
-                      сараас эхлэн Монголын Биржүүдийн Нэгдсэн Холбооны
-                      Гүйцэтгэх захирал ажиллаж байна.
+                      2012-2017 онд Капитал банк, Богд банк, 2020-2021 онд Бүрэн
+                      Скор ЗМС, 2022-2023 онд Монголын Финтекийн Холбоо, 2022
+                      оноос Ард Санхүүгийн Нэгдэл ХК-ийн Эрсдэл эрхэлсэн
+                      захирлаар, 2023 оны 3 сараас эхлэн Монголын Биржүүдийн
+                      Нэгдсэн Холбооны Гүйцэтгэх захирлаар тус тус ажиллаж
+                      байна.
                     </>
                   ) : (
                     <>
-                      From 2012-2017, Capital and Bogd bank, from 2020-2021
+                      From 2012-2017, Capital bank and Bogd bank, from 2020-2021
                       Buren Score CIB, from 2022-2023, Mongolian Fintech
                       Association, from 2023 as the CEO of the Mongolian Joint
-                      Association of Exchanges, from 2023 as the Chief Risk
-                      Officer of Ard Financial Group.
+                      Association of Exchanges, from 2022 as the Chief Risk
+                      Officer of Ard Financial Group JSC.
                     </>
                   )}
 
                   <br />
                   <br />
-                  <br />
-                  <br />
-                  {currentLanguage == "en" ? <br /> : null}
+
+                  {currentLanguage === "en" ? <br /> : null}
                 </p>
               </div>
             </div>
