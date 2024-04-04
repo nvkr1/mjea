@@ -27,7 +27,7 @@ const FunFact = () => {
                 <CountUp end={12} duration={4}></CountUp>
               </h2>
               <h3>
-                {currentLanguage == "mn" ? (
+                {currentLanguage === "mn" ? (
                   <>Бүртгэлтэй ВХҮҮ</>
                 ) : (
                   <>Registered Virtual Asset Service Providers (VASPs)</>
@@ -38,11 +38,11 @@ const FunFact = () => {
           <div className="col-lg-2 col-md-3 mt-30 col-6">
             <div className="single-fun-fact">
               <h2>
-                ₮<CountUp end={384.3} duration={5}></CountUp>
-                {currentLanguage == "mn" ? <>тэрбум</> : <>billion</>}
+                ₮<CountUp end={241.9} duration={5}></CountUp>
+                {currentLanguage === "mn" ? <>тэрбум</> : <>billion</>}
               </h2>
               <h3>
-                {currentLanguage == "mn" ? (
+                {currentLanguage === "mn" ? (
                   <>Зах зээлийн үнэлгээ</>
                 ) : (
                   <>Market capitalization</>
@@ -53,11 +53,11 @@ const FunFact = () => {
           <div className="col-lg-2 col-md-3 mt-30 col-6">
             <div className="single-fun-fact">
               <h2>
-                ₮<CountUp end={411.0} duration={6}></CountUp>
-                {currentLanguage == "mn" ? <>сая</> : <>million</>}
+                ₮<CountUp end={150.1} duration={6}></CountUp>
+                {currentLanguage === "mn" ? <>сая</> : <>million</>}
               </h2>
               <h3>
-                {currentLanguage == "mn" ? (
+                {currentLanguage === "mn" ? (
                   <>Өдрийн дундаж арилжаа</>
                 ) : (
                   <>Average daily trading</>
@@ -68,11 +68,11 @@ const FunFact = () => {
           <div className="col-lg-2 col-md-3 mt-30 col-6">
             <div className="single-fun-fact">
               <h2>
-                <CountUp end={832764} duration={7}></CountUp>
+                <CountUp end={921022} duration={7}></CountUp>
               </h2>
 
               <h3>
-                {currentLanguage == "mn" ? (
+                {currentLanguage === "mn" ? (
                   <>Нийт харилцагчийн тоо</>
                 ) : (
                   <>Total number of customers</>
@@ -83,15 +83,38 @@ const FunFact = () => {
           <div className="col-lg-2 col-md-3 mt-30 col-6">
             <div className="align-items-center single-fun-fact">
               <h2>
-                <CountUp end={211} duration={8}></CountUp>
+                <CountUp end={41} duration={7}></CountUp>
               </h2>
               <h3>
-                {currentLanguage == "mn" ? (
+                {currentLanguage === "mn" ? (
                   <>Листлэгдсэн Койн, Токен</>
                 ) : (
                   <>Listed coins and tokens</>
                 )}
               </h3>
+            </div>
+          </div>
+          <div className="col-lg-2 col-md-3 mt-30 col-6">
+            <div className="align-items-center single-fun-fact">
+              <h2>
+                {currentLanguage === "mn" ? (
+                  <>
+                    <CountUp end={12} duration={7}></CountUp> ВХҮҮ нэвтрүүлсэн
+                  </>
+                ) : (
+                  <div className="flex flex-col xl:flex-row items-center md:items-start">
+                    <div className="flex flex-row gap-2">
+                      Achieved <CountUp end={12} duration={7}></CountUp>
+                    </div>
+                    <div className="hidden xl:block">&nbsp;</div>
+                    <div className="flex flex-row justify-center md:justify-start">
+                      VASP
+                      <div style={{ textTransform: "lowercase" }}>s</div>
+                    </div>
+                  </div>
+                )}
+              </h2>
+              <h3>MNS ISO/IEC 27001</h3>
             </div>
           </div>
         </div>

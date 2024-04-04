@@ -123,9 +123,9 @@ const ServicesFour = () => {
                     <h4>
                       <p className="row text-nowrap " to="/">
                         {currentLanguage === "mn" ? (
-                          <>ТӨРТОГТОХ ЭРДЭНЭБААТАР</>
+                          <>ЭРДЭНЭБААТАРЫН ТӨРТОГТОХ</>
                         ) : (
-                          <>TURTOGTOKH ERDENEBAATAR </>
+                          <>TURTOGTOKH ERDENEBAATAR</>
                         )}
                       </p>
                     </h4>
@@ -133,7 +133,7 @@ const ServicesFour = () => {
                       {currentLanguage === "mn" ? (
                         <>Гүйцэтгэх захирал</>
                       ) : (
-                        <>Chief Executive Officer </>
+                        <>CEO</>
                       )}
                     </p>
                   </div>

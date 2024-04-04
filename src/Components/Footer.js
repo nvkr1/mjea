@@ -13,9 +13,9 @@ const Footer = () => {
   const currentLanguage = i18n.language;
   return (
     <>
-      <footer className='footer-4 footer-wrap'>
-        <div id='contacts' className='footer-widgets-wrapper text-white'>
-          <div className='container'>
+      <footer className="footer-4 footer-wrap">
+        <div id="contacts" className="footer-widgets-wrapper text-white">
+          <div className="container">
             {/* start  */}
             {/* <div className='row d-flex justify-content-center align-items-center'>
               <div className='hidden sm:block col-3 m-auto'>
@@ -109,27 +109,30 @@ const Footer = () => {
               </div>
             </div> */}
             {/* end  */}
-            <div className='flex mx-auto justify-center gap-10'>
+            <div className="flex mx-auto justify-center gap-10">
               <a
-                href='https://www.facebook.com/%D0%9C%D0%BE%D0%BD%D0%B3%D0%BE%D0%BB%D1%8B%D0%BD-%D0%91%D0%B8%D1%80%D0%B6%D2%AF%D2%AF%D0%B4%D0%B8%D0%B9%D0%BD-%D0%9D%D1%8D%D0%B3%D0%B4%D1%81%D1%8D%D0%BD-%D0%A5%D0%BE%D0%BB%D0%B1%D0%BE%D0%BE-100147869249365'
-                target='_blank'>
-                <FaFacebookF className='text-2xl sm:text-4xl' />
+                href="https://www.facebook.com/%D0%9C%D0%BE%D0%BD%D0%B3%D0%BE%D0%BB%D1%8B%D0%BD-%D0%91%D0%B8%D1%80%D0%B6%D2%AF%D2%AF%D0%B4%D0%B8%D0%B9%D0%BD-%D0%9D%D1%8D%D0%B3%D0%B4%D1%81%D1%8D%D0%BD-%D0%A5%D0%BE%D0%BB%D0%B1%D0%BE%D0%BE-100147869249365"
+                target="_blank"
+              >
+                <FaFacebookF className="text-2xl sm:text-4xl" />
               </a>
-              <a href='https://twitter.com/MJAE_MN' target='_blank'>
-                <FaTwitter className='text-2xl sm:text-4xl' />
-              </a>
-              <a
-                href='https://www.linkedin.com/company/93820230/admin/'
-                target='_blank'>
-                <FaLinkedin className='text-2xl sm:text-4xl' />
+              <a href="https://twitter.com/MJAE_MN" target="_blank">
+                <FaTwitter className="text-2xl sm:text-4xl" />
               </a>
               <a
-                target='_blank'
-                href='https://www.google.com/maps/place/Central+Tower,+Ulaanbaatar+14200/@47.9180885,106.9177498,17z/data=!3m1!4b1!4m6!3m5!1s0x5d969246ee9e7233:0x3df25e1e20c33ca5!8m2!3d47.9180885!4d106.9203247!16zL20vMGcxMWRo'>
-                <MdLocationPin className='text-2xl sm:text-4xl' />
+                href="https://www.linkedin.com/company/93820230/admin/"
+                target="_blank"
+              >
+                <FaLinkedin className="text-2xl sm:text-4xl" />
               </a>
-              <a target='_blank' href={`mailto:info@mjae.mn`}>
-                <MdEmail className='text-2xl sm:text-4xl' />
+              <a
+                target="_blank"
+                href="https://www.google.com/maps/place/Central+Tower,+Ulaanbaatar+14200/@47.9180885,106.9177498,17z/data=!3m1!4b1!4m6!3m5!1s0x5d969246ee9e7233:0x3df25e1e20c33ca5!8m2!3d47.9180885!4d106.9203247!16zL20vMGcxMWRo"
+              >
+                <MdLocationPin className="text-2xl sm:text-4xl" />
+              </a>
+              <a target="_blank" href={`mailto:info@mjae.mn`}>
+                <MdEmail className="text-2xl sm:text-4xl" />
               </a>
 
               {/* <a>
@@ -139,16 +142,16 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='footer-bottom'>
-          <div className='container'>
-            <div className='flex flex-col sm:flex-row justify-between'>
-              <div className='mt-3 mt-lg-0 col text-center text-md-start'>
-                <div className='copyright-info text-center'>
+        <div className="footer-bottom">
+          <div className="container">
+            <div className="flex flex-col sm:flex-row justify-between">
+              <div className="mt-3 mt-lg-0 col text-center text-md-start">
+                <div className="copyright-info text-center">
                   <p>Copyright @2023 Diverse Solutions LLC</p>
                 </div>
               </div>
-              <div className='mt-3 mt-lg-0 col text-center text-md-start'>
-                <div className='copyright-info text-center'>
+              <div className="mt-3 mt-lg-0 col text-center text-md-start">
+                <div className="copyright-info text-center">
                   <p>
                     {" "}
                     {currentLanguage == "mn" ? (
@@ -159,12 +162,12 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
-              <div className='mt-3 mt-lg-0 col text-center text-md-start'>
-                <div className='flex justify-center gap-2 copyright-info text-center'>
+              <div className="mt-3 mt-lg-0 col text-center text-md-start">
+                <div className="flex justify-center gap-2 copyright-info text-center">
                   <p>
                     {currentLanguage == "mn" ? <>Холбоо барих</> : <>Phone</>}
                   </p>
-                  <span>+976 00000000</span>
+                  <span>+976 88010711</span>
                 </div>
               </div>
             </div>
